@@ -1,0 +1,148 @@
+/* VIDA RPG — sitio legal. Sin fuentes externas, sin scripts, sin terceros. */
+:root {
+  --bg: #0a0716;
+  --surface: #14102a;
+  --raised: #1e1840;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --gold: #f0c33c;
+  --gold-dark: #b8860b;
+  --text: #f0eaff;
+  --text-2: #b8b0d8;
+  --muted: #8f87b0;
+  --red: #ff3d5e;
+  --max: 46rem;
+}
+
+* { box-sizing: border-box; }
+
+html { color-scheme: dark; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+a { color: var(--gold); text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
+a:hover { color: #fff; }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 3px; }
+
+.skip {
+  position: absolute; left: -999px; top: 0.5rem;
+  background: var(--gold); color: #0a0716; padding: 0.4rem 0.8rem; border-radius: 6px; z-index: 10;
+}
+.skip:focus { left: 0.5rem; }
+
+/* Cabecera */
+.top {
+  position: sticky; top: 0; z-index: 5;
+  background: rgba(10, 7, 22, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.top .row {
+  max-width: var(--max); margin: 0 auto; padding: 0.75rem 1.25rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+}
+.brand {
+  font-weight: 800; letter-spacing: 0.12em; text-decoration: none; color: var(--gold);
+  font-size: 0.95rem;
+}
+.brand small { display: block; font-weight: 500; letter-spacing: 0.02em; color: var(--muted); font-size: 0.72rem; }
+
+.lang { display: flex; gap: 0.25rem; }
+.lang a {
+  text-decoration: none; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em;
+  padding: 0.3rem 0.6rem; border-radius: 999px; border: 1px solid var(--border-strong); color: var(--text-2);
+}
+.lang a:hover { color: var(--text); border-color: var(--gold); }
+.lang a[aria-current="page"] { background: var(--gold); color: #0a0716; border-color: var(--gold); }
+
+/* Contenido */
+main { max-width: var(--max); margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+
+.kicker {
+  color: var(--gold); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.18em;
+  text-transform: uppercase; margin: 0 0 0.5rem;
+}
+h1 { font-size: clamp(1.8rem, 4.5vw, 2.5rem); line-height: 1.15; margin: 0 0 0.75rem; letter-spacing: -0.01em; }
+h2 {
+  font-size: 1.3rem; margin: 2.5rem 0 0.75rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--border); color: var(--gold);
+}
+h3 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; color: var(--text); }
+p, ul, ol { margin: 0 0 1rem; }
+li { margin-bottom: 0.35rem; }
+ul, ol { padding-left: 1.4rem; }
+.meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+.lead { font-size: 1.15rem; color: var(--text-2); }
+strong { color: #fff; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; background: var(--raised); padding: 0.1em 0.4em; border-radius: 4px; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+/* Avisos */
+.notice {
+  background: var(--surface); border: 1px solid var(--border-strong);
+  border-left: 4px solid var(--gold); border-radius: 10px; padding: 1rem 1.25rem; margin: 1.5rem 0;
+}
+.notice.warn { border-left-color: var(--red); }
+.notice p:last-child { margin-bottom: 0; }
+.notice .title { display: block; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 0.35rem; color: var(--gold); }
+.notice.warn .title { color: var(--red); }
+
+/* Tarjetas de la portada y del soporte */
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); margin: 1.5rem 0; padding: 0; list-style: none; }
+.grid li { margin: 0; }
+.card {
+  display: block; height: 100%; text-decoration: none; color: var(--text);
+  background: var(--surface); border: 1px solid var(--border); border-top-color: var(--border-strong);
+  border-radius: 12px; padding: 1.1rem 1.2rem; transition: border-color 0.15s, transform 0.15s;
+}
+.card:hover { border-color: var(--gold); transform: translateY(-2px); color: var(--text); }
+.card .t { display: block; font-weight: 700; color: var(--gold); margin-bottom: 0.25rem; }
+.card .d { display: block; color: var(--text-2); font-size: 0.93rem; }
+
+.hero { padding: 1rem 0 0.5rem; }
+.hero h1 { font-size: clamp(2.2rem, 7vw, 3.4rem); letter-spacing: 0.04em; }
+.hero .heart { color: var(--red); }
+
+.chip { display: inline-block; background: var(--raised); border: 1px solid var(--border-strong); border-radius: 999px; padding: 0.15rem 0.7rem; font-size: 0.85rem; color: var(--text-2); margin: 0 0.35rem 0.5rem 0; }
+
+/* Preguntas frecuentes */
+details { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 0.2rem 1rem; margin-bottom: 0.6rem; }
+summary { cursor: pointer; font-weight: 700; padding: 0.6rem 0; color: var(--text); list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; color: var(--gold); font-weight: 800; }
+details[open] summary::after { content: "–"; }
+details p:last-child { margin-bottom: 0.8rem; }
+
+/* Tabla */
+table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.95rem; }
+th, td { text-align: left; padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--gold); font-weight: 700; }
+.scroll { overflow-x: auto; }
+
+/* Pie */
+footer { border-top: 1px solid var(--border); background: var(--surface); }
+footer .row { max-width: var(--max); margin: 0 auto; padding: 1.5rem 1.25rem 2.5rem; color: var(--muted); font-size: 0.88rem; }
+footer nav { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; margin-bottom: 0.75rem; }
+footer nav a { color: var(--text-2); text-decoration: none; }
+footer nav a:hover { color: var(--gold); }
+
+@media (max-width: 480px) {
+  body { font-size: 1rem; }
+  main { padding: 1.75rem 1rem 3rem; }
+  .top .row { padding: 0.6rem 1rem; }
+  .brand small { display: none; }
+}
+
+@media print {
+  body { background: #fff; color: #000; }
+  .top, footer nav, .lang { display: none; }
+  a { color: #000; }
+  h2 { color: #000; }
+}
