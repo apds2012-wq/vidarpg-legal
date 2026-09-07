@@ -31,7 +31,7 @@
     <article>
       <p class="kicker">Legal document</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: 6 September 2026 · app version 1.7.0</p>
+      <p class="meta">Last updated: 7 September 2026 · app version 1.9.0</p>
 <p class="lead">VIDA RPG is an app <strong>with no user accounts and no sign-up</strong>. Everything you record stays on your device, and the whole app works offline. This policy explains plainly what is stored, where, and what happens in the only two optional features that talk to the internet.</p>
 
 <h2>1. Summary</h2>
@@ -57,10 +57,10 @@
   <li>Your preferences: language, currency symbol, sound, music, vibration, visual effects, game mode and reminders.</li>
   <li>The mentors you have unlocked and the lessons you have read.</li>
   <li>If you created your avatar from a photo: <strong>the resulting pixel grid</strong>, never the photo (see section 5).</li>
-  <li>For the AI Coach: whether you switched it off, how many queries you made today and in total, and which suggestions you accepted. These are counters, not conversations.</li>
+  <li>For the AI Coach: whether you switched it off, how many queries you made today and in total, which suggestions you accepted and, since 1.9.0, how many <i>tokens</i> those queries cost. These are counters, not conversations.</li>
   <li>If you subscribed to PRO: whether the subscription is active, which plan, and until when. Nothing else.</li>
 </ul>
-<p>No identifying data is collected: no real name, no email, no phone number, no device identifiers, no location.</p>
+<p>No identifying data is collected: no real name, no email, no phone number, no device identifiers, no location. The country code the AI Coach uses is not stored either: it is read from your system settings at the moment of the query and never written to your save file (section 8).</p>
 
 <h2>3. Where it is stored and who can see it</h2>
 <p>Exclusively in the app's private storage on your device, through the system preferences API (<code>SharedPreferences</code> on Android, <code>UserDefaults</code> on iOS). <strong>It is not sent to any server.</strong> The developer cannot see it, does not receive it and has no way to access it.</p>
@@ -99,12 +99,14 @@
 <p>To <strong>Google's</strong> artificial-intelligence services, through <strong>Firebase</strong> (Firebase AI Logic, which queries the Gemini model). No developer server is involved. Google's handling of that data is governed by the Firebase and Gemini API terms.</p>
 <h3>What is sent</h3>
 <p>A <strong>structured summary</strong> of what you are asking about: the goal with its figure, date and committed hours; your experience per day over the last two weeks; how many habits you completed in each area; your streaks; the vices you logged; your active missions with their progress; and the language it should answer in.</p>
+<p>Since version 1.9.0 it also sends <strong>your device’s country code</strong>: two letters, such as <code>ES</code>, <code>GB</code> or <code>PL</code>. It serves <strong>one purpose only</strong>: if a sign of harm to yourself or to others appears in what you are asking about, the coach has to be able to point you to <strong>the right emergency resource</strong>. Language is not enough — someone using the app in English may be in any country — and the wrong emergency number is worse than none. That code comes from the <strong>regional settings you already have in your system</strong>, the same ones that decide how dates are shown to you: it is <strong>not geolocation</strong>, it does not use GPS and it requires no permission. It is not stored anywhere: it is read at the moment of the query. If it cannot be determined, nothing is sent, and the coach gives 112 as the European emergency number and also refers you to your local one.</p>
 <h3>What is never sent</h3>
 <ul>
   <li><strong>Your real name</strong>, your character's name, or any identifying data.</li>
   <li><strong>No photograph</strong>, and not your avatar's pixel grid either.</li>
   <li><strong>The content of your golden card.</strong></li>
   <li>No calendar dates: days travel as "three days ago".</li>
+  <li><strong>No other location data</strong>: not your time zone, not your city, not coordinates, nothing of the sort. Only the two-letter country code explained above.</li>
 </ul>
 <p>This is verified by an automated test suite that inspects every request and fails if any of that data slips in.</p>
 <h3>How to switch it off</h3>

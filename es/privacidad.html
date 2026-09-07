@@ -31,7 +31,7 @@
     <article>
       <p class="kicker">Documento legal</p>
       <h1>Política de privacidad</h1>
-      <p class="meta">Última actualización: 6 de septiembre de 2026 · versión de la aplicación 1.7.0</p>
+      <p class="meta">Última actualización: 7 de septiembre de 2026 · versión de la aplicación 1.9.0</p>
 <p class="lead">VIDA RPG es una aplicación <strong>sin cuentas de usuario y sin registro</strong>. Todo lo que registras se queda en tu dispositivo, y la aplicación funciona entera sin conexión. Esta política explica, sin rodeos, qué se guarda, dónde, y qué ocurre en las dos únicas funciones opcionales que hablan con internet.</p>
 
 <h2>1. Resumen</h2>
@@ -57,10 +57,10 @@
   <li>Tus preferencias: idioma, símbolo de moneda, sonido, música, vibración, efectos visuales, modo de juego y recordatorios.</li>
   <li>Los mentores que has desbloqueado y las enseñanzas que has leído.</li>
   <li>Si has creado tu avatar a partir de una foto: <strong>la rejilla de píxeles resultante</strong>, nunca la foto (ver la sección 5).</li>
-  <li>Del Coach IA: si lo has apagado, cuántas consultas has hecho hoy y en total, y qué sugerencias has aceptado. Son contadores, no conversaciones.</li>
+  <li>Del Coach IA: si lo has apagado, cuántas consultas has hecho hoy y en total, qué sugerencias has aceptado y, desde la 1.9.0, cuántos <i>tokens</i> han costado esas consultas. Son contadores, no conversaciones.</li>
   <li>Si te has suscrito a PRO: si la suscripción está activa, con qué plan y hasta cuándo. Nada más.</li>
 </ul>
-<p>No se recoge ningún dato identificativo: ni nombre real, ni correo, ni teléfono, ni identificadores del dispositivo, ni ubicación.</p>
+<p>No se recoge ningún dato identificativo: ni nombre real, ni correo, ni teléfono, ni identificadores del dispositivo, ni ubicación. Tampoco se guarda el código de país que usa el Coach IA: se lee de la configuración del sistema en el momento de la consulta y no se escribe en la partida (sección 8).</p>
 
 <h2>3. Dónde se guardan y quién puede verlos</h2>
 <p>Exclusivamente en el almacenamiento privado de la aplicación en tu dispositivo, a través de la API de preferencias del sistema (<code>SharedPreferences</code> en Android, <code>UserDefaults</code> en iOS). <strong>No se envían a ningún servidor.</strong> El desarrollador no puede verlos, no los recibe y no tiene forma de acceder a ellos.</p>
@@ -99,12 +99,14 @@
 <p>A los servicios de inteligencia artificial de <strong>Google</strong>, a través de <strong>Firebase</strong> (Firebase AI Logic, que consulta al modelo Gemini). No hay ningún servidor del desarrollador por medio. El tratamiento que Google hace de esos datos se rige por las condiciones de Firebase y de la API de Gemini.</p>
 <h3>Qué se envía</h3>
 <p>Un <strong>resumen estructurado</strong> de lo que estás consultando: el objetivo con su cifra, su fecha y las horas comprometidas; tu experiencia por día de las últimas dos semanas; cuántos hábitos has cumplido en cada área; tus rachas; los vicios registrados; tus misiones activas con su avance, y el idioma en el que debe responder.</p>
+<p>Desde la versión 1.9.0 se envía además <strong>el código de país de tu dispositivo</strong>: dos letras, como <code>ES</code>, <code>MX</code> o <code>PL</code>. Sirve <strong>para una sola cosa</strong>: si en lo que consultas aparece una señal de daño a ti mismo o a otras personas, el coach tiene que poder indicarte <strong>el recurso de emergencia correcto</strong>. El idioma no basta —quien usa la aplicación en español puede estar en cualquier país— y un número de emergencias equivocado es peor que ninguno. Ese código sale de la <strong>configuración regional que ya tienes puesta en el sistema</strong>, la misma que decide cómo se te muestran las fechas: <strong>no es geolocalización</strong>, no usa el GPS y no pide ningún permiso. No se guarda en ningún sitio: se lee en el momento de la consulta. Si no se puede determinar, no se envía, y el coach indica el 112 como número europeo de emergencias y te remite además al número local.</p>
 <h3>Qué no se envía nunca</h3>
 <ul>
   <li><strong>Tu nombre real</strong>, ni el del personaje, ni ningún dato identificativo.</li>
   <li><strong>Ninguna fotografía</strong>, ni la rejilla de píxeles de tu avatar.</li>
   <li><strong>El contenido de tu tarjeta dorada.</strong></li>
   <li>Ninguna fecha de calendario: los días viajan como «hace tres días».</li>
+  <li><strong>Ningún otro dato de localización</strong>: ni tu zona horaria, ni tu ciudad, ni coordenadas, ni nada parecido. Solo el código de país de dos letras que se explica arriba.</li>
 </ul>
 <p>Esto lo comprueba un conjunto de pruebas automáticas que revisa cada petición y falla si alguno de esos datos se cuela.</p>
 <h3>Cómo se desactiva</h3>

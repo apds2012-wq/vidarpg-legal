@@ -31,7 +31,7 @@
     <article>
       <p class="kicker">Dokument prawny</p>
       <h1>Polityka prywatności</h1>
-      <p class="meta">Ostatnia aktualizacja: 6 września 2026 · wersja aplikacji 1.7.0</p>
+      <p class="meta">Ostatnia aktualizacja: 7 września 2026 · wersja aplikacji 1.9.0</p>
 <p class="lead">VIDA RPG to aplikacja <strong>bez kont użytkowników i bez rejestracji</strong>. Wszystko, co zapisujesz, zostaje na Twoim urządzeniu, a cała aplikacja działa offline. Ta polityka wyjaśnia wprost, co jest zapisywane, gdzie, i co dzieje się w dwóch jedynych opcjonalnych funkcjach, które łączą się z internetem.</p>
 
 <h2>1. W skrócie</h2>
@@ -57,10 +57,10 @@
   <li>Twoje preferencje: język, symbol waluty, dźwięk, muzykę, wibracje, efekty wizualne, tryb gry i przypomnienia.</li>
   <li>Odblokowanych mentorów i przeczytane nauki.</li>
   <li>Jeśli stworzono awatar ze zdjęcia: <strong>powstałą siatkę pikseli</strong>, nigdy zdjęcie (zob. sekcję 5).</li>
-  <li>Dotyczące Trenera AI: czy jest wyłączony, ile zapytań wykonano dziś i łącznie oraz które sugestie zaakceptowano. To liczniki, nie rozmowy.</li>
+  <li>Dotyczące Trenera AI: czy jest wyłączony, ile zapytań wykonano dziś i łącznie, które sugestie zaakceptowano oraz, od wersji 1.9.0, ile <i>tokenów</i> kosztowały te zapytania. To liczniki, nie rozmowy.</li>
   <li>Jeśli masz subskrypcję PRO: czy jest aktywna, jaki plan i do kiedy. Nic więcej.</li>
 </ul>
-<p>Nie są zbierane żadne dane identyfikujące: ani prawdziwe imię, ani e-mail, ani numer telefonu, ani identyfikatory urządzenia, ani lokalizacja.</p>
+<p>Nie są zbierane żadne dane identyfikujące: ani prawdziwe imię, ani e-mail, ani numer telefonu, ani identyfikatory urządzenia, ani lokalizacja. Nie jest też zapisywany kod kraju używany przez Trenera AI: odczytuje się go z ustawień systemu w chwili zapytania i nigdy nie trafia do zapisu gry (sekcja 8).</p>
 
 <h2>3. Gdzie są przechowywane i kto może je zobaczyć</h2>
 <p>Wyłącznie w prywatnej pamięci aplikacji na Twoim urządzeniu, poprzez systemowe API preferencji (<code>SharedPreferences</code> w Androidzie, <code>UserDefaults</code> w iOS). <strong>Nie są wysyłane na żaden serwer.</strong> Deweloper nie może ich zobaczyć, nie otrzymuje ich i nie ma do nich dostępu.</p>
@@ -99,12 +99,14 @@
 <p>Do usług sztucznej inteligencji <strong>Google</strong>, poprzez <strong>Firebase</strong> (Firebase AI Logic, który odpytuje model Gemini). Nie pośredniczy w tym żaden serwer dewelopera. Przetwarzanie tych danych przez Google regulują warunki Firebase i API Gemini.</p>
 <h3>Co jest wysyłane</h3>
 <p><strong>Ustrukturyzowane podsumowanie</strong> tego, o co pytasz: cel z jego wartością, datą i zadeklarowanymi godzinami; Twoje doświadczenie dzień po dniu z ostatnich dwóch tygodni; ile nawyków wykonano w każdym obszarze; Twoje serie; zarejestrowane nałogi; aktywne misje z ich postępem oraz język, w którym ma odpowiedzieć.</p>
+<p>Od wersji 1.9.0 wysyłany jest także <strong>kod kraju Twojego urządzenia</strong>: dwie litery, na przykład <code>PL</code>, <code>ES</code> lub <code>GB</code>. Służy on <strong>tylko do jednego</strong>: jeśli w tym, o co pytasz, pojawi się sygnał krzywdy wobec siebie lub innych, trener musi móc wskazać Ci <strong>właściwy numer alarmowy</strong>. Język nie wystarczy — ktoś, kto używa aplikacji po polsku, może być w dowolnym kraju — a błędny numer alarmowy jest gorszy niż żaden. Ten kod pochodzi z <strong>ustawień regionalnych, które już masz w systemie</strong>, tych samych, które decydują o sposobie wyświetlania dat: to <strong>nie jest geolokalizacja</strong>, nie korzysta z GPS i nie wymaga żadnego uprawnienia. Nie jest nigdzie zapisywany: odczytuje się go w chwili zapytania. Jeśli nie da się go ustalić, nie jest wysyłany, a trener podaje 112 jako europejski numer alarmowy i odsyła dodatkowo do numeru lokalnego.</p>
 <h3>Co nigdy nie jest wysyłane</h3>
 <ul>
   <li><strong>Twoje prawdziwe imię</strong>, imię postaci ani żadne dane identyfikujące.</li>
   <li><strong>Żadne zdjęcie</strong> ani siatka pikseli Twojego awatara.</li>
   <li><strong>Treść Twojej złotej karty.</strong></li>
   <li>Żadne daty kalendarzowe: dni są przekazywane jako „trzy dni temu”.</li>
+  <li><strong>Żadne inne dane o lokalizacji</strong>: ani strefa czasowa, ani miasto, ani współrzędne, ani nic podobnego. Tylko dwuliterowy kod kraju opisany powyżej.</li>
 </ul>
 <p>Sprawdza to zestaw testów automatycznych, który kontroluje każde zapytanie i zgłasza błąd, jeśli którakolwiek z tych danych się przedostanie.</p>
 <h3>Jak go wyłączyć</h3>
