@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Documento legale</p>
       <h1>Informativa sulla privacy</h1>
-      <p class="meta">Ultimo aggiornamento: 15 settembre 2026 · versione dell'applicazione 2.5.0</p>
+      <p class="meta">Ultimo aggiornamento: 16 settembre 2026 · versione dell'applicazione 2.6.0</p>
 <p class="lead">VIDA RPG è un'applicazione <strong>senza account utente e senza registrazione</strong>. Tutto quello che registri resta sul tuo dispositivo, e l'applicazione funziona per intero offline. Questa informativa spiega, senza giri di parole, che cosa viene salvato, dove, e che cosa succede nelle uniche due funzioni opzionali che parlano con internet: il Coach IA e gli acquisti dentro l'applicazione.</p>
 
 <h2>1. In breve</h2>
@@ -64,7 +64,7 @@
   <li>Baros, esperienza, livello, serie, scudi, traguardi, record, sfide, trofei e cronologia delle azioni.</li>
   <li>Il contenuto della tua carta dorata.</li>
   <li>Le tue preferenze: lingua, simbolo della valuta, suono, musica, vibrazione, effetti visivi, modalità di gioco e promemoria.</li>
-  <li>I mentori che hai sbloccato e gli insegnamenti che hai letto.</li>
+  <li>Dalla 2.6.0, <strong>il tuo cammino dei mentori</strong>: quali mentori hai completato e in quale data, quali hai aperti, se c'è un forziere del mentore da raccogliere e se hai un cambio di prospettiva in sospeso; e gli insegnamenti che hai letto. E il tuo profilo di affinità con i mentori: le risposte del questionario e di ogni cambio di prospettiva con il loro risultato, calcolato dentro il telefono e che non viene inviato a nessuno, nemmeno al Coach IA.</li>
   <li>Se hai creato il tuo avatar a partire da una foto: <strong>la griglia di pixel che ne risulta</strong>, mai la foto (vedi la sezione 5).</li>
   <li>Del Coach IA: se l'hai spento, quante domande hai fatto oggi, questa settimana e in totale, da quale data decorre il tuo mese di domande gratuite, quali suggerimenti hai accettato, quanti <i>token</i> sono costate quelle domande e, dalla 2.5.0, l'ultima risposta del coach, salvata sul dispositivo per potertela mostrare per intero se attivi PRO senza ripetere la domanda.</li>
   <li>Dalla 2.5.0: i contatori del piano gratuito (quante missioni della biblioteca hai aggiunto questa settimana), quali offerte ti sono già state mostrate, e i tuoi <strong>programmi di sfida</strong>: quello in corso con i giorni fatti, quelli terminati con la loro percentuale e i distintivi conquistati.</li>
@@ -88,7 +88,7 @@
 <h2>5. Fotocamera, galleria e l'avatar a partire da una foto</h2>
 <p>Puoi creare l'avatar del tuo personaggio a partire da una fotografia. La fotocamera e la galleria si usano <strong>unicamente</strong> in quel momento e per nient'altro:</p>
 <ul>
-  <li>Il sistema ti chiede il permesso della fotocamera o di lettura delle immagini quando scegli l'opzione. Puoi negarlo: semplicemente non potrai usare questa funzione, e il resto dell'applicazione funziona uguale.</li>
+  <li>Il sistema ti chiede il permesso della fotocamera quando scegli di scattare la foto. Puoi negarlo: semplicemente non potrai usare questa funzione, e il resto dell'applicazione funziona uguale. Scegliere una foto dalla galleria non richiede nessun permesso: si apre il selettore di foto del sistema e l'applicazione riceve solo l'immagine che scegli tu; dalla 2.6.0 il pacchetto non dichiara nessun permesso di lettura delle immagini.</li>
   <li>L'immagine viene aperta in memoria perché tu la inquadri e viene convertita, <strong>in quello stesso momento e dentro il tuo dispositivo</strong>, in una griglia di 20 × 20 pixel con una tavolozza di circa 14 colori. Non interviene nessun servizio esterno, né riconoscimento facciale, né biometria, né intelligenza artificiale.</li>
   <li><strong>La fotografia non viene mai conservata né trasmessa.</strong> Non viene copiata in nessuna cartella dell'applicazione, non viene salvata nella galleria, non viene caricata su nessun server e non viene condivisa con nessuno. Appena l'avatar è generato, viene liberata dalla memoria.</li>
   <li>L'unica cosa che resta nella partita è quella griglia: un elenco di indici di colore di <strong>meno di due kilobyte</strong>, dal quale non si può ricostruire la foto originale.</li>
@@ -118,14 +118,14 @@
   <li>Nessuna data di calendario: i giorni viaggiano come «tre giorni fa».</li>
   <li><strong>Nessun altro dato di posizione</strong>: né il tuo fuso orario, né la tua città, né coordinate, né niente del genere. Solo il codice del paese di due lettere spiegato qui sopra.</li>
 </ul>
-<p>Questo lo verifica un insieme di test automatici che controlla ogni richiesta e fallisce se uno di quei dati si intrufola.</p>
+<p>Questo lo verifica un insieme di test automatici che controlla ogni richiesta e fallisce se uno di quei dati si intrufola, e dalla 2.6.0 <strong>la stessa verifica viene eseguita sul tuo telefono prima di ogni invio</strong>: se trovasse il tuo nome, la griglia del tuo avatar, la tua carta dorata o il nome di un vizio personale dentro la richiesta, la richiesta non parte. Come in ogni connessione HTTPS di qualsiasi applicazione, il server che riceve la richiesta vede l'indirizzo IP da cui arriva; l'applicazione non lo legge, non lo salva e non lo usa per niente.</p>
 <h3>Come si disattiva</h3>
 <p>Dalle <strong>Impostazioni</strong> puoi <strong>spegnere del tutto il Coach IA</strong>. Quando lo fai spariscono tutti i suoi punti di accesso e non viene inviato assolutamente niente. Finché è acceso, non viene inviato niente finché non premi il suo pulsante.</p>
 <h3>Limiti</h3>
 <p>La quota dipende dal piano: senza pagare, una domanda per settimana di calendario durante i trenta giorni successivi alla creazione della partita (o all'aggiornamento alla 2.5.0, per le partite precedenti) e nessuna dopo; con PRO, nove al giorno. Al di sopra di qualsiasi piano c'è un tetto di dodici domande al giorno per dispositivo. Il contatore è in vista. La protezione contro gli abusi è fornita da Firebase App Check.</p>
 
 <h2>9. Gli acquisti: PRO e i programmi di sfida</h2>
-<p>Il download è gratuito e include il gioco completo. VIDA RPG offre un abbonamento opzionale, <strong>PRO</strong> —mensile o annuale, quello annuale con sette giorni di prova gratuita—, e sei <strong>programmi di sfida</strong> che si possono comprare anche singolarmente come acquisto unico. Nessun acquisto sblocca il gioco, toglie la pubblicità (non ce n'è) né vende Baros o oggetti estetici con denaro reale, che si guadagnano solo giocando. Non esiste un acquisto a vita.</p>
+<p>Il download è gratuito e include il gioco completo. VIDA RPG offre un abbonamento opzionale, <strong>PRO</strong> —mensile o annuale, quello annuale con sette giorni di prova gratuita—, e sei <strong>programmi di sfida</strong> che si possono comprare anche singolarmente come acquisto unico. Nessun acquisto sblocca il gioco, toglie la pubblicità (non ce n'è) né vende Baros o oggetti estetici con denaro reale, che si guadagnano solo giocando. Dalla 2.6.0 nessun mentore e nessuna tecnica si apre in base al livello né con Baros, ma completando il mentore precedente, tanto con PRO quanto senza; PRO permette di percorrere due cammini di mentori in parallelo. Non esiste un acquisto a vita.</p>
 <h3>Chi incassa e chi controlla</h3>
 <ul>
   <li><strong>Il pagamento lo gestisce lo store del tuo telefono</strong> (Google Play o App Store) con l'account che hai lì. L'applicazione non vede, non riceve e non salva il tuo metodo di pagamento: apre la scheda di acquisto del sistema e il resto avviene fuori. <strong>L'applicazione non riceve nessun dato di pagamento.</strong></li>
@@ -136,13 +136,14 @@
   <li>La <strong>ricevuta di acquisto</strong> emessa dallo store, per convalidarla con Google o con Apple.</li>
   <li>Quali <strong>prodotti</strong> hai attivi (l'abbonamento e i programmi) e in quale stato.</li>
   <li>La <strong>piattaforma</strong> (Android o iOS), la versione dell'applicazione e il <strong>paese</strong> dello store.</li>
-  <li>Un <strong>identificatore anonimo che genera lui stesso</strong>. L'applicazione non gli consegna nessun identificatore tuo: non ci sono account, non c'è email e non viene chiamata nessuna funzione di identificazione.</li>
+  <li>Quello che il suo componente aggiunge a ogni richiesta per conto suo: <strong>la marca e il modello del telefono, la versione del sistema operativo e le lingue configurate sul dispositivo</strong>. Sono dati del dispositivo, non tuoi, e servono a gestire la richiesta e a rilevare le frodi.</li>
+  <li>Un <strong>identificatore anonimo che genera lui stesso</strong>. L'applicazione non gli consegna nessun identificatore tuo: non ci sono account, non c'è email e non viene chiamata nessuna funzione di identificazione. Se hai comprato qualcosa, quell'identificatore anonimo viene salvato anche nel backup del tuo account Google (Block Store), per poter riconoscere i tuoi acquisti su un telefono nuovo senza nessun dato tuo.</li>
 </ul>
 <p>Non riceve il tuo nome, né la tua partita, né i tuoi programmi, né fotografie, né niente di quello che invii al Coach IA.</p>
 <h3>Quando si collega</h3>
 <ul>
   <li><strong>Se non compri e non apri la schermata di PRO, l'applicazione non si collega a RevenueCat nemmeno una volta</strong>, né all'avvio né in secondo piano.</li>
-  <li>Se apri la schermata di PRO, vengono chiesti allo store i prodotti e i loro prezzi, nella tua valuta.</li>
+  <li>Se apri la schermata di PRO, vengono chiesti allo store i prodotti e i loro prezzi, nella tua valuta. Una volta caricato, il suo componente può aggiornare quello che sa ogni volta che l'applicazione torna in primo piano durante quella stessa sessione.</li>
   <li>Se hai PRO, un programma comprato o un pagamento in attesa, all'avvio viene controllato al massimo una volta al giorno che sia tutto in ordine, e RevenueCat avvisa l'applicazione se qualcosa cambia.</li>
   <li>Senza connessione non viene controllato niente e non perdi nulla: l'applicazione conserva l'ultimo stato conosciuto, con la sua data.</li>
 </ul>
@@ -155,12 +156,12 @@
 
 <h2>11. Permessi</h2>
 <ul>
-  <li><strong>Notifiche</strong>: solo se attivi i promemoria. Puoi negarlo.</li>
-  <li><strong>Fotocamera e lettura delle immagini</strong>: solo per creare l'avatar a partire da una foto, vengono chiesti in quel momento e puoi negarli. La fotocamera è dichiarata come non obbligatoria.</li>
+  <li><strong>Notifiche</strong>: è l'unico permesso che ti viene chiesto all'inizio, una sola volta, quando finisci di creare il tuo personaggio. Puoi negarlo, e i promemoria si disattivano quando vuoi dalle Impostazioni o dal sistema.</li>
+  <li><strong>Fotocamera</strong>: solo per scattare la foto da cui si crea l'avatar, viene chiesto in quel momento e puoi negarlo. La fotocamera è dichiarata come non obbligatoria. Scegliere una foto dalla galleria non richiede permessi: dalla 2.6.0 il pacchetto non dichiara nessun permesso di lettura delle immagini.</li>
   <li><strong>Internet</strong>: lo dichiara il motore su cui gira l'applicazione. Tutte le risorse sono nel pacchetto; le uniche richieste di rete possibili sono quelle del Coach IA e quelle dell'abbonamento, e solo quando le provochi tu.</li>
   <li><strong>Vibrazione</strong>, e i permessi tecnici che il sistema usa per riprogrammare i promemoria dopo il riavvio del telefono e per aprire la schermata di acquisto dello store. Nessuno di questi ti chiede un'approvazione né accede ai tuoi dati.</li>
 </ul>
-<p>L'applicazione non richiede microfono, posizione, contatti, tracciamento tra applicazioni, scrittura su memoria esterna né allarmi esatti, su nessuna piattaforma.</p>
+<p>L'applicazione non richiede microfono, posizione, contatti, tracciamento tra applicazioni, lettura della galleria, scrittura su memoria esterna né allarmi esatti, su nessuna piattaforma.</p>
 
 <h2>12. I tuoi diritti (GDPR)</h2>
 <p>Il Regolamento generale sulla protezione dei dati dell'Unione Europea ti riconosce i diritti di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione sui tuoi dati personali. In VIDA RPG lo sviluppatore <strong>non raccoglie né conserva dati personali su server propri</strong>, quindi non ha niente di tuo a cui dare accesso, da correggere o da cancellare. L'esercizio di quei diritti si risolve <strong>sul tuo stesso dispositivo</strong>:</p>
@@ -178,7 +179,7 @@
 <p>Disinstallare VIDA RPG elimina tutti i dati della partita. <strong>Non esiste nessuna copia in mano allo sviluppatore</strong>, quindi non c'è altro da cancellare né da chiedere. Resterebbero solo i file che hai esportato tu e salvato dove hai scelto.</p>
 
 <h2>15. Modifiche a questa informativa</h2>
-<p>Se in futuro cambierà il trattamento dei dati, questa informativa sarà aggiornata, pubblicata a questo stesso indirizzo e mostrata dentro l'applicazione (Altro → Privacy), nelle tre lingue.</p>
+<p>Se in futuro cambierà il trattamento dei dati, questa informativa sarà aggiornata, pubblicata a questo stesso indirizzo e mostrata dentro l'applicazione (Altro → Privacy), nelle sette lingue.</p>
 
 <h2>16. Titolare del trattamento</h2>
 <p><strong>Alex Vida</strong>, sviluppatore indipendente, Spagna.<br>Contatto: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>

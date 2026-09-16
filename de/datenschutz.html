@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Rechtsdokument</p>
       <h1>Datenschutzerklärung</h1>
-      <p class="meta">Zuletzt aktualisiert: 15. September 2026 · App-Version 2.5.0</p>
+      <p class="meta">Zuletzt aktualisiert: 16. September 2026 · App-Version 2.6.0</p>
 <p class="lead">VIDA RPG ist eine App <strong>ohne Benutzerkonten und ohne Registrierung</strong>. Alles, was du einträgst, bleibt auf deinem Gerät, und die ganze App funktioniert offline. Diese Erklärung sagt ohne Umschweife, was gespeichert wird, wo, und was in den einzigen zwei optionalen Funktionen geschieht, die mit dem Internet sprechen: dem KI-Coach und den Käufen in der App.</p>
 
 <h2>1. Zusammenfassung</h2>
@@ -64,7 +64,7 @@
   <li>Baros, Erfahrung, Level, Serie, Schilde, Meilensteine, Rekorde, Herausforderungen, Erfolge und den Verlauf deiner Aktionen.</li>
   <li>Den Inhalt deiner goldenen Karte.</li>
   <li>Deine Einstellungen: Sprache, Währungssymbol, Ton, Musik, Vibration, visuelle Effekte, Spielmodus und Erinnerungen.</li>
-  <li>Die Mentoren, die du freigeschaltet hast, und die Lehren, die du gelesen hast.</li>
+  <li>Seit 2.6.0 <strong>deinen Mentorenweg</strong>: welche Mentoren du abgeschlossen hast und an welchem Datum, welche dir offenstehen, ob eine Mentorenkiste noch abzuholen ist und ob ein Perspektivwechsel aussteht; und die Lehren, die du gelesen hast. Und dein Affinitätsprofil zu den Mentoren: die Antworten aus dem Fragebogen und aus jedem Perspektivwechsel mit ihrem Ergebnis, auf deinem Telefon berechnet und an niemanden gesendet, auch nicht an den KI-Coach.</li>
   <li>Wenn du deinen Avatar aus einem Foto erstellt hast: <strong>das daraus entstandene Pixelraster</strong>, niemals das Foto (siehe Abschnitt 5).</li>
   <li>Zum KI-Coach: ob du ihn abgeschaltet hast, wie viele Anfragen du heute, diese Woche und insgesamt gestellt hast, seit welchem Datum dein Monat kostenloser Anfragen läuft, welche Vorschläge du angenommen hast, wie viele <i>Tokens</i> diese Anfragen gekostet haben und, seit 2.5.0, die letzte Antwort des Coachs, auf dem Gerät gespeichert, um sie dir ganz zeigen zu können, wenn du PRO aktivierst, ohne die Anfrage zu wiederholen.</li>
   <li>Seit 2.5.0: die Zähler des kostenlosen Tarifs (wie viele Quests aus dem Questkatalog du diese Woche hinzugefügt hast), welche Angebote dir schon gezeigt wurden, und deine <strong>Challenge-Programme</strong>: das laufende mit seinen erledigten Tagen, die abgeschlossenen mit ihrem Prozentsatz und die gewonnenen Abzeichen.</li>
@@ -88,7 +88,7 @@
 <h2>5. Kamera, Galerie und der Avatar aus einem Foto</h2>
 <p>Du kannst den Avatar deiner Figur aus einem Foto erstellen. Kamera und Galerie werden <strong>ausschließlich</strong> in diesem Moment und für nichts anderes verwendet:</p>
 <ul>
-  <li>Das System fragt dich nach der Berechtigung für die Kamera oder für das Lesen von Bildern, wenn du die Option wählst. Du kannst sie verweigern: Dann steht dir diese Funktion nicht zur Verfügung, und der Rest der App funktioniert genauso.</li>
+  <li>Das System fragt dich nach der Berechtigung für die Kamera, wenn du dich entscheidest, das Foto aufzunehmen. Du kannst sie verweigern: Dann steht dir diese Funktion nicht zur Verfügung, und der Rest der App funktioniert genauso. Ein Foto aus der Galerie zu wählen braucht keinerlei Berechtigung: Die Fotoauswahl des Systems öffnet sich, und die App erhält nur das Bild, das du auswählst; seit 2.6.0 deklariert das Paket keine Berechtigung zum Lesen von Bildern.</li>
   <li>Das Bild wird im Arbeitsspeicher geöffnet, damit du den Ausschnitt wählst, und wird <strong>im selben Moment und auf deinem Gerät</strong> in ein Raster von 20 × 20 Pixeln mit einer Palette von etwa 14 Farben umgewandelt. Kein externer Dienst ist beteiligt, keine Gesichtserkennung, keine Biometrie, keine künstliche Intelligenz.</li>
   <li><strong>Das Foto wird niemals gespeichert und niemals übertragen.</strong> Es wird in keinen Ordner der App kopiert, nicht in der Galerie gesichert, auf keinen Server geladen und mit niemandem geteilt. Sobald der Avatar erzeugt ist, wird es aus dem Speicher freigegeben.</li>
   <li>Im Spielstand bleibt nur dieses Raster: eine Liste von Farbindizes mit <strong>weniger als zwei Kilobyte</strong>, aus der sich das ursprüngliche Foto nicht rekonstruieren lässt.</li>
@@ -118,14 +118,14 @@
   <li>Kein Kalenderdatum: Tage reisen als „vor drei Tagen“.</li>
   <li><strong>Keine weiteren Standortdaten</strong>: weder deine Zeitzone noch deine Stadt, keine Koordinaten, nichts dergleichen. Nur der oben erklärte zweibuchstabige Ländercode.</li>
 </ul>
-<p>Das prüft eine Reihe automatischer Tests, die jede Anfrage durchsieht und fehlschlägt, sobald sich eine dieser Angaben einschleicht.</p>
+<p>Das prüft eine Reihe automatischer Tests, die jede Anfrage durchsieht und fehlschlägt, sobald sich eine dieser Angaben einschleicht, und seit 2.6.0 <strong>läuft dieselbe Prüfung auf deinem Telefon vor jedem Senden</strong>: Fände sie deinen Namen, das Pixelraster deines Avatars, deine goldene Karte oder den Namen eines eigenen Lasters in der Anfrage, geht die Anfrage nicht hinaus. Wie bei jeder HTTPS-Verbindung jeder beliebigen App sieht der Server, der die Anfrage empfängt, die IP-Adresse, von der sie kommt; die App liest sie nicht, speichert sie nicht und nutzt sie für nichts.</p>
 <h3>Wie er abgeschaltet wird</h3>
 <p>In den <strong>Einstellungen</strong> kannst du den <strong>KI-Coach vollständig abschalten</strong>. Damit verschwinden alle seine Einstiegspunkte, und es wird absolut nichts gesendet. Solange er eingeschaltet ist, wird nichts gesendet, bis du seine Schaltfläche drückst.</p>
 <h3>Grenzen</h3>
 <p>Das Kontingent hängt vom Tarif ab: ohne zu zahlen eine Anfrage pro Kalenderwoche während der dreißig Tage nach dem Anlegen des Spielstands (oder nach der Aktualisierung auf 2.5.0 bei älteren Spielständen) und danach keine; mit PRO neun pro Tag. Über jedem Tarif liegt eine Obergrenze von zwölf Anfragen pro Tag und Gerät. Der Zähler ist sichtbar. Den Schutz vor Missbrauch liefert Firebase App Check.</p>
 
 <h2>9. Die Käufe: PRO und die Challenge-Programme</h2>
-<p>Der Download ist kostenlos und enthält das vollständige Spiel. VIDA RPG bietet ein optionales Abo, <strong>PRO</strong> – monatlich oder jährlich, das jährliche mit sieben Tagen kostenloser Testphase –, und sechs <strong>Challenge-Programme</strong>, die sich auch einzeln als Einmalkauf erwerben lassen. Kein Kauf schaltet das Spiel frei, entfernt Werbung (es gibt keine) oder verkauft Baros oder Kosmetik gegen echtes Geld; die gibt es nur durch Spielen. Einen lebenslangen Kauf gibt es nicht.</p>
+<p>Der Download ist kostenlos und enthält das vollständige Spiel. VIDA RPG bietet ein optionales Abo, <strong>PRO</strong> – monatlich oder jährlich, das jährliche mit sieben Tagen kostenloser Testphase –, und sechs <strong>Challenge-Programme</strong>, die sich auch einzeln als Einmalkauf erwerben lassen. Kein Kauf schaltet das Spiel frei, entfernt Werbung (es gibt keine) oder verkauft Baros oder Kosmetik gegen echtes Geld; die gibt es nur durch Spielen. Seit 2.6.0 öffnet sich kein Mentor und keine Technik mehr nach Level oder gegen Baros, sondern durch das Abschließen des vorigen Mentors, mit PRO genauso wie ohne; PRO erlaubt es, zwei Mentorenwege zugleich zu gehen. Einen lebenslangen Kauf gibt es nicht.</p>
 <h3>Wer abrechnet und wer prüft</h3>
 <ul>
   <li><strong>Die Zahlung wickelt der Store deines Telefons ab</strong> (Google Play oder App Store) mit dem Konto, das du dort hast. Die App sieht deine Zahlungsmethode nicht, erhält sie nicht und speichert sie nicht: Sie öffnet das Kaufblatt des Systems, und der Rest geschieht außerhalb von ihr. <strong>Die App erhält keinerlei Zahlungsdaten.</strong></li>
@@ -136,13 +136,14 @@
   <li>Den <strong>Kaufbeleg</strong>, den der Store ausstellt, um ihn bei Google oder Apple zu prüfen.</li>
   <li>Welche <strong>Produkte</strong> du aktiv hast (das Abo und die Programme) und in welchem Zustand.</li>
   <li>Die <strong>Plattform</strong> (Android oder iOS), die Version der App und das <strong>Land</strong> des Stores.</li>
-  <li>Eine <strong>anonyme Kennung, die er selbst erzeugt</strong>. Die App übergibt ihm keine Kennung von dir: Es gibt keine Konten, keine E-Mail-Adresse, und es wird keine Identifizierungsfunktion aufgerufen.</li>
+  <li>Was seine Komponente jeder Anfrage von sich aus hinzufügt: <strong>Marke und Modell des Telefons, die Version des Betriebssystems und die auf dem Gerät eingestellten Sprachen</strong>. Das sind Daten des Geräts, nicht deine, und sie dienen dazu, die Anfrage zu bedienen und Betrug zu erkennen.</li>
+  <li>Eine <strong>anonyme Kennung, die er selbst erzeugt</strong>. Die App übergibt ihm keine Kennung von dir: Es gibt keine Konten, keine E-Mail-Adresse, und es wird keine Identifizierungsfunktion aufgerufen. Wenn du etwas gekauft hast, wird diese anonyme Kennung auch in der Sicherung deines Google-Kontos (Block Store) abgelegt, damit deine Käufe auf einem neuen Telefon ohne irgendeine Angabe von dir erkannt werden können.</li>
 </ul>
 <p>Er erhält weder deinen Namen noch deinen Spielstand, weder deine Programme noch Fotos, und nichts von dem, was du an den KI-Coach sendest.</p>
 <h3>Wann sie sich verbindet</h3>
 <ul>
   <li><strong>Wenn du nichts kaufst und den PRO-Bildschirm nicht öffnest, verbindet sich die App kein einziges Mal mit RevenueCat</strong>, weder beim Start noch im Hintergrund.</li>
-  <li>Wenn du den PRO-Bildschirm öffnest, werden die Produkte und ihre Preise beim Store abgefragt, in deiner Währung.</li>
+  <li>Wenn du den PRO-Bildschirm öffnest, werden die Produkte und ihre Preise beim Store abgefragt, in deiner Währung. Einmal geladen, kann seine Komponente das, was sie weiß, jedes Mal auffrischen, wenn die App während derselben Sitzung in den Vordergrund zurückkehrt.</li>
   <li>Wenn du PRO, ein gekauftes Programm oder eine ausstehende Zahlung hast, prüft die App beim Start höchstens einmal am Tag, ob noch alles in Ordnung ist, und RevenueCat benachrichtigt die App, wenn sich etwas ändert.</li>
   <li>Ohne Verbindung wird nichts geprüft, und du verlierst nichts: Die App behält den letzten bekannten Zustand mit seinem Datum.</li>
 </ul>
@@ -155,12 +156,12 @@
 
 <h2>11. Berechtigungen</h2>
 <ul>
-  <li><strong>Benachrichtigungen</strong>: nur wenn du die Erinnerungen aktivierst. Du kannst sie verweigern.</li>
-  <li><strong>Kamera und Lesen von Bildern</strong>: nur um den Avatar aus einem Foto zu erstellen; sie werden in diesem Moment angefragt, und du kannst sie verweigern. Die Kamera ist als nicht erforderlich deklariert.</li>
+  <li><strong>Benachrichtigungen</strong>: die einzige Berechtigung, nach der du von Anfang an gefragt wirst, ein einziges Mal, wenn du deine Figur fertig erstellt hast. Du kannst sie verweigern, und die Erinnerungen lassen sich jederzeit in den Einstellungen oder im System abschalten.</li>
+  <li><strong>Kamera</strong>: nur um das Foto aufzunehmen, aus dem der Avatar erstellt wird; sie wird in diesem Moment angefragt, und du kannst sie verweigern. Die Kamera ist als nicht erforderlich deklariert. Ein Foto aus der Galerie zu wählen braucht keine Berechtigung: Seit 2.6.0 deklariert das Paket keine zum Lesen von Bildern.</li>
   <li><strong>Internet</strong>: wird von der Engine deklariert, auf der die App läuft. Alle Ressourcen sind mitgeliefert; die einzigen möglichen Netzanfragen sind die des KI-Coachs und die des Abos, und nur dann, wenn du sie auslöst.</li>
   <li><strong>Vibration</strong>, dazu die technischen Berechtigungen, mit denen das System die Erinnerungen nach einem Neustart des Telefons neu einplant und die Kaufansicht des Stores öffnet. Keine davon fragt dich um Zustimmung, und keine greift auf deine Daten zu.</li>
 </ul>
-<p>Die App verlangt auf keiner Plattform Mikrofon, Standort, Kontakte, App-übergreifende Nachverfolgung, Schreiben auf externen Speicher oder exakte Alarme.</p>
+<p>Die App verlangt auf keiner Plattform Mikrofon, Standort, Kontakte, App-übergreifende Nachverfolgung, Lesezugriff auf die Galerie, Schreiben auf externen Speicher oder exakte Alarme.</p>
 
 <h2>12. Deine Rechte (DSGVO)</h2>
 <p>Die Datenschutz-Grundverordnung der Europäischen Union gibt dir die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch in Bezug auf deine personenbezogenen Daten. Bei VIDA RPG <strong>erhebt und speichert der Entwickler keine personenbezogenen Daten auf eigenen Servern</strong>, er hat also nichts von dir, wozu er Auskunft geben, was er berichtigen oder löschen könnte. Diese Rechte werden <strong>auf deinem eigenen Gerät</strong> ausgeübt:</p>
@@ -178,7 +179,7 @@
 <p>VIDA RPG zu deinstallieren löscht alle Daten des Spielstands. <strong>Beim Entwickler existiert keinerlei Kopie</strong>, es gibt also nichts weiter zu löschen und nichts zu beantragen. Übrig blieben nur die Dateien, die du selbst exportiert und dort gespeichert hast, wo du wolltest.</p>
 
 <h2>15. Änderungen dieser Erklärung</h2>
-<p>Wenn sich die Verarbeitung der Daten künftig ändert, wird diese Erklärung aktualisiert, unter derselben Adresse veröffentlicht und in der App angezeigt (Mehr → Datenschutz), in allen drei Sprachen.</p>
+<p>Wenn sich die Verarbeitung der Daten künftig ändert, wird diese Erklärung aktualisiert, unter derselben Adresse veröffentlicht und in der App angezeigt (Mehr → Datenschutz), in allen sieben Sprachen.</p>
 
 <h2>16. Verantwortlicher</h2>
 <p><strong>Alex Vida</strong>, unabhängiger Entwickler, Spanien.<br>Kontakt: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>

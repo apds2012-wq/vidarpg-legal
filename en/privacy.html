@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Legal document</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: 15 September 2026 · app version 2.5.0</p>
+      <p class="meta">Last updated: 16 September 2026 · app version 2.6.0</p>
 <p class="lead">VIDA RPG is an app <strong>with no user accounts and no sign-up</strong>. Everything you record stays on your device, and the whole app works offline. This policy explains plainly what is stored, where, and what happens in the only two optional features that talk to the internet: the AI Coach and in-app purchases.</p>
 
 <h2>1. Summary</h2>
@@ -64,7 +64,7 @@
   <li>Baros, experience, level, streak, shields, milestones, records, challenges, achievements and action history.</li>
   <li>The content of your golden card.</li>
   <li>Your preferences: language, currency symbol, sound, music, vibration, visual effects, game mode and reminders.</li>
-  <li>The mentors you have unlocked and the lessons you have read.</li>
+  <li>Since 2.6.0, <strong>your mentor path</strong>: which mentors you have completed and on what date, which ones are open to you, whether a mentor chest is waiting to be collected and whether you have a change of perspective pending; and the lessons you have read. And your affinity profile with the mentors: the answers to the questionnaire and to each change of perspective, with their result, computed inside the phone and never sent to anyone, not even to the AI Coach.</li>
   <li>If you created your avatar from a photo: <strong>the resulting pixel grid</strong>, never the photo (see section 5).</li>
   <li>For the AI Coach: whether you switched it off, how many queries you made today, this week and in total, the date your month of free queries runs from, which suggestions you accepted, how many <i>tokens</i> those queries cost and, since 2.5.0, the coach's last reply, kept on the device so it can be shown to you in full if you activate PRO without repeating the query.</li>
   <li>Since 2.5.0: the free plan's counters (how many library missions you have added this week), which offers you have already been shown, and your <strong>challenge programmes</strong>: the one in progress with its completed days, the finished ones with their percentage, and the badges earned.</li>
@@ -88,7 +88,7 @@
 <h2>5. Camera, gallery and the photo avatar</h2>
 <p>You can create your character's avatar from a photograph. The camera and the gallery are used <strong>only</strong> at that moment and for nothing else:</p>
 <ul>
-  <li>The system asks for the camera or photo permission when you choose the option. You can deny it: you simply will not be able to use this feature, and the rest of the app works the same.</li>
+  <li>The system asks for the camera permission when you choose to take the photo. You can deny it: you simply will not be able to use this feature, and the rest of the app works the same. Picking a photo from the gallery needs no permission at all: the system photo picker opens and the app receives only the image you choose; since 2.6.0 the package declares no image-reading permission.</li>
   <li>The image is opened in memory so you can frame it, and it is converted, <strong>right then and inside your device</strong>, into a 20 × 20 pixel grid with a palette of about 14 colours. No external service, no facial recognition, no biometrics and no artificial intelligence are involved.</li>
   <li><strong>The photograph is never stored or transmitted.</strong> It is not copied to any app folder, not saved to the gallery, not uploaded to any server and not shared with anyone. As soon as the avatar is generated, it is released from memory.</li>
   <li>The only thing kept in your game is that grid: a list of colour indexes of <strong>less than two kilobytes</strong>, from which the original photo cannot be reconstructed.</li>
@@ -118,14 +118,14 @@
   <li>No calendar dates: days travel as "three days ago".</li>
   <li><strong>No other location data</strong>: not your time zone, not your city, not coordinates, nothing of the sort. Only the two-letter country code explained above.</li>
 </ul>
-<p>This is verified by an automated test suite that inspects every request and fails if any of that data slips in.</p>
+<p>This is verified by an automated test suite that inspects every request and fails if any of that data slips in, and since 2.6.0 <strong>the same check runs on your phone before each request is sent</strong>: if it finds your name, your avatar grid, your card or the name of a vice of your own inside the request, the request does not go out. As in every HTTPS connection of any app, the server that receives the request sees the IP address it comes from; the app does not read it, does not store it and does not use it for anything.</p>
 <h3>How to switch it off</h3>
 <p>From <strong>Settings</strong> you can <strong>switch the AI Coach off completely</strong>. All its entry points disappear and absolutely nothing is sent. While it is on, nothing is sent until you tap its button.</p>
 <h3>Limits</h3>
 <p>The quota depends on your plan: without paying, one query per calendar week during the thirty days after the game was created (or after updating to 2.5.0, for earlier games) and none after that; with PRO, nine a day. Above any plan there is a cap of twelve queries per day per device. The counter is visible on screen. Abuse protection is provided by Firebase App Check.</p>
 
 <h2>9. Purchases: PRO and the challenge programmes</h2>
-<p>The download is free and includes the complete game. VIDA RPG offers an optional subscription, <strong>PRO</strong> — monthly or yearly, the yearly one with a seven-day free trial — and six <strong>challenge programmes</strong> that can also be bought individually as a one-off purchase. No purchase unlocks the game, removes ads (there are none) or sells Baros or cosmetics for real money; those are earned only by playing. There is no lifetime purchase.</p>
+<p>The download is free and includes the complete game. VIDA RPG offers an optional subscription, <strong>PRO</strong> — monthly or yearly, the yearly one with a seven-day free trial — and six <strong>challenge programmes</strong> that can also be bought individually as a one-off purchase. No purchase unlocks the game, removes ads (there are none) or sells Baros or cosmetics for real money; those are earned only by playing. Since 2.6.0 no mentor or technique is unlocked by level or with Baros: each opens by completing the mentor before it, with or without PRO; PRO lets you walk two mentor paths at once. There is no lifetime purchase.</p>
 <h3>Who charges you and who checks</h3>
 <ul>
   <li><strong>Payment is handled by your phone's store</strong> (Google Play or the App Store) with the account you have there. The app does not see, receive or store your payment method: it opens the system purchase sheet and the rest happens outside it. <strong>The app receives no payment data whatsoever.</strong></li>
@@ -136,13 +136,14 @@
   <li>The <strong>purchase receipt</strong> issued by the store, to validate it with Google or Apple.</li>
   <li>Which <strong>products</strong> you have active (the subscription and the programmes) and in what state.</li>
   <li>The <strong>platform</strong> (Android or iOS), the app version and the store <strong>country</strong>.</li>
-  <li>An <strong>anonymous identifier it generates itself</strong>. The app hands it no identifier of yours: there are no accounts, no email, and no identification function is ever called.</li>
+  <li>What its component adds to every request on its own: <strong>the phone's make and model, the operating-system version and the languages configured on the device</strong>. That is device data, not yours, and it is used to handle the request and to detect fraud.</li>
+  <li>An <strong>anonymous identifier it generates itself</strong>. The app hands it no identifier of yours: there are no accounts, no email, and no identification function is ever called. If you have bought something, that anonymous identifier is also stored in your Google account's backup (Block Store), so that your purchases can be recognised on a new phone without any data of yours.</li>
 </ul>
 <p>It does not receive your name, your game, your programmes, photographs or anything you send to the AI Coach.</p>
 <h3>When it connects</h3>
 <ul>
   <li><strong>If you do not buy and do not open the PRO screen, the app never connects to RevenueCat at all</strong>, neither on launch nor in the background.</li>
-  <li>If you open the PRO screen, the products and their prices are requested from the store, in your currency.</li>
+  <li>If you open the PRO screen, the products and their prices are requested from the store, in your currency. Once loaded, its component may refresh what it knows each time the app returns to the foreground during that same session.</li>
   <li>If you have PRO, a purchased programme or a pending payment, on launch the app checks at most once a day that everything is still in order, and RevenueCat notifies the app if anything changes.</li>
   <li>Offline there is no check and you lose nothing: the app keeps the last known state, with its date.</li>
 </ul>
@@ -155,12 +156,12 @@
 
 <h2>11. Permissions</h2>
 <ul>
-  <li><strong>Notifications</strong>: only if you enable reminders. You can deny it.</li>
-  <li><strong>Camera and photo access</strong>: only to create the avatar from a photo, requested at that moment, and you can deny them. The camera is declared as not required.</li>
+  <li><strong>Notifications</strong>: the only permission you are asked for up front, once, when you finish creating your character. You can deny it, and reminders can be switched off whenever you like from Settings or from the system.</li>
+  <li><strong>Camera</strong>: only to take the photo the avatar is created from, requested at that moment, and you can deny it. The camera is declared as not required. Picking a photo from the gallery needs no permission: since 2.6.0 the package declares no image-reading permission.</li>
   <li><strong>Internet</strong>: declared by the engine the app runs on. All resources are bundled; the only possible network requests are those of the AI Coach and the subscription, and only when you trigger them.</li>
   <li><strong>Vibration</strong>, plus the technical permissions the system uses to reschedule reminders after a reboot and to open the store's purchase sheet. None of them ask for your approval or access your data.</li>
 </ul>
-<p>The app does not request the microphone, location, contacts, cross-app tracking, external storage writing or exact alarms, on either platform.</p>
+<p>The app does not request the microphone, location, contacts, cross-app tracking, gallery reading, external storage writing or exact alarms, on either platform.</p>
 
 <h2>12. Your rights (GDPR)</h2>
 <p>The European Union's General Data Protection Regulation grants you the rights of access, rectification, erasure, restriction, portability and objection over your personal data. In VIDA RPG the developer <strong>does not collect or keep personal data on any server of their own</strong>, so there is nothing of yours to give access to, correct or delete. Those rights are exercised <strong>on your own device</strong>:</p>
@@ -178,7 +179,7 @@
 <p>Uninstalling VIDA RPG deletes all game data. <strong>The developer holds no copy whatsoever</strong>, so there is nothing else to delete or to request. The only remaining files would be those you exported yourself and saved wherever you chose.</p>
 
 <h2>15. Changes to this policy</h2>
-<p>If data handling changes in the future, this policy will be updated, published at this same address and shown inside the app (More → Privacy), in all three languages.</p>
+<p>If data handling changes in the future, this policy will be updated, published at this same address and shown inside the app (More → Privacy), in all seven languages.</p>
 
 <h2>16. Controller</h2>
 <p><strong>Alex Vida</strong>, independent developer, Spain.<br>Contact: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>

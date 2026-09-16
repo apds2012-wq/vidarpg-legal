@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Dokument prawny</p>
       <h1>Polityka prywatności</h1>
-      <p class="meta">Ostatnia aktualizacja: 15 września 2026 · wersja aplikacji 2.5.0</p>
+      <p class="meta">Ostatnia aktualizacja: 16 września 2026 · wersja aplikacji 2.6.0</p>
 <p class="lead">VIDA RPG to aplikacja <strong>bez kont użytkowników i bez rejestracji</strong>. Wszystko, co zapisujesz, zostaje na Twoim urządzeniu, a cała aplikacja działa offline. Ta polityka wyjaśnia wprost, co jest zapisywane, gdzie, i co dzieje się w dwóch jedynych opcjonalnych funkcjach, które łączą się z internetem: w Trenerze AI i w zakupach w aplikacji.</p>
 
 <h2>1. W skrócie</h2>
@@ -64,7 +64,7 @@
   <li>Baros, doświadczenie, poziom, serię, tarcze, kamienie milowe, rekordy, wyzwania, osiągnięcia i historię działań.</li>
   <li>Treść Twojej złotej karty.</li>
   <li>Twoje preferencje: język, symbol waluty, dźwięk, muzykę, wibracje, efekty wizualne, tryb gry i przypomnienia.</li>
-  <li>Odblokowanych mentorów i przeczytane nauki.</li>
+  <li>Od wersji 2.6.0: <strong>Twoja ścieżka mentorów</strong>, czyli którzy mentorzy są ukończeni i kiedy, którzy otwarci, czy jakaś skrzynia mentora czeka na odebranie i czy czeka na Ciebie zmiana perspektywy; oraz przeczytane lekcje. A także Twój profil dopasowania do mentorów — odpowiedzi z kwestionariusza i z każdej zmiany perspektywy wraz z ich wynikiem — obliczany wewnątrz telefonu i niewysyłany nikomu, nawet Trenerowi AI.</li>
   <li>Jeśli stworzono awatar ze zdjęcia: <strong>powstałą siatkę pikseli</strong>, nigdy zdjęcie (zob. sekcję 5).</li>
   <li>Dotyczące Trenera AI: czy jest wyłączony, ile zapytań wykonano dziś, w tym tygodniu i łącznie, od jakiej daty liczy się Twój miesiąc bezpłatnych zapytań, które sugestie zaakceptowano, ile <i>tokenów</i> kosztowały te zapytania oraz, od wersji 2.5.0, ostatnia odpowiedź trenera, zapisana na urządzeniu po to, by móc pokazać Ci ją w całości po aktywowaniu PRO bez powtarzania zapytania.</li>
   <li>Od wersji 2.5.0: liczniki planu bezpłatnego (ile zadań z biblioteki dodano w tym tygodniu), które oferty już Ci pokazano, oraz Twoje <strong>programy wyzwań</strong>: trwający z wykonanymi dniami, ukończone z ich procentem i zdobyte odznaki.</li>
@@ -88,7 +88,7 @@
 <h2>5. Aparat, galeria i awatar ze zdjęcia</h2>
 <p>Możesz stworzyć awatar swojej postaci ze zdjęcia. Aparat i galeria są używane <strong>wyłącznie</strong> w tym momencie i do niczego innego:</p>
 <ul>
-  <li>System prosi o uprawnienie do aparatu lub odczytu zdjęć, gdy wybierzesz tę opcję. Możesz odmówić: po prostu nie skorzystasz z tej funkcji, a reszta aplikacji działa tak samo.</li>
+  <li>System prosi o uprawnienie do aparatu, gdy zdecydujesz się zrobić zdjęcie. Możesz odmówić: po prostu nie skorzystasz z tej funkcji, a reszta aplikacji działa tak samo. Wybranie zdjęcia z galerii nie wymaga żadnego uprawnienia: otwiera się systemowy selektor zdjęć, a aplikacja otrzymuje tylko ten obraz, który wybierzesz; od wersji 2.6.0 pakiet nie deklaruje żadnego uprawnienia do odczytu zdjęć.</li>
   <li>Obraz jest otwierany w pamięci, abyś mógł go wykadrować, i <strong>od razu, wewnątrz Twojego urządzenia</strong>, przekształcany w siatkę 20 × 20 pikseli z paletą około 14 kolorów. Nie bierze w tym udziału żadna usługa zewnętrzna, rozpoznawanie twarzy, biometria ani sztuczna inteligencja.</li>
   <li><strong>Zdjęcie nigdy nie jest zapisywane ani przesyłane.</strong> Nie jest kopiowane do żadnego folderu aplikacji, nie jest zapisywane w galerii, nie jest wysyłane na żaden serwer i nie jest nikomu udostępniane. Gdy tylko awatar zostanie wygenerowany, zdjęcie jest zwalniane z pamięci.</li>
   <li>W grze zostaje tylko ta siatka: lista indeksów kolorów o rozmiarze <strong>poniżej dwóch kilobajtów</strong>, z której nie da się odtworzyć oryginalnego zdjęcia.</li>
@@ -118,14 +118,14 @@
   <li>Żadne daty kalendarzowe: dni są przekazywane jako „trzy dni temu”.</li>
   <li><strong>Żadne inne dane o lokalizacji</strong>: ani strefa czasowa, ani miasto, ani współrzędne, ani nic podobnego. Tylko dwuliterowy kod kraju opisany powyżej.</li>
 </ul>
-<p>Sprawdza to zestaw testów automatycznych, który kontroluje każde zapytanie i zgłasza błąd, jeśli którakolwiek z tych danych się przedostanie.</p>
+<p>Sprawdza to zestaw testów automatycznych, który kontroluje każde zapytanie i zgłasza błąd, jeśli którakolwiek z tych danych się przedostanie, a od wersji 2.6.0 <strong>ta sama kontrola jest wykonywana w Twoim telefonie przed każdym wysłaniem</strong>: jeśli znajdzie w zapytaniu Twoje imię, siatkę Twojego awatara, Twoją złotą kartę lub nazwę własnego nałogu, zapytanie nie wychodzi. Jak przy każdym połączeniu HTTPS w dowolnej aplikacji, serwer odbierający zapytanie widzi adres IP, z którego ono przychodzi; aplikacja go nie odczytuje, nie zapisuje i do niczego nie używa.</p>
 <h3>Jak go wyłączyć</h3>
 <p>W <strong>Ustawieniach</strong> możesz <strong>całkowicie wyłączyć Trenera AI</strong>. Znikają wtedy wszystkie jego punkty wejścia i nie jest wysyłane absolutnie nic. Gdy jest włączony, nic nie jest wysyłane, dopóki nie naciśniesz jego przycisku.</p>
 <h3>Limity</h3>
 <p>Limit zależy od planu: bez płacenia jedno zapytanie na tydzień kalendarzowy przez trzydzieści dni od utworzenia gry (lub od aktualizacji do wersji 2.5.0 w przypadku wcześniejszych gier), a potem żadnego; z PRO dziewięć dziennie. Ponad każdym planem obowiązuje górny limit dwunastu zapytań dziennie na urządzenie. Licznik jest widoczny na ekranie. Ochronę przed nadużyciami zapewnia Firebase App Check.</p>
 
 <h2>9. Zakupy: PRO i programy wyzwań</h2>
-<p>Pobranie jest bezpłatne i zawiera pełną grę. VIDA RPG oferuje opcjonalną subskrypcję <strong>PRO</strong> — miesięczną lub roczną, roczną z siedmioma dniami bezpłatnego okresu próbnego — oraz sześć <strong>programów wyzwań</strong>, które można też kupić osobno jako zakup jednorazowy. Żaden zakup nie odblokowuje gry, nie usuwa reklam (nie ma ich) ani nie sprzedaje Baros czy kosmetyków za prawdziwe pieniądze; te zdobywa się wyłącznie grając. Nie ma zakupu dożywotniego.</p>
+<p>Pobranie jest bezpłatne i zawiera pełną grę. VIDA RPG oferuje opcjonalną subskrypcję <strong>PRO</strong> — miesięczną lub roczną, roczną z siedmioma dniami bezpłatnego okresu próbnego — oraz sześć <strong>programów wyzwań</strong>, które można też kupić osobno jako zakup jednorazowy. Żaden zakup nie odblokowuje gry, nie usuwa reklam (nie ma ich) ani nie sprzedaje Baros czy kosmetyków za prawdziwe pieniądze; te zdobywa się wyłącznie grając. Od wersji 2.6.0 żadnego mentora ani żadnej techniki nie otwiera ani poziom, ani Baros, lecz ukończenie poprzedniego mentora, tak samo z PRO, jak i bez niego; PRO pozwala iść dwiema ścieżkami mentorów naraz. Nie ma zakupu dożywotniego.</p>
 <h3>Kto pobiera opłatę i kto sprawdza</h3>
 <ul>
   <li><strong>Płatność obsługuje sklep Twojego telefonu</strong> (Google Play lub App Store) na koncie, które w nim masz. Aplikacja nie widzi, nie otrzymuje i nie przechowuje Twojej metody płatności: otwiera systemowy arkusz zakupu, a reszta dzieje się poza nią. <strong>Aplikacja nie otrzymuje żadnych danych płatniczych.</strong></li>
@@ -136,13 +136,14 @@
   <li><strong>Paragon zakupu</strong> wystawiony przez sklep, aby zweryfikować go w Google lub Apple.</li>
   <li>Które <strong>produkty</strong> masz aktywne (subskrypcję i programy) i w jakim stanie.</li>
   <li><strong>Platformę</strong> (Android lub iOS), wersję aplikacji i <strong>kraj</strong> sklepu.</li>
-  <li><strong>Anonimowy identyfikator, który sam generuje</strong>. Aplikacja nie przekazuje mu żadnego Twojego identyfikatora: nie ma kont, nie ma adresu e-mail i nie wywołuje się żadnej funkcji identyfikacji.</li>
+  <li>To, co jego komponent sam dodaje do każdego zapytania: <strong>markę i model telefonu, wersję systemu operacyjnego oraz języki skonfigurowane na urządzeniu</strong>. To dane urządzenia, nie Twoje; służą do obsługi zapytania i wykrywania oszustw.</li>
+  <li><strong>Anonimowy identyfikator, który sam generuje</strong>. Aplikacja nie przekazuje mu żadnego Twojego identyfikatora: nie ma kont, nie ma adresu e-mail i nie wywołuje się żadnej funkcji identyfikacji. Jeśli coś kupisz, ten anonimowy identyfikator jest zapisywany także w kopii zapasowej Twojego konta Google (Block Store), aby dało się rozpoznać Twoje zakupy na nowym telefonie bez żadnych Twoich danych.</li>
 </ul>
 <p>Nie otrzymuje Twojego imienia, Twojej gry, Twoich programów, zdjęć ani niczego, co wysyłasz Trenerowi AI.</p>
 <h3>Kiedy się łączy</h3>
 <ul>
   <li><strong>Jeśli nic nie kupisz i nie otworzysz ekranu PRO, aplikacja ani razu nie łączy się z RevenueCat</strong>, ani przy uruchomieniu, ani w tle.</li>
-  <li>Jeśli otworzysz ekran PRO, produkty i ich ceny są pobierane ze sklepu, w Twojej walucie.</li>
+  <li>Jeśli otworzysz ekran PRO, produkty i ich ceny są pobierane ze sklepu, w Twojej walucie. Po załadowaniu jego komponent może odświeżać to, co wie, za każdym razem, gdy aplikacja wraca na pierwszy plan w tej samej sesji.</li>
   <li>Jeśli masz PRO, kupiony program lub oczekującą płatność, przy uruchomieniu aplikacja sprawdza co najwyżej raz dziennie, czy wszystko jest w porządku, a RevenueCat powiadamia ją, gdy coś się zmieni.</li>
   <li>Bez połączenia nic nie jest sprawdzane i niczego nie tracisz: aplikacja zachowuje ostatni znany stan wraz z jego datą.</li>
 </ul>
@@ -155,12 +156,12 @@
 
 <h2>11. Uprawnienia</h2>
 <ul>
-  <li><strong>Powiadomienia</strong>: tylko jeśli włączysz przypomnienia. Możesz odmówić.</li>
-  <li><strong>Aparat i dostęp do zdjęć</strong>: tylko do stworzenia awatara ze zdjęcia, proszone w tym momencie, i możesz odmówić. Aparat jest zadeklarowany jako niewymagany.</li>
+  <li><strong>Powiadomienia</strong>: to jedyne uprawnienie, o które aplikacja pyta na starcie, tylko raz, po zakończeniu tworzenia postaci. Możesz odmówić, a przypomnienia wyłączysz, kiedy chcesz, w Ustawieniach lub w systemie.</li>
+  <li><strong>Aparat</strong>: tylko do zrobienia zdjęcia, z którego powstaje awatar; system prosi o to uprawnienie w tym momencie i możesz odmówić. Aparat jest zadeklarowany jako niewymagany. Wybranie zdjęcia z galerii nie wymaga uprawnienia: od wersji 2.6.0 pakiet nie deklaruje żadnego uprawnienia do odczytu zdjęć.</li>
   <li><strong>Internet</strong>: deklaruje go silnik, na którym działa aplikacja. Wszystkie zasoby są w pakiecie; jedyne możliwe żądania sieciowe to te Trenera AI i subskrypcji, i tylko wtedy, gdy je wywołasz.</li>
   <li><strong>Wibracje</strong> oraz uprawnienia techniczne, których system używa do ponownego zaplanowania przypomnień po restarcie telefonu i do otwarcia arkusza zakupu w sklepie. Żadne z nich nie prosi o Twoją zgodę ani nie ma dostępu do Twoich danych.</li>
 </ul>
-<p>Aplikacja nie prosi o mikrofon, lokalizację, kontakty, śledzenie między aplikacjami, zapis w pamięci zewnętrznej ani dokładne alarmy, na żadnej platformie.</p>
+<p>Aplikacja nie prosi o mikrofon, lokalizację, kontakty, śledzenie między aplikacjami, odczyt galerii, zapis w pamięci zewnętrznej ani dokładne alarmy, na żadnej platformie.</p>
 
 <h2>12. Twoje prawa (RODO)</h2>
 <p>Ogólne rozporządzenie o ochronie danych Unii Europejskiej przyznaje Ci prawo dostępu, sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych i sprzeciwu wobec przetwarzania Twoich danych osobowych. W VIDA RPG deweloper <strong>nie gromadzi ani nie przechowuje danych osobowych na własnych serwerach</strong>, więc nie ma niczego Twojego, do czego mógłby dać dostęp, co poprawić lub usunąć. Z tych praw korzystasz <strong>na własnym urządzeniu</strong>:</p>
@@ -178,7 +179,7 @@
 <p>Odinstalowanie VIDA RPG usuwa wszystkie dane gry. <strong>Deweloper nie ma żadnej kopii</strong>, więc nie ma nic więcej do usunięcia ani o co prosić. Pozostałyby tylko pliki, które sam wyeksportowano i zapisano w wybranym miejscu.</p>
 
 <h2>15. Zmiany w tej polityce</h2>
-<p>Jeśli w przyszłości zmieni się sposób przetwarzania danych, ta polityka zostanie zaktualizowana, opublikowana pod tym samym adresem i wyświetlona w aplikacji (Więcej → Prywatność), we wszystkich trzech językach.</p>
+<p>Jeśli w przyszłości zmieni się sposób przetwarzania danych, ta polityka zostanie zaktualizowana, opublikowana pod tym samym adresem i wyświetlona w aplikacji (Więcej → Prywatność), we wszystkich siedmiu językach.</p>
 
 <h2>16. Administrator</h2>
 <p><strong>Alex Vida</strong>, niezależny deweloper, Hiszpania.<br>Kontakt: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>

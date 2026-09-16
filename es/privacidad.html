@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Documento legal</p>
       <h1>Política de privacidad</h1>
-      <p class="meta">Última actualización: 15 de septiembre de 2026 · versión de la aplicación 2.5.0</p>
+      <p class="meta">Última actualización: 16 de septiembre de 2026 · versión de la aplicación 2.6.0</p>
 <p class="lead">VIDA RPG es una aplicación <strong>sin cuentas de usuario y sin registro</strong>. Todo lo que registras se queda en tu dispositivo, y la aplicación funciona entera sin conexión. Esta política explica, sin rodeos, qué se guarda, dónde, y qué ocurre en las dos únicas funciones opcionales que hablan con internet: el Coach IA y las compras dentro de la aplicación.</p>
 
 <h2>1. Resumen</h2>
@@ -64,7 +64,7 @@
   <li>Baros, experiencia, nivel, racha, escudos, hitos, récords, retos, logros e historial de acciones.</li>
   <li>El contenido de tu tarjeta dorada.</li>
   <li>Tus preferencias: idioma, símbolo de moneda, sonido, música, vibración, efectos visuales, modo de juego y recordatorios.</li>
-  <li>Los mentores que has desbloqueado y las enseñanzas que has leído.</li>
+  <li>Desde la 2.6.0, <strong>tu camino de mentores</strong>: qué mentores has completado y en qué fecha, cuáles tienes abiertos, si hay un cofre de mentor pendiente de recoger y si tienes pendiente un cambio de perspectiva; y las enseñanzas que has leído. Y tu perfil de afinidad con los mentores: las respuestas del cuestionario y de cada cambio de perspectiva con su resultado, calculado dentro del teléfono y que no se envía a nadie, tampoco al Coach IA.</li>
   <li>Si has creado tu avatar a partir de una foto: <strong>la rejilla de píxeles resultante</strong>, nunca la foto (ver la sección 5).</li>
   <li>Del Coach IA: si lo has apagado, cuántas consultas has hecho hoy, esta semana y en total, desde qué fecha corre tu mes de consultas gratuitas, qué sugerencias has aceptado, cuántos <i>tokens</i> han costado esas consultas y, desde la 2.5.0, la última respuesta del coach, guardada en el dispositivo para poder mostrártela entera si activas PRO sin repetir la consulta.</li>
   <li>Desde la 2.5.0: los contadores del plan gratuito (cuántas misiones de la biblioteca has añadido esta semana), qué ofertas se te han mostrado ya, y tus <strong>programas de desafío</strong>: el que tienes en curso con sus días hechos, los terminados con su porcentaje y las insignias ganadas.</li>
@@ -88,7 +88,7 @@
 <h2>5. Cámara, galería y el avatar a partir de una foto</h2>
 <p>Puedes crear el avatar de tu personaje a partir de una fotografía. La cámara y la galería se usan <strong>únicamente</strong> en ese momento y para nada más:</p>
 <ul>
-  <li>El sistema te pide el permiso de cámara o de lectura de imágenes cuando eliges la opción. Puedes denegarlo: simplemente no podrás usar esta función y el resto de la aplicación funciona igual.</li>
+  <li>El sistema te pide el permiso de cámara cuando eliges hacer la foto. Puedes denegarlo: simplemente no podrás usar esta función y el resto de la aplicación funciona igual. Elegir una foto de la galería no necesita ningún permiso: se abre el selector de fotos del sistema y la aplicación recibe solo la imagen que tú eliges; desde la 2.6.0 el paquete no declara ningún permiso de lectura de imágenes.</li>
   <li>La imagen se abre en memoria para que la encuadres y se convierte, <strong>en ese mismo momento y dentro de tu dispositivo</strong>, en una rejilla de 20 × 20 píxeles con una paleta de unos 14 colores. No interviene ningún servicio externo, ni reconocimiento facial, ni biometría, ni inteligencia artificial.</li>
   <li><strong>La fotografía nunca se almacena ni se transmite.</strong> No se copia a ninguna carpeta de la aplicación, no se guarda en la galería, no se sube a ningún servidor y no se comparte con nadie. En cuanto se genera el avatar, se libera de la memoria.</li>
   <li>Lo único que queda en la partida es esa rejilla: una lista de índices de color de <strong>menos de dos kilobytes</strong>, de la que no se puede reconstruir la foto original.</li>
@@ -118,14 +118,14 @@
   <li>Ninguna fecha de calendario: los días viajan como «hace tres días».</li>
   <li><strong>Ningún otro dato de localización</strong>: ni tu zona horaria, ni tu ciudad, ni coordenadas, ni nada parecido. Solo el código de país de dos letras que se explica arriba.</li>
 </ul>
-<p>Esto lo comprueba un conjunto de pruebas automáticas que revisa cada petición y falla si alguno de esos datos se cuela.</p>
+<p>Esto lo comprueba un conjunto de pruebas automáticas que revisa cada petición y falla si alguno de esos datos se cuela, y desde la 2.6.0 <strong>la misma comprobación se ejecuta en tu teléfono antes de cada envío</strong>: si encontrara tu nombre, la rejilla de tu avatar, tu tarjeta o el nombre de un vicio propio dentro de la petición, la petición no sale. Como en toda conexión HTTPS de cualquier aplicación, el servidor que recibe la petición ve la dirección IP desde la que llega; la aplicación no la lee, no la guarda y no la usa para nada.</p>
 <h3>Cómo se desactiva</h3>
 <p>Desde <strong>Ajustes</strong> puedes <strong>apagar el Coach IA por completo</strong>. Al hacerlo desaparecen todos sus puntos de entrada y no se envía absolutamente nada. Mientras esté encendido, nada se envía hasta que tú pulses su botón.</p>
 <h3>Límites</h3>
 <p>La cuota depende del plan: sin pagar, una consulta por semana natural durante los treinta días siguientes a la creación de la partida (o a la actualización a la 2.5.0, para las partidas anteriores) y ninguna después; con PRO, nueve al día. Por encima de cualquier plan hay un tope de doce consultas al día por dispositivo. El contador está a la vista. La protección antiabuso la proporciona Firebase App Check.</p>
 
 <h2>9. Las compras: PRO y los programas de desafío</h2>
-<p>La descarga es gratuita y trae el juego completo. VIDA RPG ofrece una suscripción opcional, <strong>PRO</strong> —mensual o anual, la anual con siete días de prueba gratuita—, y seis <strong>programas de desafío</strong> que también se pueden comprar sueltos como compra única. Ninguna compra desbloquea el juego, quita anuncios (no hay) ni vende Baros ni cosméticos con dinero real, que solo se ganan jugando. No existe compra vitalicia.</p>
+<p>La descarga es gratuita y trae el juego completo. VIDA RPG ofrece una suscripción opcional, <strong>PRO</strong> —mensual o anual, la anual con siete días de prueba gratuita—, y seis <strong>programas de desafío</strong> que también se pueden comprar sueltos como compra única. Ninguna compra desbloquea el juego, quita anuncios (no hay) ni vende Baros ni cosméticos con dinero real, que solo se ganan jugando. Desde la 2.6.0 ningún mentor ni ninguna técnica se abre por nivel ni con Baros, sino completando el mentor anterior, igual con PRO que sin él; PRO permite recorrer dos caminos de mentores a la vez. No existe compra vitalicia.</p>
 <h3>Quién cobra y quién comprueba</h3>
 <ul>
   <li><strong>El cobro lo gestiona la tienda de tu teléfono</strong> (Google Play o App Store) con la cuenta que tengas en ella. La aplicación no ve, no recibe y no guarda tu método de pago: abre la hoja de compra del sistema y el resto ocurre fuera. <strong>La aplicación no recibe ningún dato de pago.</strong></li>
@@ -136,13 +136,14 @@
   <li>El <strong>recibo de compra</strong> que emite la tienda, para validarlo con Google o con Apple.</li>
   <li>Qué <strong>productos</strong> tienes activos (la suscripción y los programas) y en qué estado.</li>
   <li>La <strong>plataforma</strong> (Android o iOS), la versión de la aplicación y el <strong>país</strong> de la tienda.</li>
-  <li>Un <strong>identificador anónimo que genera él mismo</strong>. La aplicación no le entrega ningún identificador tuyo: no hay cuentas, no hay correo y no se llama a ninguna función de identificación.</li>
+  <li>Lo que su componente añade a cada petición por su cuenta: <strong>la marca y el modelo del teléfono, la versión del sistema operativo y los idiomas configurados en el dispositivo</strong>. Son datos del dispositivo, no tuyos, y sirven para atender la petición y detectar fraude.</li>
+  <li>Un <strong>identificador anónimo que genera él mismo</strong>. La aplicación no le entrega ningún identificador tuyo: no hay cuentas, no hay correo y no se llama a ninguna función de identificación. Si has comprado algo, ese identificador anónimo se guarda también en la copia de seguridad de tu cuenta de Google (Block Store), para poder reconocer tus compras en un teléfono nuevo sin ningún dato tuyo.</li>
 </ul>
 <p>No recibe tu nombre, ni tu partida, ni tus programas, ni fotografías, ni nada de lo que envías al Coach IA.</p>
 <h3>Cuándo se conecta</h3>
 <ul>
   <li><strong>Si no compras y no abres la pantalla de PRO, la aplicación no se conecta a RevenueCat ni una sola vez</strong>, ni al arrancar ni en segundo plano.</li>
-  <li>Si abres la pantalla de PRO, se piden los productos y sus precios a la tienda, en tu moneda.</li>
+  <li>Si abres la pantalla de PRO, se piden los productos y sus precios a la tienda, en tu moneda. Una vez cargado, su componente puede refrescar lo que sabe cada vez que la aplicación vuelve a primer plano durante esa misma sesión.</li>
   <li>Si tienes PRO, un programa comprado o un pago pendiente, al arrancar se comprueba como mucho una vez al día que sigue todo en orden, y RevenueCat avisa a la aplicación si algo cambia.</li>
   <li>Sin conexión no se comprueba y no pierdes nada: la aplicación conserva el último estado conocido, con su fecha.</li>
 </ul>
@@ -155,12 +156,12 @@
 
 <h2>11. Permisos</h2>
 <ul>
-  <li><strong>Notificaciones</strong>: solo si activas los recordatorios. Puedes denegarlo.</li>
-  <li><strong>Cámara y lectura de imágenes</strong>: solo para crear el avatar a partir de una foto, se piden en ese momento y puedes denegarlos. La cámara está declarada como no obligatoria.</li>
+  <li><strong>Notificaciones</strong>: es el único permiso que se te pregunta de entrada, una sola vez, al terminar de crear tu personaje. Puedes denegarlo, y los recordatorios se apagan cuando quieras desde Ajustes o desde el sistema.</li>
+  <li><strong>Cámara</strong>: solo para hacer la foto con la que se crea el avatar, se pide en ese momento y puedes denegarla. La cámara está declarada como no obligatoria. Elegir una foto de la galería no necesita permiso: desde la 2.6.0 el paquete no declara ninguno de lectura de imágenes.</li>
   <li><strong>Internet</strong>: lo declara el motor sobre el que se ejecuta la aplicación. Todos los recursos van empaquetados; las únicas peticiones de red posibles son las del Coach IA y las de la suscripción, y solo cuando tú las provocas.</li>
   <li><strong>Vibración</strong>, y los permisos técnicos que usa el sistema para reprogramar los recordatorios tras reiniciar el teléfono y para abrir la hoja de compra de la tienda. Ninguno de ellos te pide aprobación ni accede a tus datos.</li>
 </ul>
-<p>La aplicación no solicita micrófono, ubicación, contactos, seguimiento entre aplicaciones, escritura en almacenamiento externo ni alarmas exactas, en ninguna plataforma.</p>
+<p>La aplicación no solicita micrófono, ubicación, contactos, seguimiento entre aplicaciones, lectura de la galería, escritura en almacenamiento externo ni alarmas exactas, en ninguna plataforma.</p>
 
 <h2>12. Tus derechos (RGPD)</h2>
 <p>El Reglamento General de Protección de Datos de la Unión Europea te reconoce los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición sobre tus datos personales. En VIDA RPG el desarrollador <strong>no recopila ni conserva datos personales en servidores propios</strong>, así que no tiene nada tuyo a lo que dar acceso, corregir o borrar. El ejercicio de esos derechos se resuelve <strong>en tu propio dispositivo</strong>:</p>
@@ -178,7 +179,7 @@
 <p>Desinstalar VIDA RPG elimina todos los datos de la partida. <strong>No existe copia alguna en poder del desarrollador</strong>, así que no hay nada más que borrar ni que pedir. Solo quedarían los ficheros que tú mismo hubieras exportado y guardado donde eligieras.</p>
 
 <h2>15. Cambios en esta política</h2>
-<p>Si en el futuro cambia el tratamiento de datos, esta política se actualizará, se publicará en esta misma dirección y se mostrará dentro de la aplicación (Más → Privacidad), en los tres idiomas.</p>
+<p>Si en el futuro cambia el tratamiento de datos, esta política se actualizará, se publicará en esta misma dirección y se mostrará dentro de la aplicación (Más → Privacidad), en los siete idiomas.</p>
 
 <h2>16. Responsable</h2>
 <p><strong>Alex Vida</strong>, desarrollador independiente, España.<br>Contacto: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>
