@@ -39,8 +39,8 @@
     <article>
       <p class="kicker">Legal document</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: 7 September 2026 · app version 1.9.0</p>
-<p class="lead">VIDA RPG is an app <strong>with no user accounts and no sign-up</strong>. Everything you record stays on your device, and the whole app works offline. This policy explains plainly what is stored, where, and what happens in the only two optional features that talk to the internet.</p>
+      <p class="meta">Last updated: 15 September 2026 · app version 2.5.0</p>
+<p class="lead">VIDA RPG is an app <strong>with no user accounts and no sign-up</strong>. Everything you record stays on your device, and the whole app works offline. This policy explains plainly what is stored, where, and what happens in the only two optional features that talk to the internet: the AI Coach and in-app purchases.</p>
 
 <h2>1. Summary</h2>
 <ul>
@@ -50,6 +50,7 @@
   <li>The camera and photo gallery are used only if you choose to create your avatar from a photo, and the photo is never stored or sent.</li>
   <li>Notifications are local and optional.</li>
   <li>The <strong>AI Coach</strong> is optional and only sends anything when you tap its button. It can be switched off completely.</li>
+  <li><strong>Purchases</strong> — the PRO subscription and the challenge programmes — are optional; they are handled by Google Play (or the App Store) and validated by RevenueCat. <strong>The app receives no payment data whatsoever.</strong> If you do not buy anything, it connects to no one on this account.</li>
   <li>Uninstalling the app deletes all data. The developer holds no copy of anything.</li>
 </ul>
 
@@ -65,8 +66,9 @@
   <li>Your preferences: language, currency symbol, sound, music, vibration, visual effects, game mode and reminders.</li>
   <li>The mentors you have unlocked and the lessons you have read.</li>
   <li>If you created your avatar from a photo: <strong>the resulting pixel grid</strong>, never the photo (see section 5).</li>
-  <li>For the AI Coach: whether you switched it off, how many queries you made today and in total, which suggestions you accepted and, since 1.9.0, how many <i>tokens</i> those queries cost. These are counters, not conversations.</li>
-  <li>If you subscribed to PRO: whether the subscription is active, which plan, and until when. Nothing else.</li>
+  <li>For the AI Coach: whether you switched it off, how many queries you made today, this week and in total, the date your month of free queries runs from, which suggestions you accepted, how many <i>tokens</i> those queries cost and, since 2.5.0, the coach's last reply, kept on the device so it can be shown to you in full if you activate PRO without repeating the query.</li>
+  <li>Since 2.5.0: the free plan's counters (how many library missions you have added this week), which offers you have already been shown, and your <strong>challenge programmes</strong>: the one in progress with its completed days, the finished ones with their percentage, and the badges earned.</li>
+  <li>If you bought something: whether your subscription is active, in which state (active, on trial, in grace period, cancelled or expired), which plan and until when; which challenge programmes you bought; and whether a payment is awaiting confirmation by the store. Nothing else: not the receipt, not the amount, not the payment method.</li>
 </ul>
 <p>No identifying data is collected: no real name, no email, no phone number, no device identifiers, no location. The country code the AI Coach uses is not stored either: it is read from your system settings at the moment of the query and never written to your save file (section 8).</p>
 
@@ -120,17 +122,32 @@
 <h3>How to switch it off</h3>
 <p>From <strong>Settings</strong> you can <strong>switch the AI Coach off completely</strong>. All its entry points disappear and absolutely nothing is sent. While it is on, nothing is sent until you tap its button.</p>
 <h3>Limits</h3>
-<p>Ten queries per day per device (one hundred with the PRO subscription), with the counter visible on screen. Abuse protection is provided by Firebase App Check.</p>
+<p>The quota depends on your plan: without paying, one query per calendar week during the thirty days after the game was created (or after updating to 2.5.0, for earlier games) and none after that; with PRO, nine a day. Above any plan there is a cap of twelve queries per day per device. The counter is visible on screen. Abuse protection is provided by Firebase App Check.</p>
 
-<h2>9. The PRO subscription</h2>
-<p>VIDA RPG has an optional subscription, <strong>PRO</strong>, whose only effect is to raise the AI Coach's daily limit. It does not unlock the game, does not remove ads (there are none) and does not sell Baros or cosmetics, which are earned only by playing.</p>
+<h2>9. Purchases: PRO and the challenge programmes</h2>
+<p>The download is free and includes the complete game. VIDA RPG offers an optional subscription, <strong>PRO</strong> — monthly or yearly, the yearly one with a seven-day free trial — and six <strong>challenge programmes</strong> that can also be bought individually as a one-off purchase. No purchase unlocks the game, removes ads (there are none) or sells Baros or cosmetics for real money; those are earned only by playing. There is no lifetime purchase.</p>
+<h3>Who charges you and who checks</h3>
 <ul>
-  <li><strong>Payment is handled by your phone's store</strong> (Google Play or the App Store). The app does not see, receive or store your payment method.</li>
-  <li>The party that checks whether the subscription is still active is <strong>RevenueCat</strong>, a subscription intermediary. It receives the receipt issued by the store, the platform, the store country and an anonymous identifier it generates itself. It does not receive your name, your game, photographs or anything you send to the AI Coach.</li>
-  <li><strong>If you do not buy and do not open the subscription screen, the app never connects to RevenueCat at all.</strong></li>
-  <li>Your phone only stores whether you are PRO, which plan, and until when. That data is not included in the exported game file.</li>
-  <li>Subscriptions are cancelled from the store itself, like any other.</li>
+  <li><strong>Payment is handled by your phone's store</strong> (Google Play or the App Store) with the account you have there. The app does not see, receive or store your payment method: it opens the system purchase sheet and the rest happens outside it. <strong>The app receives no payment data whatsoever.</strong></li>
+  <li>The party that checks that the purchase is valid and still active is <strong>RevenueCat</strong> (RevenueCat, Inc.), an in-app purchase intermediary.</li>
 </ul>
+<h3>What RevenueCat receives</h3>
+<ul>
+  <li>The <strong>purchase receipt</strong> issued by the store, to validate it with Google or Apple.</li>
+  <li>Which <strong>products</strong> you have active (the subscription and the programmes) and in what state.</li>
+  <li>The <strong>platform</strong> (Android or iOS), the app version and the store <strong>country</strong>.</li>
+  <li>An <strong>anonymous identifier it generates itself</strong>. The app hands it no identifier of yours: there are no accounts, no email, and no identification function is ever called.</li>
+</ul>
+<p>It does not receive your name, your game, your programmes, photographs or anything you send to the AI Coach.</p>
+<h3>When it connects</h3>
+<ul>
+  <li><strong>If you do not buy and do not open the PRO screen, the app never connects to RevenueCat at all</strong>, neither on launch nor in the background.</li>
+  <li>If you open the PRO screen, the products and their prices are requested from the store, in your currency.</li>
+  <li>If you have PRO, a purchased programme or a pending payment, on launch the app checks at most once a day that everything is still in order, and RevenueCat notifies the app if anything changes.</li>
+  <li>Offline there is no check and you lose nothing: the app keeps the last known state, with its date.</li>
+</ul>
+<h3>What is stored on your phone and how to cancel</h3>
+<p>Whether your subscription is active, in which state, which plan and until when; which programmes you have bought; and whether a payment is pending. That block is not included in the exported game file: purchases belong to your store account and are recovered with <strong>"Restore purchases"</strong>, in Settings and on the PRO screen. The subscription renews itself at the end of each period until you cancel it, and it is cancelled from the store itself; you keep PRO until the end of the period you paid for. The free trial turns into a subscription when it ends unless you cancel it first.</p>
 <p>RevenueCat's, Google's and Apple's handling of this data is governed by their own privacy policies.</p>
 
 <h2>10. Home-screen widget (Android)</h2>

@@ -39,8 +39,8 @@
     <article>
       <p class="kicker">Rechtsdokument</p>
       <h1>Datenschutzerklärung</h1>
-      <p class="meta">Zuletzt aktualisiert: 7. September 2026 · App-Version 1.9.0</p>
-<p class="lead">VIDA RPG ist eine App <strong>ohne Benutzerkonten und ohne Registrierung</strong>. Alles, was du einträgst, bleibt auf deinem Gerät, und die ganze App funktioniert offline. Diese Erklärung sagt ohne Umschweife, was gespeichert wird, wo, und was in den einzigen zwei optionalen Funktionen geschieht, die mit dem Internet sprechen.</p>
+      <p class="meta">Zuletzt aktualisiert: 15. September 2026 · App-Version 2.5.0</p>
+<p class="lead">VIDA RPG ist eine App <strong>ohne Benutzerkonten und ohne Registrierung</strong>. Alles, was du einträgst, bleibt auf deinem Gerät, und die ganze App funktioniert offline. Diese Erklärung sagt ohne Umschweife, was gespeichert wird, wo, und was in den einzigen zwei optionalen Funktionen geschieht, die mit dem Internet sprechen: dem KI-Coach und den Käufen in der App.</p>
 
 <h2>1. Zusammenfassung</h2>
 <ul>
@@ -50,6 +50,7 @@
   <li>Kamera und Galerie werden nur genutzt, wenn du deinen Avatar aus einem Foto erstellen möchtest, und das Foto wird nie gespeichert und nie gesendet.</li>
   <li>Benachrichtigungen sind lokal und optional.</li>
   <li>Der <strong>KI-Coach</strong> ist optional und sendet nur dann etwas, wenn du seine Schaltfläche drückst. Er lässt sich vollständig abschalten.</li>
+  <li>Die <strong>Käufe</strong> – das PRO-Abo und die Challenge-Programme – sind optional; sie werden von Google Play (oder dem App Store) abgewickelt und von RevenueCat geprüft. <strong>Die App erhält keinerlei Zahlungsdaten.</strong> Wenn du nichts kaufst, verbindet sie sich deswegen mit niemandem.</li>
   <li>Die App zu deinstallieren löscht alle Daten. Der Entwickler hat von nichts eine Kopie.</li>
 </ul>
 
@@ -65,8 +66,9 @@
   <li>Deine Einstellungen: Sprache, Währungssymbol, Ton, Musik, Vibration, visuelle Effekte, Spielmodus und Erinnerungen.</li>
   <li>Die Mentoren, die du freigeschaltet hast, und die Lehren, die du gelesen hast.</li>
   <li>Wenn du deinen Avatar aus einem Foto erstellt hast: <strong>das daraus entstandene Pixelraster</strong>, niemals das Foto (siehe Abschnitt 5).</li>
-  <li>Zum KI-Coach: ob du ihn abgeschaltet hast, wie viele Anfragen du heute und insgesamt gestellt hast, welche Vorschläge du angenommen hast und, seit 1.9.0, wie viele <i>Tokens</i> diese Anfragen gekostet haben. Das sind Zähler, keine Gespräche.</li>
-  <li>Wenn du PRO abonniert hast: ob das Abo aktiv ist, mit welchem Tarif und bis wann. Mehr nicht.</li>
+  <li>Zum KI-Coach: ob du ihn abgeschaltet hast, wie viele Anfragen du heute, diese Woche und insgesamt gestellt hast, seit welchem Datum dein Monat kostenloser Anfragen läuft, welche Vorschläge du angenommen hast, wie viele <i>Tokens</i> diese Anfragen gekostet haben und, seit 2.5.0, die letzte Antwort des Coachs, auf dem Gerät gespeichert, um sie dir ganz zeigen zu können, wenn du PRO aktivierst, ohne die Anfrage zu wiederholen.</li>
+  <li>Seit 2.5.0: die Zähler des kostenlosen Tarifs (wie viele Quests aus dem Questkatalog du diese Woche hinzugefügt hast), welche Angebote dir schon gezeigt wurden, und deine <strong>Challenge-Programme</strong>: das laufende mit seinen erledigten Tagen, die abgeschlossenen mit ihrem Prozentsatz und die gewonnenen Abzeichen.</li>
+  <li>Wenn du etwas gekauft hast: ob dein Abo aktiv ist, in welchem Zustand (aktiv, in der Testphase, in der Kulanzfrist, gekündigt oder abgelaufen), mit welchem Tarif und bis wann; welche Challenge-Programme du gekauft hast; und ob eine Zahlung noch auf die Bestätigung des Stores wartet. Mehr nicht: weder den Beleg noch den Betrag noch die Zahlungsmethode.</li>
 </ul>
 <p>Es werden keine identifizierenden Angaben erhoben: kein echter Name, keine E-Mail-Adresse, keine Telefonnummer, keine Gerätekennungen, kein Standort. Auch der Ländercode, den der KI-Coach verwendet, wird nicht gespeichert: Er wird im Moment der Anfrage aus den Systemeinstellungen gelesen und nie in den Spielstand geschrieben (Abschnitt 8).</p>
 
@@ -120,17 +122,32 @@
 <h3>Wie er abgeschaltet wird</h3>
 <p>In den <strong>Einstellungen</strong> kannst du den <strong>KI-Coach vollständig abschalten</strong>. Damit verschwinden alle seine Einstiegspunkte, und es wird absolut nichts gesendet. Solange er eingeschaltet ist, wird nichts gesendet, bis du seine Schaltfläche drückst.</p>
 <h3>Grenzen</h3>
-<p>Zehn Anfragen pro Tag und Gerät (hundert mit dem PRO-Abo), mit sichtbarem Zähler. Den Schutz vor Missbrauch liefert Firebase App Check.</p>
+<p>Das Kontingent hängt vom Tarif ab: ohne zu zahlen eine Anfrage pro Kalenderwoche während der dreißig Tage nach dem Anlegen des Spielstands (oder nach der Aktualisierung auf 2.5.0 bei älteren Spielständen) und danach keine; mit PRO neun pro Tag. Über jedem Tarif liegt eine Obergrenze von zwölf Anfragen pro Tag und Gerät. Der Zähler ist sichtbar. Den Schutz vor Missbrauch liefert Firebase App Check.</p>
 
-<h2>9. Das PRO-Abo</h2>
-<p>VIDA RPG hat ein optionales Abo, <strong>PRO</strong>, dessen einzige Wirkung darin besteht, das Tageslimit des KI-Coachs anzuheben. Es schaltet das Spiel nicht frei, es entfernt keine Werbung (es gibt keine) und es verkauft weder Baros noch Kosmetik, die es nur durch Spielen gibt.</p>
+<h2>9. Die Käufe: PRO und die Challenge-Programme</h2>
+<p>Der Download ist kostenlos und enthält das vollständige Spiel. VIDA RPG bietet ein optionales Abo, <strong>PRO</strong> – monatlich oder jährlich, das jährliche mit sieben Tagen kostenloser Testphase –, und sechs <strong>Challenge-Programme</strong>, die sich auch einzeln als Einmalkauf erwerben lassen. Kein Kauf schaltet das Spiel frei, entfernt Werbung (es gibt keine) oder verkauft Baros oder Kosmetik gegen echtes Geld; die gibt es nur durch Spielen. Einen lebenslangen Kauf gibt es nicht.</p>
+<h3>Wer abrechnet und wer prüft</h3>
 <ul>
-  <li><strong>Die Zahlung wickelt der Store deines Telefons ab</strong> (Google Play oder App Store). Die App sieht deine Zahlungsmethode nicht, erhält sie nicht und speichert sie nicht.</li>
-  <li>Wer prüft, ob das Abo noch aktiv ist, ist <strong>RevenueCat</strong>, ein Vermittler für Abonnements. Er erhält den Beleg, den der Store ausstellt, die Plattform, das Land des Stores und eine anonyme Kennung, die er selbst erzeugt. Er erhält weder deinen Namen noch deinen Spielstand, keine Fotos und nichts von dem, was du an den KI-Coach sendest.</li>
-  <li><strong>Wenn du nichts kaufst und den Bildschirm des Abos nicht öffnest, verbindet sich die App kein einziges Mal mit RevenueCat.</strong></li>
-  <li>Auf deinem Telefon wird nur gespeichert, ob du PRO hast, mit welchem Tarif und bis wann. Diese Angabe reist nicht in der Exportdatei des Spielstands mit.</li>
-  <li>Abos werden im Store selbst gekündigt, wie jedes andere auch.</li>
+  <li><strong>Die Zahlung wickelt der Store deines Telefons ab</strong> (Google Play oder App Store) mit dem Konto, das du dort hast. Die App sieht deine Zahlungsmethode nicht, erhält sie nicht und speichert sie nicht: Sie öffnet das Kaufblatt des Systems, und der Rest geschieht außerhalb von ihr. <strong>Die App erhält keinerlei Zahlungsdaten.</strong></li>
+  <li>Wer prüft, ob der Kauf gültig ist und noch aktiv, ist <strong>RevenueCat</strong> (RevenueCat, Inc.), ein Vermittler für In-App-Käufe.</li>
 </ul>
+<h3>Was RevenueCat erhält</h3>
+<ul>
+  <li>Den <strong>Kaufbeleg</strong>, den der Store ausstellt, um ihn bei Google oder Apple zu prüfen.</li>
+  <li>Welche <strong>Produkte</strong> du aktiv hast (das Abo und die Programme) und in welchem Zustand.</li>
+  <li>Die <strong>Plattform</strong> (Android oder iOS), die Version der App und das <strong>Land</strong> des Stores.</li>
+  <li>Eine <strong>anonyme Kennung, die er selbst erzeugt</strong>. Die App übergibt ihm keine Kennung von dir: Es gibt keine Konten, keine E-Mail-Adresse, und es wird keine Identifizierungsfunktion aufgerufen.</li>
+</ul>
+<p>Er erhält weder deinen Namen noch deinen Spielstand, weder deine Programme noch Fotos, und nichts von dem, was du an den KI-Coach sendest.</p>
+<h3>Wann sie sich verbindet</h3>
+<ul>
+  <li><strong>Wenn du nichts kaufst und den PRO-Bildschirm nicht öffnest, verbindet sich die App kein einziges Mal mit RevenueCat</strong>, weder beim Start noch im Hintergrund.</li>
+  <li>Wenn du den PRO-Bildschirm öffnest, werden die Produkte und ihre Preise beim Store abgefragt, in deiner Währung.</li>
+  <li>Wenn du PRO, ein gekauftes Programm oder eine ausstehende Zahlung hast, prüft die App beim Start höchstens einmal am Tag, ob noch alles in Ordnung ist, und RevenueCat benachrichtigt die App, wenn sich etwas ändert.</li>
+  <li>Ohne Verbindung wird nichts geprüft, und du verlierst nichts: Die App behält den letzten bekannten Zustand mit seinem Datum.</li>
+</ul>
+<h3>Was auf deinem Telefon gespeichert wird und wie man kündigt</h3>
+<p>Ob dein Abo aktiv ist, in welchem Zustand, mit welchem Tarif und bis wann; welche Programme du gekauft hast; und ob eine Zahlung aussteht. Dieser Block reist nicht in der Exportdatei des Spielstands mit: Die Käufe gehören zu deinem Store-Konto und werden mit <strong>„Käufe wiederherstellen“</strong> zurückgeholt, in den Einstellungen und auf dem PRO-Bildschirm. Das Abo verlängert sich am Ende jedes Zeitraums von selbst, bis du es kündigst, und gekündigt wird im Store selbst; du behältst PRO bis zum Ende des bezahlten Zeitraums. Die kostenlose Testphase geht an ihrem Ende in das Abo über, wenn du sie nicht vorher kündigst.</p>
 <p>Wie RevenueCat, Google und Apple diese Daten verarbeiten, richtet sich nach ihren eigenen Datenschutzerklärungen.</p>
 
 <h2>10. Widget auf dem Startbildschirm (Android)</h2>
