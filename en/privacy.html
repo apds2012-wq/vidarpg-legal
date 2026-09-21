@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Legal document</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: 16 September 2026 · app version 2.6.0</p>
+      <p class="meta">Last updated: 21 September 2026· app version 2.8.0</p>
 <p class="lead">VIDA RPG is an app <strong>with no user accounts and no sign-up</strong>. Everything you record stays on your device, and the whole app works offline. This policy explains plainly what is stored, where, and what happens in the only two optional features that talk to the internet: the AI Coach and in-app purchases.</p>
 
 <h2>1. Summary</h2>
@@ -52,6 +52,7 @@
   <li>The <strong>AI Coach</strong> is optional and only sends anything when you tap its button. It can be switched off completely.</li>
   <li><strong>Purchases</strong> — the PRO subscription and the challenge programmes — are optional; they are handled by Google Play (or the App Store) and validated by RevenueCat. <strong>The app receives no payment data whatsoever.</strong> If you do not buy anything, it connects to no one on this account.</li>
   <li>Uninstalling the app deletes all data. The developer holds no copy of anything.</li>
+  <li><strong>Physical activity</strong> is optional: if you turn it on, steps and runs are read from Health Connect when you open the app, never in the background, and they never leave your phone.</li>
 </ul>
 
 <h2>2. What data the app stores</h2>
@@ -124,7 +125,12 @@
 <h3>Limits</h3>
 <p>The quota depends on your plan: without paying, one query per calendar week during the thirty days after the game was created (or after updating to 2.5.0, for earlier games) and none after that; with PRO, nine a day. Above any plan there is a cap of twelve queries per day per device. The counter is visible on screen. Abuse protection is provided by Firebase App Check.</p>
 
-<h2>9. Purchases: PRO and the challenge programmes</h2>
+<h2>9. Physical activity (Health Connect)</h2>
+<p>It is <strong>optional and off by default</strong>. If you turn it on, the app reads three things from <strong>Health Connect</strong> — Android's health data store: your steps for each day, any distance another app has recorded, and the running-type exercise sessions written by other apps (Strava, Samsung Health, Google Health or another), together with the name of the app that wrote them. Only the last thirty days, only when you open the app and <strong>never in the background</strong>. VIDA RPG writes nothing to Health Connect.</p>
+<p>That data <strong>stays on your phone</strong>, inside your game, and is used to pay step tiers and runs when each day closes. It does not leave the device, is not sent to any server and is not used for advertising or for anything else. The only thing that can travel is your main quest's measurement, if you log it yourself from a run: it goes to the AI Coach by the same route as any measurement you type by hand, described in section 8.</p>
+<p>You switch it off in Settings, which stops the reading and erases the days already read. The permission is revoked in Health Connect by removing VIDA RPG from its apps with access; without it, the whole app works exactly the same.</p>
+
+<h2>10. Purchases: PRO and the challenge programmes</h2>
 <p>The download is free and includes the complete game. VIDA RPG offers an optional subscription, <strong>PRO</strong> — monthly or yearly, the yearly one with a seven-day free trial — and six <strong>challenge programmes</strong> that can also be bought individually as a one-off purchase. No purchase unlocks the game, removes ads (there are none) or sells Baros or cosmetics for real money; those are earned only by playing. Since 2.6.0 no mentor or technique is unlocked by level or with Baros: each opens by completing the mentor before it, with or without PRO; PRO lets you walk two mentor paths at once. There is no lifetime purchase.</p>
 <h3>Who charges you and who checks</h3>
 <ul>
@@ -151,19 +157,20 @@
 <p>Whether your subscription is active, in which state, which plan and until when; which programmes you have bought; and whether a payment is pending. That block is not included in the exported game file: purchases belong to your store account and are recovered with <strong>"Restore purchases"</strong>, in Settings and on the PRO screen. The subscription renews itself at the end of each period until you cancel it, and it is cancelled from the store itself; you keep PRO until the end of the period you paid for. The free trial turns into a subscription when it ends unless you cancel it first.</p>
 <p>RevenueCat's, Google's and Apple's handling of this data is governed by their own privacy policies.</p>
 
-<h2>10. Home-screen widget (Android)</h2>
+<h2>11. Home-screen widget (Android)</h2>
 <p>If you place the widget, the app keeps in its own private storage just enough to draw it: the day's rings, your streak count and a small image of your character in classic mode (never the photo-based version). It requests no permissions, uses no connection and never leaves the device.</p>
 
-<h2>11. Permissions</h2>
+<h2>12. Permissions</h2>
 <ul>
   <li><strong>Notifications</strong>: the only permission you are asked for up front, once, when you finish creating your character. You can deny it, and reminders can be switched off whenever you like from Settings or from the system.</li>
   <li><strong>Camera</strong>: only to take the photo the avatar is created from, requested at that moment, and you can deny it. The camera is declared as not required. Picking a photo from the gallery needs no permission: since 2.6.0 the package declares no image-reading permission.</li>
   <li><strong>Internet</strong>: declared by the engine the app runs on. All resources are bundled; the only possible network requests are those of the AI Coach and the subscription, and only when you trigger them.</li>
   <li><strong>Vibration</strong>, plus the technical permissions the system uses to reschedule reminders after a reboot and to open the store's purchase sheet. None of them ask for your approval or access your data.</li>
+  <li><strong>Health Connect</strong>: three read permissions — steps, distance and exercise sessions — requested only when you turn on physical activity, on the system's own screen. None for background access or for extended history, and the app writes nothing to Health Connect.</li>
 </ul>
 <p>The app does not request the microphone, location, contacts, cross-app tracking, gallery reading, external storage writing or exact alarms, on either platform.</p>
 
-<h2>12. Your rights (GDPR)</h2>
+<h2>13. Your rights (GDPR)</h2>
 <p>The European Union's General Data Protection Regulation grants you the rights of access, rectification, erasure, restriction, portability and objection over your personal data. In VIDA RPG the developer <strong>does not collect or keep personal data on any server of their own</strong>, so there is nothing of yours to give access to, correct or delete. Those rights are exercised <strong>on your own device</strong>:</p>
 <ul>
   <li><strong>Access and portability</strong>: the export option in Settings gives you all your data in a readable file.</li>
@@ -172,16 +179,16 @@
 </ul>
 <p>For any privacy enquiry, write to <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a>. If you believe your rights are not being respected, you may complain to the Spanish Data Protection Agency (AEPD) or to the supervisory authority in your country.</p>
 
-<h2>13. Children</h2>
+<h2>14. Children</h2>
 <p>The app is <strong>not directed at children under thirteen</strong> and does not collect data from them. Since it collects no identifying data from anyone, it cannot collect any from children either. If you are a parent or guardian and believe a child has used the app, remember that all of their data is on the device and is removed by uninstalling it.</p>
 
-<h2>14. Uninstalling the app</h2>
+<h2>15. Uninstalling the app</h2>
 <p>Uninstalling VIDA RPG deletes all game data. <strong>The developer holds no copy whatsoever</strong>, so there is nothing else to delete or to request. The only remaining files would be those you exported yourself and saved wherever you chose.</p>
 
-<h2>15. Changes to this policy</h2>
+<h2>16. Changes to this policy</h2>
 <p>If data handling changes in the future, this policy will be updated, published at this same address and shown inside the app (More → Privacy), in all seven languages.</p>
 
-<h2>16. Controller</h2>
+<h2>17. Controller</h2>
 <p><strong>Alex Vida</strong>, independent developer, Spain.<br>Contact: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>
     </article>
   </main>

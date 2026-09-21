@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Documento legal</p>
       <h1>Política de privacidad</h1>
-      <p class="meta">Última actualización: 16 de septiembre de 2026 · versión de la aplicación 2.6.0</p>
+      <p class="meta">Última actualización: 21 de septiembre de 2026· versión de la aplicación 2.8.0</p>
 <p class="lead">VIDA RPG es una aplicación <strong>sin cuentas de usuario y sin registro</strong>. Todo lo que registras se queda en tu dispositivo, y la aplicación funciona entera sin conexión. Esta política explica, sin rodeos, qué se guarda, dónde, y qué ocurre en las dos únicas funciones opcionales que hablan con internet: el Coach IA y las compras dentro de la aplicación.</p>
 
 <h2>1. Resumen</h2>
@@ -52,6 +52,7 @@
   <li>El <strong>Coach IA</strong> es opcional y solo envía algo cuando tú pulsas su botón. Puede apagarse por completo.</li>
   <li>Las <strong>compras</strong> —la suscripción PRO y los programas de desafío— son opcionales; las gestiona Google Play (o la App Store) y las valida RevenueCat. <strong>La aplicación no recibe ningún dato de pago.</strong> Si no compras, no se conecta con nadie por este concepto.</li>
   <li>Desinstalar la aplicación elimina todos los datos. El desarrollador no tiene copia de nada.</li>
+  <li>La <strong>actividad física</strong> (pasos y carreras) es opcional: si la activas, se lee de Health Connect al abrir la app y nunca sale del teléfono.</li>
 </ul>
 
 <h2>2. Qué datos guarda la aplicación</h2>
@@ -124,7 +125,12 @@
 <h3>Límites</h3>
 <p>La cuota depende del plan: sin pagar, una consulta por semana natural durante los treinta días siguientes a la creación de la partida (o a la actualización a la 2.5.0, para las partidas anteriores) y ninguna después; con PRO, nueve al día. Por encima de cualquier plan hay un tope de doce consultas al día por dispositivo. El contador está a la vista. La protección antiabuso la proporciona Firebase App Check.</p>
 
-<h2>9. Las compras: PRO y los programas de desafío</h2>
+<h2>9. Actividad física (Health Connect)</h2>
+<p>Es <strong>opcional y nace apagada</strong>. Si la activas, la aplicación lee de Health Connect —el almacén de datos de salud de Android— tres cosas: tus pasos de cada día, la distancia que otra aplicación haya registrado y las sesiones de ejercicio de tipo carrera escritas por otras aplicaciones (Strava, Samsung Health, Google Health u otra), con el nombre de la aplicación que las escribió. Solo de los últimos treinta días, solo al abrir la app y nunca en segundo plano. VIDA RPG no escribe nada en Health Connect.</p>
+<p>Esos datos se quedan en tu teléfono, dentro de tu partida, y sirven para pagar tramos de pasos y carreras al cerrar cada día. <strong>No salen del dispositivo, no se envían a ningún servidor y no se usan para publicidad</strong> ni para nada más. Lo único que puede viajar es la medida de tu misión principal si tú la registras a partir de una carrera: viaja al Coach IA por el mismo camino que cualquier medida que escribas a mano, descrito en el apartado del Coach IA.</p>
+<p>Se desactiva en Ajustes, que deja de leer y borra los días leídos. El permiso se revoca en Health Connect quitando VIDA RPG de sus aplicaciones con acceso; sin él la aplicación funciona entera igual.</p>
+
+<h2>10. Las compras: PRO y los programas de desafío</h2>
 <p>La descarga es gratuita y trae el juego completo. VIDA RPG ofrece una suscripción opcional, <strong>PRO</strong> —mensual o anual, la anual con siete días de prueba gratuita—, y seis <strong>programas de desafío</strong> que también se pueden comprar sueltos como compra única. Ninguna compra desbloquea el juego, quita anuncios (no hay) ni vende Baros ni cosméticos con dinero real, que solo se ganan jugando. Desde la 2.6.0 ningún mentor ni ninguna técnica se abre por nivel ni con Baros, sino completando el mentor anterior, igual con PRO que sin él; PRO permite recorrer dos caminos de mentores a la vez. No existe compra vitalicia.</p>
 <h3>Quién cobra y quién comprueba</h3>
 <ul>
@@ -151,19 +157,20 @@
 <p>Si tu suscripción está activa, en qué estado, con qué plan y hasta cuándo; qué programas has comprado; y si hay un pago pendiente. Ese bloque no viaja en el fichero de exportar la partida: las compras son de tu cuenta de la tienda y se recuperan con <strong>«Restaurar compras»</strong>, en Ajustes y en la pantalla de PRO. La suscripción se renueva sola al final de cada periodo hasta que la canceles, y se cancela desde la propia tienda; conservas PRO hasta el final del periodo pagado. La prueba gratuita pasa a suscripción al terminar si no la cancelas antes.</p>
 <p>El tratamiento que RevenueCat, Google y Apple hacen de estos datos se rige por sus propias políticas de privacidad.</p>
 
-<h2>10. Widget de pantalla de inicio (Android)</h2>
+<h2>11. Widget de pantalla de inicio (Android)</h2>
 <p>Si colocas el widget, la aplicación deja en su propio almacenamiento privado lo justo para pintarlo: los anillos del día, la cifra de la racha y una imagen pequeña de tu personaje en modo clásico (nunca la versión hecha a partir de una foto). No pide permisos, no usa conexión y no sale del dispositivo.</p>
 
-<h2>11. Permisos</h2>
+<h2>12. Permisos</h2>
 <ul>
   <li><strong>Notificaciones</strong>: es el único permiso que se te pregunta de entrada, una sola vez, al terminar de crear tu personaje. Puedes denegarlo, y los recordatorios se apagan cuando quieras desde Ajustes o desde el sistema.</li>
   <li><strong>Cámara</strong>: solo para hacer la foto con la que se crea el avatar, se pide en ese momento y puedes denegarla. La cámara está declarada como no obligatoria. Elegir una foto de la galería no necesita permiso: desde la 2.6.0 el paquete no declara ninguno de lectura de imágenes.</li>
   <li><strong>Internet</strong>: lo declara el motor sobre el que se ejecuta la aplicación. Todos los recursos van empaquetados; las únicas peticiones de red posibles son las del Coach IA y las de la suscripción, y solo cuando tú las provocas.</li>
   <li><strong>Vibración</strong>, y los permisos técnicos que usa el sistema para reprogramar los recordatorios tras reiniciar el teléfono y para abrir la hoja de compra de la tienda. Ninguno de ellos te pide aprobación ni accede a tus datos.</li>
+  <li><strong>Health Connect</strong>: tres permisos de lectura —pasos, distancia y sesiones de ejercicio— que se piden solo si activas la actividad física, en la pantalla de permisos del propio sistema; ninguno de segundo plano ni de histórico ampliado, y la aplicación no escribe nada en Health Connect. Se revocan desde Health Connect.</li>
 </ul>
 <p>La aplicación no solicita micrófono, ubicación, contactos, seguimiento entre aplicaciones, lectura de la galería, escritura en almacenamiento externo ni alarmas exactas, en ninguna plataforma.</p>
 
-<h2>12. Tus derechos (RGPD)</h2>
+<h2>13. Tus derechos (RGPD)</h2>
 <p>El Reglamento General de Protección de Datos de la Unión Europea te reconoce los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición sobre tus datos personales. En VIDA RPG el desarrollador <strong>no recopila ni conserva datos personales en servidores propios</strong>, así que no tiene nada tuyo a lo que dar acceso, corregir o borrar. El ejercicio de esos derechos se resuelve <strong>en tu propio dispositivo</strong>:</p>
 <ul>
   <li><strong>Acceso y portabilidad</strong>: la opción de exportar la partida, en Ajustes, te entrega todos tus datos en un fichero legible.</li>
@@ -172,16 +179,16 @@
 </ul>
 <p>Para cualquier consulta sobre privacidad, escribe a <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a>. Si consideras que tus derechos no se respetan, puedes reclamar ante la Agencia Española de Protección de Datos o ante la autoridad de control de tu país.</p>
 
-<h2>13. Menores</h2>
+<h2>14. Menores</h2>
 <p>La aplicación <strong>no está dirigida a menores de trece años</strong> y no recopila datos de ellos. Como no recopila datos identificativos de nadie, tampoco puede recopilarlos de menores. Si eres padre, madre o tutor y crees que un menor ha usado la aplicación, recuerda que todos sus datos están en el dispositivo y se eliminan desinstalándola.</p>
 
-<h2>14. Desinstalar la aplicación</h2>
+<h2>15. Desinstalar la aplicación</h2>
 <p>Desinstalar VIDA RPG elimina todos los datos de la partida. <strong>No existe copia alguna en poder del desarrollador</strong>, así que no hay nada más que borrar ni que pedir. Solo quedarían los ficheros que tú mismo hubieras exportado y guardado donde eligieras.</p>
 
-<h2>15. Cambios en esta política</h2>
+<h2>16. Cambios en esta política</h2>
 <p>Si en el futuro cambia el tratamiento de datos, esta política se actualizará, se publicará en esta misma dirección y se mostrará dentro de la aplicación (Más → Privacidad), en los siete idiomas.</p>
 
-<h2>16. Responsable</h2>
+<h2>17. Responsable</h2>
 <p><strong>Alex Vida</strong>, desarrollador independiente, España.<br>Contacto: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>
     </article>
   </main>
