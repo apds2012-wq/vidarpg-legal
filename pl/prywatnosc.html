@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Dokument prawny</p>
       <h1>Polityka prywatności</h1>
-      <p class="meta">Ostatnia aktualizacja: 23 września 2026 · wersja aplikacji 2.9.0</p>
+      <p class="meta">Ostatnia aktualizacja: 27 września 2026 · wersja aplikacji 2.11.0</p>
 <p class="lead">VIDA RPG to aplikacja <strong>bez kont użytkowników i bez rejestracji</strong>. Wszystko, co zapisujesz, zostaje na Twoim urządzeniu, a cała aplikacja działa offline. Ta polityka wyjaśnia wprost, co jest zapisywane, gdzie, i co dzieje się w dwóch jedynych opcjonalnych funkcjach, które łączą się z internetem: w Trenerze AI i w zakupach w aplikacji.</p>
 
 <h2>1. W skrócie</h2>
@@ -67,6 +67,7 @@
   <li>Treść Twojej złotej karty.</li>
   <li>Twoje preferencje: język, symbol waluty, dźwięk, muzykę, wibracje, efekty wizualne, tryb gry i przypomnienia.</li>
   <li>Od wersji 2.6.0: <strong>Twoja ścieżka mentorów</strong>, czyli którzy mentorzy są ukończeni i kiedy, którzy otwarci, czy jakaś skrzynia mentora czeka na odebranie i czy czeka na Ciebie zmiana perspektywy; oraz przeczytane lekcje. A także Twój profil dopasowania do mentorów — odpowiedzi z kwestionariusza i z każdej zmiany perspektywy wraz z ich wynikiem — obliczany wewnątrz telefonu i niewysyłany nikomu, nawet Trenerowi AI.</li>
+  <li>Od wersji 2.11.0: <strong>to, co odpowiadasz Lume</strong>, przewodniczce gry, w dialogach mikrozadań: na pytania o każdy obszar Twojego życia — na przykład o to, czy jesteś w związku, jak układa się w Twojej rodzinie albo co Ci ciąży w sprawach pieniędzy — przy których zawsze możesz wybrać „Wolę tego nie mówić”. Zapisuje się to <strong>tylko w Twoim telefonie</strong>, wraz z ostatnim dniem, w którym była mowa o każdym obszarze, żeby Lume pamiętała, co już od Ciebie usłyszała, i nie pytała o to samo; <strong>nigdy nie jest nikomu wysyłane, nawet Trenerowi AI</strong>, a usuniesz to, kiedy zechcesz, w Ustawieniach → „Co pamięta Lume” → „Zapomnij o moich odpowiedziach”. Zapisuje się też, które propozycje z dymka Twojej postaci odłożono i do kiedy.</li>
   <li>Jeśli stworzono awatar ze zdjęcia: <strong>powstałą siatkę pikseli</strong>, nigdy zdjęcie (zob. sekcję 5).</li>
   <li>Dotyczące Trenera AI: czy jest wyłączony, ile zapytań wykonano dziś, w tym tygodniu i łącznie, od jakiej daty liczy się Twój miesiąc bezpłatnych zapytań, które sugestie zaakceptowano, ile <i>tokenów</i> kosztowały te zapytania oraz, od wersji 2.5.0, ostatnia odpowiedź trenera, zapisana na urządzeniu po to, by móc pokazać Ci ją w całości po aktywowaniu PRO bez powtarzania zapytania.</li>
   <li>Od wersji 2.5.0: liczniki planu bezpłatnego (ile zadań z biblioteki dodano w tym tygodniu), które oferty już Ci pokazano, oraz Twoje <strong>programy wyzwań</strong>: trwający z wykonanymi dniami, ukończone z ich procentem i zdobyte odznaki.</li>
@@ -118,9 +119,11 @@
   <li><strong>Żadne zdjęcie</strong> ani siatka pikseli Twojego awatara.</li>
   <li><strong>Treść Twojej złotej karty.</strong></li>
   <li>Żadne daty kalendarzowe: dni są przekazywane jako „trzy dni temu”.</li>
+  <li><strong>Twoje odpowiedzi dla Lume</strong> (od wersji 2.11.0) — ani wszystkie razem, ani żadna pojedyncza odpowiedź.</li>
+  <li><strong>Nazwa wpadki „Kompulsywne porno”</strong> z katalogu (od wersji 2.11.0): jest przekazywana jako własny nałóg, z jej kategorią, częstotliwością, wpływem i tym, ile razy ją zapisano, nigdy z nazwą.</li>
   <li><strong>Żadne inne dane o lokalizacji</strong>: ani strefa czasowa, ani miasto, ani współrzędne, ani nic podobnego. Tylko dwuliterowy kod kraju opisany powyżej.</li>
 </ul>
-<p>Sprawdza to zestaw testów automatycznych, który kontroluje każde zapytanie i zgłasza błąd, jeśli którakolwiek z tych danych się przedostanie, a od wersji 2.6.0 <strong>ta sama kontrola jest wykonywana w Twoim telefonie przed każdym wysłaniem</strong>: jeśli znajdzie w zapytaniu Twoje imię, siatkę Twojego awatara, Twoją złotą kartę lub nazwę własnego nałogu, zapytanie nie wychodzi. Jak przy każdym połączeniu HTTPS w dowolnej aplikacji, serwer odbierający zapytanie widzi adres IP, z którego ono przychodzi; aplikacja go nie odczytuje, nie zapisuje i do niczego nie używa.</p>
+<p>Sprawdza to zestaw testów automatycznych, który kontroluje każde zapytanie i zgłasza błąd, jeśli którakolwiek z tych danych się przedostanie, a od wersji 2.6.0 <strong>ta sama kontrola jest wykonywana w Twoim telefonie przed każdym wysłaniem</strong>: jeśli znajdzie w zapytaniu Twoje imię, siatkę Twojego awatara, Twoją złotą kartę, nazwę własnego nałogu lub, od wersji 2.11.0, jakąkolwiek odpowiedź dla Lume, zapytanie nie wychodzi. Jak przy każdym połączeniu HTTPS w dowolnej aplikacji, serwer odbierający zapytanie widzi adres IP, z którego ono przychodzi; aplikacja go nie odczytuje, nie zapisuje i do niczego nie używa.</p>
 <h3>Jak go wyłączyć</h3>
 <p>W <strong>Ustawieniach</strong> możesz <strong>całkowicie wyłączyć Trenera AI</strong>. Znikają wtedy wszystkie jego punkty wejścia i nie jest wysyłane absolutnie nic. Gdy jest włączony, nic nie jest wysyłane, dopóki nie naciśniesz jego przycisku.</p>
 <h3>Limity</h3>

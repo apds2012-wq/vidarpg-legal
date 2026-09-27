@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Legal document</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: 23 September 2026 · app version 2.9.0</p>
+      <p class="meta">Last updated: 27 September 2026 · app version 2.11.0</p>
 <p class="lead">VIDA RPG is an app <strong>with no user accounts and no sign-up</strong>. Everything you record stays on your device, and the whole app works offline. This policy explains plainly what is stored, where, and what happens in the only two optional features that talk to the internet: the AI Coach and in-app purchases.</p>
 
 <h2>1. Summary</h2>
@@ -67,6 +67,7 @@
   <li>The content of your golden card.</li>
   <li>Your preferences: language, currency symbol, sound, music, vibration, visual effects, game mode and reminders.</li>
   <li>Since 2.6.0, <strong>your mentor path</strong>: which mentors you have completed and on what date, which ones are open to you, whether a mentor chest is waiting to be collected and whether you have a change of perspective pending; and the lessons you have read. And your affinity profile with the mentors: the answers to the questionnaire and to each change of perspective, with their result, computed inside the phone and never sent to anyone, not even to the AI Coach.</li>
+  <li>Since 2.11.0, <strong>what you answer Lume</strong>, the game's guide, in the micro-quest dialogues: questions about each area of your life — for example, whether you have a partner, how things are with your family or what weighs on you about money — where you can always choose "I'd rather not say". It is kept <strong>only on your phone</strong>, together with the last day each area was talked about, so that Lume remembers what you have already shared and does not ask you the same thing again; <strong>it is never sent to anyone, not even to the AI Coach</strong>, and you can erase it whenever you like in Settings → "What Lume remembers" → "Forget my answers". The app also stores which suggestions in your character's speech bubble you have put off, and until when.</li>
   <li>If you created your avatar from a photo: <strong>the resulting pixel grid</strong>, never the photo (see section 5).</li>
   <li>For the AI Coach: whether you switched it off, how many queries you made today, this week and in total, the date your month of free queries runs from, which suggestions you accepted, how many <i>tokens</i> those queries cost and, since 2.5.0, the coach's last reply, kept on the device so it can be shown to you in full if you activate PRO without repeating the query.</li>
   <li>Since 2.5.0: the free plan's counters (how many library missions you have added this week), which offers you have already been shown, and your <strong>challenge programmes</strong>: the one in progress with its completed days, the finished ones with their percentage, and the badges earned.</li>
@@ -118,9 +119,11 @@
   <li><strong>No photograph</strong>, and not your avatar's pixel grid either.</li>
   <li><strong>The content of your golden card.</strong></li>
   <li>No calendar dates: days travel as "three days ago".</li>
+  <li><strong>Your answers to Lume</strong> (since 2.11.0), neither the whole block nor a single answer.</li>
+  <li><strong>The name of the "Compulsive porn use" slip</strong> from the catalogue (since 2.11.0): it travels as a vice of your own, with its category, frequency, impact and how many times you logged it, never with its name.</li>
   <li><strong>No other location data</strong>: not your time zone, not your city, not coordinates, nothing of the sort. Only the two-letter country code explained above.</li>
 </ul>
-<p>This is verified by an automated test suite that inspects every request and fails if any of that data slips in, and since 2.6.0 <strong>the same check runs on your phone before each request is sent</strong>: if it finds your name, your avatar grid, your card or the name of a vice of your own inside the request, the request does not go out. As in every HTTPS connection of any app, the server that receives the request sees the IP address it comes from; the app does not read it, does not store it and does not use it for anything.</p>
+<p>This is verified by an automated test suite that inspects every request and fails if any of that data slips in, and since 2.6.0 <strong>the same check runs on your phone before each request is sent</strong>: if it finds your name, your avatar grid, your card, the name of a vice of your own or, since 2.11.0, any answer to Lume inside the request, the request does not go out. As in every HTTPS connection of any app, the server that receives the request sees the IP address it comes from; the app does not read it, does not store it and does not use it for anything.</p>
 <h3>How to switch it off</h3>
 <p>From <strong>Settings</strong> you can <strong>switch the AI Coach off completely</strong>. All its entry points disappear and absolutely nothing is sent. While it is on, nothing is sent until you tap its button.</p>
 <h3>Limits</h3>
