@@ -1,7 +1,7 @@
 # VIDA RPG · documentos legales
 
 Sitio estático con los documentos legales de la aplicación **VIDA RPG**
-(`com.vidarpg`) en español, inglés y polaco: política de privacidad,
+(`com.vidarpg`) en siete idiomas (español, inglés, polaco, francés, alemán, italiano y ruso): política de privacidad,
 términos de uso, política de eliminación de datos y página de soporte.
 
 - Solo HTML y CSS. Sin scripts, sin analítica, sin recursos de terceros.
