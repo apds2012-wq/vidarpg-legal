@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Legal document</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: 28 September 2026 · app version 2.12.0</p>
+      <p class="meta">Last updated: 1 October 2026 · app version 2.14.0</p>
 <p class="lead">VIDA RPG is an app <strong>with no user accounts and no sign-up</strong>. Everything you record stays on your device, and the whole app works offline. This policy explains plainly what is stored, where, and what happens in the only two optional features that talk to the internet: the AI Coach and in-app purchases.</p>
 
 <h2>1. Summary</h2>
@@ -70,7 +70,7 @@
   <li>Since 2.11.0, <strong>what you answer your guide</strong> in the micro-quest dialogues (Lume or, since 2.12.0, the character you choose as your guide): questions about each area of your life — for example, whether you have a partner, how things are with your family or what weighs on you about money — where you can always choose "I'd rather not say". It is kept <strong>only on your phone</strong>, together with the last day each area was talked about, so that your guide remembers what you have already shared and does not ask you the same thing again; <strong>it is never sent to anyone, not even to the AI Coach</strong>, and you can erase it whenever you like in Settings → "What your guide and the Paladin remember" → "Forget my answers". The app also stores which suggestions in your character's speech bubble you have put off, and until when.</li>
   <li>Since 2.12.0, <strong>the guide you choose</strong> from the game's twelve characters (existing games keep Lume) and <strong>what you tell the Paladin</strong> when she helps you choose a Feat: only the life area, where you stand today and what you want to achieve, each answer picked from a fixed list — never text you write — with the day you gave it. It is kept <strong>only on your phone</strong>, <strong>it is never sent to anyone, not even to the AI Coach</strong>, and it is forgotten with the same button as your answers to your guide: Settings → "What your guide and the Paladin remember" → "Forget my answers".</li>
   <li>Since 2.12.0, also only on your phone and only for the game: <strong>the slips you log, day by day, for fourteen days</strong>, which pick the weekly boss — your most repeated slip — and decide when the Hedge Witch offers you a guided practice; the boss of the week and when the Witch appeared for each slip; the avenue <strong>album</strong>; the <strong>recent split of your experience across areas</strong> and the <strong>character class</strong> that comes from it, a game trait and not a diagnosis of anything; the low-health warnings you have already been shown, so they are not repeated; the last scene you saw; and how many <strong>Feats</strong> you have started, which is what the free plan's limit counts. None of this leaves the phone.</li>
-  <li>If you created your avatar from a photo: <strong>the resulting pixel grid</strong>, never the photo (see section 5).</li>
+  <li>If you created your avatar from a photo: <strong>only two colours from the game's own colour catalogue</strong>, the skin tone and hair colour read from it; never the photo (see section 5).</li>
   <li>For the AI Coach: whether you switched it off, how many queries you made today, this week and in total, the date your month of free queries runs from, which suggestions you accepted, how many <i>tokens</i> those queries cost and, since 2.5.0, the coach's last reply, kept on the device so it can be shown to you in full if you activate PRO without repeating the query.</li>
   <li>Since 2.5.0: the free plan's counters (until 2.11.0, how many library missions you had added each week; since 2.12.0, the number of Feats started, described above), which offers you have already been shown, and your <strong>challenge programmes</strong>: the one in progress with its completed days, the finished ones with their percentage, and the badges earned.</li>
   <li>If you bought something: whether your subscription is active, in which state (active, on trial, in grace period, cancelled or expired), which plan and until when; which challenge programmes you bought; and whether a payment is awaiting confirmation by the store. Nothing else: not the receipt, not the amount, not the payment method.</li>
@@ -95,17 +95,17 @@
 <p>You can create your character's avatar from a photograph. The camera and the gallery are used <strong>only</strong> at that moment and for nothing else:</p>
 <ul>
   <li>The system asks for the camera permission when you choose to take the photo. You can deny it: you simply will not be able to use this feature, and the rest of the app works the same. Picking a photo from the gallery needs no permission at all: the system photo picker opens and the app receives only the image you choose; since 2.6.0 the package declares no image-reading permission.</li>
-  <li>The image is opened in memory so you can frame it, and it is converted, <strong>right then and inside your device</strong>, into a 20 × 20 pixel grid with a palette of about 14 colours. No external service, no facial recognition, no biometrics and no artificial intelligence are involved.</li>
+  <li>The image is opened in memory so you can frame it, and <strong>right then and inside your device</strong> it is reduced to a 20 × 20 pixel grid with a palette of about 14 colours. From that grid the app reads the most frequent colour in the hair area and in the face area, and matches each one to the nearest colour in the game's own colour catalogue. No external service, no facial recognition, no biometrics and no artificial intelligence are involved.</li>
   <li><strong>The photograph is never stored or transmitted.</strong> It is not copied to any app folder, not saved to the gallery, not uploaded to any server and not shared with anyone. As soon as the avatar is generated, it is released from memory.</li>
-  <li>The only thing kept in your game is that grid: a list of colour indexes of <strong>less than two kilobytes</strong>, from which the original photo cannot be reconstructed.</li>
-  <li>You can switch back to the classic avatar at any time and erase the grid by resetting the game.</li>
+  <li>The only thing kept in your game is <strong>those two colours</strong>: your character's skin tone and hair colour, the same ones you could pick by hand in the editor, and the photo cannot be reconstructed from them. <strong>The grid is not saved</strong>: it is used on that screen and discarded when you leave it.</li>
+  <li>Up to version 2.13.0 your game kept that grid. <strong>Updating to 2.14.0 deletes it</strong>; if it was your avatar's head, the two colours are taken from it first. You can change skin and hair by hand at any time.</li>
 </ul>
 
 <h2>6. Notifications</h2>
 <p>Reminders are <strong>local notifications</strong>: your own phone generates them from your game, offline and without any server. They are <strong>optional</strong>: you can turn them on or off in Settings and in the system's notification settings. The app does not know whether you read them and sends nothing to anyone about them.</p>
 
 <h2>7. Exporting and importing your game</h2>
-<p>From Settings you can <strong>export</strong> your game to a file (including, if you created it, the avatar grid, but never a photograph). The app opens the system share sheet so that <strong>you</strong> choose where to save it or whom to send it to. That file is under your control and your responsibility: the app never sends it anywhere on its own. The <strong>import</strong> option reads a file you select and replaces the current game.</p>
+<p>From Settings you can <strong>export</strong> your game to a file (including your avatar's appearance, but never a photograph). The app opens the system share sheet so that <strong>you</strong> choose where to save it or whom to send it to. That file is under your control and your responsibility: the app never sends it anywhere on its own. The <strong>import</strong> option reads a file you select and replaces the current game.</p>
 
 <h2>8. The AI Coach</h2>
 <p>The AI Coach is an <strong>optional feature</strong> that analyses your goals and progress and proposes concrete adjustments and actions. The entire app works the same without it.</p>
@@ -120,7 +120,7 @@
 <h3>What is never sent</h3>
 <ul>
   <li><strong>Your real name</strong>, your character's name, or any identifying data.</li>
-  <li><strong>No photograph</strong>, and not your avatar's pixel grid either.</li>
+  <li><strong>No photograph</strong>, and not your avatar's appearance either.</li>
   <li><strong>The content of your golden card.</strong></li>
   <li>No calendar dates: days travel as "three days ago".</li>
   <li><strong>Your answers to your guide</strong> (since 2.11.0), neither the whole block nor a single answer.</li>
@@ -128,7 +128,7 @@
   <li><strong>Nothing that 2.12.0 keeps on the phone</strong>: not what you tell the Paladin, not the answer about physical limitations, not the guide you choose, and not your slips by day, the weekly boss, the Hedge Witch, the album, the split across areas, your character's class or the low-health warnings.</li>
   <li><strong>No other location data</strong>: not your time zone, not your city, not coordinates, nothing of the sort. Only the two-letter country code explained above.</li>
 </ul>
-<p>This is verified by an automated test suite that inspects every request and fails if any of that data slips in, and since 2.6.0 <strong>the same check runs on your phone before each request is sent</strong>: if it finds your name, your avatar grid, your card, the name of a vice of your own, since 2.11.0 any answer to your guide or, since 2.12.0, what you tell the Paladin, the block of slips by day, the boss, the Witch, the album, the split across areas or the class, or an assistant answer that is not from its fixed list inside the request, the request does not go out. As in every HTTPS connection of any app, the server that receives the request sees the IP address it comes from; the app does not read it, does not store it and does not use it for anything.</p>
+<p>This is verified by an automated test suite that inspects every request and fails if any of that data slips in, and since 2.6.0 <strong>the same check runs on your phone before each request is sent</strong>: if it finds your name, your avatar, your card, the name of a vice of your own, since 2.11.0 any answer to your guide or, since 2.12.0, what you tell the Paladin, the block of slips by day, the boss, the Witch, the album, the split across areas or the class, or an assistant answer that is not from its fixed list inside the request, the request does not go out. As in every HTTPS connection of any app, the server that receives the request sees the IP address it comes from; the app does not read it, does not store it and does not use it for anything.</p>
 <h3>How to switch it off</h3>
 <p>From <strong>Settings</strong> you can <strong>switch the AI Coach off completely</strong>. All its entry points disappear and absolutely nothing is sent. While it is on, nothing is sent until you tap its button.</p>
 <h3>Limits</h3>
@@ -167,7 +167,7 @@
 <p>RevenueCat's, Google's and Apple's handling of this data is governed by their own privacy policies.</p>
 
 <h2>11. Home-screen widget (Android)</h2>
-<p>If you place the widget, the app keeps in its own private storage just enough to draw it: the day's rings, your streak count and a small image of your character in classic mode (never the photo-based version). It requests no permissions, uses no connection and never leaves the device.</p>
+<p>If you place the widget, the app keeps in its own private storage just enough to draw it: the day's rings, your streak count and a small image of your drawn character (never a photograph). It requests no permissions, uses no connection and never leaves the device.</p>
 
 <h2>12. Permissions</h2>
 <ul>
