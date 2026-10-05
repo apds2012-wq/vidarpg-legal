@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Documento legale</p>
       <h1>Supporto</h1>
-      <p class="meta">Ultimo aggiornamento: 28 settembre 2026 · versione dell'applicazione 2.12.0</p>
+      <p class="meta">Ultimo aggiornamento: 5 ottobre 2026 · versione dell'applicazione 2.15.0</p>
 <p class="lead">Qualcosa non funziona o hai un dubbio? Scrivi a <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a>. Indica il modello del tuo telefono, la versione dell'applicazione (compare in fondo alla schermata Altro) e che cosa è successo. Risponde una sola persona, quindi la risposta può richiedere qualche giorno.</p>
 
 <div class="notice">
@@ -73,18 +73,23 @@
 
 <details>
   <summary>Che cosa fa esattamente il Coach IA?</summary>
-  <p>È una funzione opzionale che analizza i tuoi obiettivi e i tuoi progressi e ti propone aggiustamenti o azioni concrete, nella tua lingua. Agisce solo quando premi il suo pulsante, in tre punti: quando affini un obiettivo, quando chiedi l'analisi settimanale in Progressi o quando chiedi un suggerimento su una missione. In quel momento viene inviato ai servizi di intelligenza artificiale di Google, attraverso Firebase, un riassunto strutturato dei tuoi obiettivi e dei tuoi progressi: <strong>senza il tuo nome, senza fotografie e senza il contenuto della tua carta dorata</strong>. Non invia mai niente per conto suo.</p>
-  <p>Senza pagare, puoi fargli una domanda per settimana di calendario durante i trenta giorni successivi alla creazione della tua partita (o all'aggiornamento alla 2.5.0, se la partita è precedente), e nessuna dopo; con PRO, nove al giorno; e in ogni caso un tetto di dodici al giorno per telefono. Dalla 2.12.0 si adatta a ogni tipo di obiettivo, e quello che rispondi alla tua guida o alla Paladina non gli arriva mai. Puoi spegnerlo del tutto dalle Impostazioni; il resto dell'applicazione funziona esattamente uguale senza di lui. I suoi suggerimenti sono idee da valutare, non istruzioni né consulenza professionale. Più dettagli nell'<a href="privacy.html">Informativa sulla privacy</a>.</p>
+  <p>È una funzione opzionale che analizza i tuoi obiettivi e i tuoi progressi e ti propone aggiustamenti o azioni concrete, nella tua lingua. Agisce solo quando premi il suo pulsante, in tre punti: quando affini un obiettivo, quando chiedi l'analisi settimanale in Progressi o quando chiedi un suggerimento su una missione. In quel momento viene inviato al server del coach di VIDA RPG, su Cloudflare, che interroga un modello linguistico aperto (Llama) e non conserva quello che gli invii, un riassunto strutturato dei tuoi obiettivi e dei tuoi progressi: <strong>senza il tuo nome, senza fotografie e senza il contenuto della tua carta dorata</strong>. Non invia mai niente per conto suo.</p>
+  <p>Senza pagare, puoi fargli una domanda per settimana di calendario, senza scadenza; con PRO, una al giorno; ogni domanda in più, se la vuoi, guardando un annuncio con ricompensa volontario; e in ogni caso un tetto di dodici al giorno per telefono. Se un giorno il server esaurisce la sua quota gratuita, il coach lo dice, non ti scala la domanda e torna il giorno dopo. Dalla 2.12.0 si adatta a ogni tipo di obiettivo, e quello che rispondi alla tua guida o alla Paladina non gli arriva mai. Puoi spegnerlo del tutto dalle Impostazioni; il resto dell'applicazione funziona esattamente uguale senza di lui. I suoi suggerimenti sono idee da valutare, non istruzioni né consulenza professionale. Più dettagli nell'<a href="privacy.html">Informativa sulla privacy</a>.</p>
 </details>
 
 <details>
   <summary>L'applicazione ha bisogno di una connessione a internet?</summary>
-  <p>No. Tutto il gioco funziona offline. Ne hanno bisogno solo il Coach IA, quando lo richiami, e gli acquisti (la schermata di PRO e i programmi di sfida), quando li apri. L'attività fisica di Health Connect si legge sul telefono stesso e non ne ha bisogno.</p>
+  <p>No. Tutto il gioco funziona offline. Ne hanno bisogno solo il Coach IA, quando lo richiami, gli annunci con ricompensa, quando chiedi di guardarne uno, e gli acquisti (la schermata di PRO e i programmi di sfida), quando li apri. L'attività fisica di Health Connect si legge sul telefono stesso e non ne ha bisogno.</p>
 </details>
 
 <details>
   <summary>Che cos'è PRO e come si annulla?</summary>
-  <p>PRO è un abbonamento opzionale, mensile o annuale (quello annuale con sette giorni di prova gratuita). Porta il Coach IA a nove domande al giorno, permette di percorrere due cammini dei mentori alla volta, toglie il limite di Imprese (senza PRO la prima è gratis e la seconda si sblocca con Baros guadagnati giocando) e di piani del coach, e aggiunge statistiche avanzate, cosmetici esclusivi e i sei programmi di sfida, che si possono comprare anche singolarmente. Il download è gratuito, non c'è pubblicità da togliere e i Baros non si vendono con soldi veri. Si compra e si annulla da Google Play (o dall'App Store), come qualsiasi altro abbonamento: PRO resta attivo fino alla fine del periodo pagato, e l'applicazione non può annullarlo per te e non ti mette ostacoli.</p>
+  <p>PRO è un abbonamento opzionale, mensile o annuale (quello annuale con sette giorni di prova gratuita). Dà al Coach IA una domanda al giorno, permette di percorrere due cammini dei mentori alla volta, toglie il limite di Imprese (senza PRO la prima è gratis e la seconda si sblocca con Baros guadagnati giocando) e di piani del coach, e aggiunge statistiche avanzate, cosmetici esclusivi e i sei programmi di sfida, che si possono comprare anche singolarmente. Il download è gratuito, gli annunci sono sempre volontari (PRO non ne ha bisogno) e i Baros non si vendono con soldi veri. Si compra e si annulla da Google Play (o dall'App Store), come qualsiasi altro abbonamento: PRO resta attivo fino alla fine del periodo pagato, e l'applicazione non può annullarlo per te e non ti mette ostacoli.</p>
+</details>
+
+<details>
+  <summary>Ci sono annunci?</summary>
+  <p>Solo se li chiedi. Dalla 2.15.0 ci sono annunci con ricompensa di Google AdMob in due punti, e sempre dietro un pulsante che decidi tu di toccare: una domanda extra al Coach IA, quando hai già usato quella del tuo piano, e una nuova Impresa dalla terza senza PRO, al massimo una a settimana. Non danno EXP né Baros. Non compaiono mai all'apertura dell'app, quando segni abitudini o ricadute, alla chiusura della giornata, negli avvisi di vita bassa, nella Bussola, nelle pratiche, nell'acquisto né nelle schermate con dati di Health Connect, e quei dati non vengono mai usati per la pubblicità. Nello Spazio economico europeo, nel Regno Unito e in Svizzera, prima del primo annuncio vedrai il modulo di consenso di Google, che puoi riaprire in Impostazioni → Annunci → Privacy degli annunci. In Russia e su iPhone non ci sono annunci.</p>
 </details>
 
 <details>

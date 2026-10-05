@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0a0716">
-  <meta name="description" content="Qué datos guarda VIDA RPG, dónde se guardan y qué hace el Coach IA. Sin cuentas, sin publicidad, sin analítica: todo vive en tu dispositivo.">
+  <meta name="description" content="Qué datos guarda VIDA RPG, dónde se guardan, qué hace el Coach IA y cómo funcionan los anuncios bonificados. Sin cuentas ni analítica propia: tu partida vive en tu dispositivo.">
   <meta name="referrer" content="no-referrer">
   <title>Política de privacidad · VIDA RPG</title>
   <link rel="canonical" href="https://apds2012-wq.github.io/vidarpg-legal/es/privacidad.html">
@@ -39,17 +39,17 @@
     <article>
       <p class="kicker">Documento legal</p>
       <h1>Política de privacidad</h1>
-      <p class="meta">Última actualización: 1 de octubre de 2026 · versión de la aplicación 2.14.0</p>
-<p class="lead">VIDA RPG es una aplicación <strong>sin cuentas de usuario y sin registro</strong>. Todo lo que registras se queda en tu dispositivo, y la aplicación funciona entera sin conexión. Esta política explica, sin rodeos, qué se guarda, dónde, y qué ocurre en las dos únicas funciones opcionales que hablan con internet: el Coach IA y las compras dentro de la aplicación.</p>
+      <p class="meta">Última actualización: 5 de octubre de 2026 · versión de la aplicación 2.15.0</p>
+<p class="lead">VIDA RPG es una aplicación <strong>sin cuentas de usuario y sin registro</strong>. Todo lo que registras se queda en tu dispositivo, y la aplicación funciona entera sin conexión. Esta política explica, sin rodeos, qué se guarda, dónde, y qué ocurre en las funciones opcionales que hablan con internet: el Coach IA, los anuncios bonificados y las compras dentro de la aplicación.</p>
 
 <h2>1. Resumen</h2>
 <ul>
   <li>No hay cuentas, ni registro, ni contraseñas. No te pedimos nombre real, correo ni teléfono.</li>
-  <li>Toda tu partida se guarda <strong>exclusivamente en tu dispositivo</strong>. No existe servidor propio, ni base de datos remota, ni copia en la nube de VIDA RPG.</li>
-  <li>No hay publicidad, ni ningún componente (SDK) de publicidad, ni identificadores publicitarios, ni analítica de terceros, ni rastreadores.</li>
+  <li>Toda tu partida se guarda <strong>exclusivamente en tu dispositivo</strong>. No existe base de datos remota ni copia en la nube de VIDA RPG; el único servidor del desarrollador es el del Coach IA, y no guarda lo que le envías.</li>
+  <li>Desde la 2.15.0 hay <strong>anuncios bonificados de Google AdMob, solo si pides ver uno</strong>, en dos sitios: una consulta extra del Coach IA y una Hazaña más. Su componente no se carga hasta entonces. <strong>Tus datos de Health Connect no se usan nunca para publicidad.</strong> No hay analítica propia ni rastreadores de VIDA RPG.</li>
   <li>La cámara y la galería se usan solo si decides crear tu avatar a partir de una foto, y la foto nunca se guarda ni se envía.</li>
   <li>Las notificaciones son locales y opcionales.</li>
-  <li>El <strong>Coach IA</strong> es opcional y solo envía algo cuando tú pulsas su botón. Puede apagarse por completo.</li>
+  <li>El <strong>Coach IA</strong> es opcional y solo envía algo cuando tú pulsas su botón; desde la 2.15.0 lo atiende un servidor del desarrollador en Cloudflare que no guarda tus consultas. Puede apagarse por completo.</li>
   <li>Las <strong>compras</strong> —la suscripción PRO y los programas de desafío— son opcionales; las gestiona Google Play (o la App Store) y las valida RevenueCat. <strong>La aplicación no recibe ningún dato de pago.</strong> Si no compras, no se conecta con nadie por este concepto.</li>
   <li>Desinstalar la aplicación elimina todos los datos. El desarrollador no tiene copia de nada.</li>
   <li>La <strong>actividad física</strong> (pasos y carreras) es opcional: si la activas, se lee de Health Connect al abrir la app y nunca sale del teléfono.</li>
@@ -75,7 +75,7 @@
   <li>Desde la 2.5.0: los contadores del plan gratuito (hasta la 2.11.0, cuántas misiones de la biblioteca habías añadido cada semana; desde la 2.12.0 cuenta el número de Hazañas empezadas, descrito arriba), qué ofertas se te han mostrado ya, y tus <strong>programas de desafío</strong>: el que tienes en curso con sus días hechos, los terminados con su porcentaje y las insignias ganadas.</li>
   <li>Si has comprado algo: si tu suscripción está activa, en qué estado (activa, en prueba, en periodo de gracia, cancelada o caducada), con qué plan y hasta cuándo; qué programas de desafío has comprado; y si hay un pago pendiente de confirmar por la tienda. Nada más: ni el recibo, ni el importe, ni el método de pago.</li>
 </ul>
-<p>No se recoge ningún dato identificativo: ni nombre real, ni correo, ni teléfono, ni identificadores del dispositivo, ni ubicación. Tampoco se guarda el código de país que usa el Coach IA: se lee de la configuración del sistema en el momento de la consulta y no se escribe en la partida (sección 8).</p>
+<p>No se recoge ningún dato identificativo: ni nombre real, ni correo, ni teléfono, ni identificadores del dispositivo, ni ubicación (el identificador de instalación del Coach IA es aleatorio y no identifica el dispositivo; sección 8). Tampoco se guarda el código de país que usa el Coach IA: se lee de la configuración del sistema en el momento de la consulta y no se escribe en la partida (sección 8).</p>
 
 <h2>3. Dónde se guardan y quién puede verlos</h2>
 <p>Exclusivamente en el almacenamiento privado de la aplicación en tu dispositivo, a través de la API de preferencias del sistema (<code>SharedPreferences</code> en Android, <code>UserDefaults</code> en iOS). <strong>No se envían a ningún servidor.</strong> El desarrollador no puede verlos, no los recibe y no tiene forma de acceder a ellos.</p>
@@ -84,10 +84,9 @@
 <h2>4. Lo que la aplicación no hace</h2>
 <ul>
   <li>No crea cuentas ni perfiles de usuario.</li>
-  <li>No muestra publicidad, y no la mostrará: es un principio de producto, no una situación temporal.</li>
-  <li>No incluye ningún SDK ni componente de publicidad, tampoco de anuncios recompensados.</li>
-  <li>No incluye rastreadores publicitarios ni herramientas de analítica de terceros. No hay cookies ni perfilado.</li>
-  <li>No vende ni comparte datos con nadie.</li>
+  <li>No muestra ningún anuncio que no pidas: los anuncios bonificados (sección 9) solo aparecen cuando tú tocas el botón de ver uno. Hasta la 2.14 esta política decía que no habría publicidad nunca; desde la 2.15.0, por decisión del desarrollador, esa promesa se retira. <strong>Se mantiene para siempre que los datos de Health Connect no alimentan publicidad.</strong></li>
+  <li>No incluye herramientas de analítica propias. Lo que hace Google al mostrarte un anuncio que has pedido se explica en la sección 9.</li>
+  <li>No vende datos a nadie.</li>
   <li>No usa micrófono, ubicación, contactos ni seguimiento entre aplicaciones.</li>
 </ul>
 
@@ -112,7 +111,12 @@
 <h3>Cuándo se envía algo</h3>
 <p><strong>Únicamente cuando tú lo invocas de forma expresa</strong> pulsando su botón, en uno de estos tres sitios: al afinar un objetivo, al pedir el análisis semanal en Progreso o al pedir una sugerencia sobre una misión concreta. La aplicación nunca envía nada por su cuenta: ni en segundo plano, ni al abrirse, ni al cerrarse.</p>
 <h3>A dónde va</h3>
-<p>A los servicios de inteligencia artificial de <strong>Google</strong>, a través de <strong>Firebase</strong> (Firebase AI Logic, que consulta al modelo Gemini). No hay ningún servidor del desarrollador por medio. El tratamiento que Google hace de esos datos se rige por las condiciones de Firebase y de la API de Gemini.</p>
+<p>Desde la versión 2.15.0, al <strong>servidor del coach de VIDA RPG</strong>, un programa pequeño que funciona en <strong>Cloudflare</strong> (Cloudflare, Inc.) y consulta allí mismo un modelo de lenguaje abierto, <strong>Llama</strong>, a través de <strong>Workers AI</strong>. Hasta la 2.14 la consulta iba a Google (Firebase AI Logic y el modelo Gemini); eso se ha retirado entero y la aplicación ya no incluye Firebase.</p>
+<ul>
+  <li>Ese servidor <strong>pasa la consulta al modelo y te devuelve la respuesta: no guarda ni registra lo que envías ni lo que contesta</strong>. Tiene los registros de Cloudflare desactivados.</li>
+  <li><strong>Cloudflare no usa ese contenido para entrenar modelos ni para mejorar sus servicios.</strong></li>
+  <li>El tratamiento se rige por el <strong>acuerdo de tratamiento de datos de Cloudflare</strong>, que incluye las <strong>cláusulas contractuales tipo</strong> de la Unión Europea y su adhesión al <strong>Data Privacy Framework</strong> para las transferencias fuera del Espacio Económico Europeo.</li>
+</ul>
 <h3>Qué se envía</h3>
 <p>Un <strong>resumen estructurado</strong> de lo que estás consultando: el objetivo con su cifra, su fecha y las horas comprometidas; tu experiencia por día de las últimas dos semanas; cuántos hábitos has cumplido en cada área; tus rachas; los vicios registrados; tus misiones activas con su avance, y el idioma en el que debe responder.</p>
 <p>Desde la 2.12.0 la aplicación decide en el teléfono la <strong>clase</strong> de tu objetivo —corporal, forma física, ingresos, ahorro o deuda, proyecto, estudio, creativo, relaciones, servicio a los demás, vida interior, hábito u objetivo abierto— y su forma (una cifra, un hábito o hitos), y esa clase viaja en las tres consultas. Al afinar un objetivo viajan además <strong>las respuestas a las preguntas que hace esa clase</strong>, cada una elegida de una lista cerrada, nunca un texto escrito por ti: el momento del día, tu experiencia previa, de dónde saldrá el ingreso, si se trata de ahorrar o de pagar una deuda, si pasa por gastar menos, por ingresar más o por las dos cosas, si el aprendizaje tiene examen o es por libre, dónde estás hoy con ello, si depende de ti o también de otras personas y si te imaginas haciéndolo por tu cuenta o en grupo; y, solo en las clases a las que les dicen algo, cuánto dominas el tema, si te centras en una sola cosa y tu motivación, que hasta la 2.11.0 viajaban con cualquier objetivo. <strong>La pregunta sobre limitaciones físicas no viaja ni se guarda en la partida</strong>: solo sirve para enseñarte en esa misma pantalla el aviso de hablarlo con un profesional de la salud.</p>
@@ -127,19 +131,38 @@
   <li><strong>El nombre de la caída «Porno compulsivo»</strong> del catálogo (desde la 2.11.0): viaja como un vicio propio, con su categoría, su frecuencia, su impacto y cuántas veces la registraste, nunca con su nombre.</li>
   <li><strong>Nada de lo que la 2.12.0 guarda en el teléfono</strong>: ni lo que contestas a la Paladina, ni la respuesta sobre limitaciones físicas, ni la guía que eliges, ni tus caídas por día, el jefe semanal, la Bruja sanadora, el álbum, el reparto por áreas, la clase de tu personaje o los avisos de vida baja.</li>
   <li><strong>Ningún otro dato de localización</strong>: ni tu zona horaria, ni tu ciudad, ni coordenadas, ni nada parecido. Solo el código de país de dos letras que se explica arriba.</li>
+  <li><strong>Ningún dato de Health Connect.</strong></li>
 </ul>
-<p>Esto lo comprueba un conjunto de pruebas automáticas que revisa cada petición y falla si alguno de esos datos se cuela, y desde la 2.6.0 <strong>la misma comprobación se ejecuta en tu teléfono antes de cada envío</strong>: si encontrara tu nombre, tu avatar, tu tarjeta, el nombre de un vicio propio, desde la 2.11.0 cualquier respuesta a tu guía y, desde la 2.12.0, lo que contestas a la Paladina, el bloque de las caídas por día, el jefe, la Bruja, el álbum, el reparto por áreas o la clase de tu personaje, o una respuesta del asistente que no sea de su lista cerrada dentro de la petición, la petición no sale. Como en toda conexión HTTPS de cualquier aplicación, el servidor que recibe la petición ve la dirección IP desde la que llega; la aplicación no la lee, no la guarda y no la usa para nada.</p>
+<p>Esto lo comprueba un conjunto de pruebas automáticas que revisa cada petición y falla si alguno de esos datos se cuela, y desde la 2.6.0 <strong>la misma comprobación se ejecuta en tu teléfono antes de cada envío</strong>: si encontrara tu nombre, tu avatar, tu tarjeta, el nombre de un vicio propio, desde la 2.11.0 cualquier respuesta a tu guía y, desde la 2.12.0, lo que contestas a la Paladina, el bloque de las caídas por día, el jefe, la Bruja, el álbum, el reparto por áreas o la clase de tu personaje, o una respuesta del asistente que no sea de su lista cerrada dentro de la petición, la petición no sale.</p>
+<p>Desde la 2.15.0 viaja también, en una cabecera aparte, un <strong>identificador aleatorio de instalación</strong>: la aplicación lo genera la primera vez que consultas, lo guarda en el teléfono fuera de la partida (no viaja al exportarla) y no está ligado a ti, a ninguna cuenta ni al dispositivo; solo sirve para limitar cuántas consultas hace cada instalación. Y, como en toda conexión HTTPS, el servidor ve la <strong>dirección IP</strong> desde la que llega la petición: la usa solo para frenar el abuso. De la IP y del identificador guarda únicamente, durante ese día, una huella irreversible que cambia cada día, junto a un contador; al día siguiente se sustituye.</p>
 <h3>Cómo se desactiva</h3>
 <p>Desde <strong>Ajustes</strong> puedes <strong>apagar el Coach IA por completo</strong>. Al hacerlo desaparecen todos sus puntos de entrada y no se envía absolutamente nada. Mientras esté encendido, nada se envía hasta que tú pulses su botón.</p>
 <h3>Límites</h3>
-<p>La cuota depende del plan: sin pagar, una consulta por semana natural durante los treinta días siguientes a la creación de la partida (o a la actualización a la 2.5.0, para las partidas anteriores) y ninguna después; con PRO, nueve al día. Por encima de cualquier plan hay un tope de doce consultas al día por dispositivo. El contador está a la vista. La protección antiabuso la proporciona Firebase App Check.</p>
+<p>Desde la 2.15.0: sin pagar, <strong>una consulta por semana natural</strong> (de lunes a domingo, en hora UTC), sin fecha de caducidad; con PRO, <strong>una al día</strong>; y cada consulta de más, <strong>solo si la pides</strong>, viendo un anuncio bonificado (sección 9). Por encima de todo hay un tope de doce consultas al día por dispositivo. El contador está a la vista.</p>
+<p>El servidor funciona con el <strong>cupo diario gratuito</strong> de Workers AI, común a toda la comunidad. Si un día se agota, el coach lo dice, no te descuenta la consulta y vuelve al día siguiente; antes de ofrecerte un anuncio para una consulta extra, la aplicación comprueba que queda cupo, y si no queda no te ofrece ninguno. El servidor limita además las consultas por instalación y por dirección IP.</p>
 
-<h2>9. Actividad física (Health Connect)</h2>
+<h2>9. Anuncios bonificados</h2>
+<h3>Dónde, y solo cuando tú los pides</h3>
+<p>Desde la versión 2.15.0 hay anuncios bonificados en <strong>dos</strong> sitios y en ninguno más, y en los dos aparece un botón que <strong>tú</strong> decides tocar:</p>
+<ul>
+  <li><strong>Coach IA</strong>: cuando ya has usado la consulta de tu plan, puedes ver un anuncio para <strong>una consulta más</strong>, válida ese día. Antes de ofrecértelo, la aplicación comprueba que el servidor del coach tiene cupo; si no lo tiene, no te ofrece ningún anuncio.</li>
+  <li><strong>Hazañas</strong>: desde la tercera Hazaña, en vez de PRO, un anuncio abre <strong>una</strong> Hazaña nueva, <strong>como máximo una por semana</strong>.</li>
+</ul>
+<p><strong>Un anuncio no da EXP ni Baros.</strong> Nunca aparece un anuncio al abrir la aplicación, al marcar hábitos, al registrar caídas, al cerrar el día, en los avisos de vida baja, en la Brújula, en las prácticas con temporizador, en la pantalla de compra ni en las pantallas que muestran datos de Health Connect (Inicio, Progreso, Estadísticas, las misiones de kilómetros y la pantalla de muerte).</p>
+<h3>Quién los sirve y qué recibe</h3>
+<p>Los sirve <strong>Google AdMob</strong> (en el Espacio Económico Europeo, Google Ireland Limited). Su componente <strong>solo se carga cuando pides el primer anuncio</strong>, nunca al abrir la aplicación. Para mostrarlo, según la información que Google publica para los desarrolladores, recoge y envía a Google la <strong>dirección IP</strong> (de la que se deduce una ubicación aproximada), <strong>datos técnicos</strong> del teléfono y de la aplicación, <strong>cómo interactúas con el anuncio</strong>, datos de diagnóstico y el <strong>identificador de publicidad</strong> del teléfono (y el identificador de conjunto de aplicaciones), para servir y medir anuncios, para analítica y para prevenir el fraude, cifrados en tránsito y según la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>.</p>
+<p><strong>VIDA RPG no le pasa a Google ningún dato de tu partida</strong>: ni tu nombre, ni tus objetivos, ni tus hábitos, ni nada del Coach IA. <strong>Tus datos de actividad física de Health Connect no se envían nunca al componente de anuncios ni se usan, de ninguna forma, para publicidad.</strong></p>
+<h3>Consentimiento</h3>
+<p>Antes del primer anuncio, si estás en el <strong>Espacio Económico Europeo, el Reino Unido o Suiza</strong>, verás el formulario de consentimiento de Google (Google User Messaging Platform, una plataforma de gestión del consentimiento certificada). Ahí eliges si los anuncios pueden ser personalizados. Puedes cambiar tu elección cuando quieras en <strong>Ajustes → Anuncios → Privacidad de los anuncios</strong>, y restablecer o eliminar el identificador de publicidad desde los ajustes de Android. Si no completas el formulario, no se muestra ningún anuncio.</p>
+<h3>Dónde no hay anuncios</h3>
+<p>En <strong>Rusia</strong>, donde Google AdMob no sirve anuncios, la opción no aparece y la aplicación lo dice; queda PRO. En <strong>iPhone</strong> la aplicación no muestra anuncios.</p>
+
+<h2>10. Actividad física (Health Connect)</h2>
 <p>Es <strong>opcional y nace apagada</strong>. Si la activas, la aplicación lee de Health Connect —el almacén de datos de salud de Android— tres cosas: tus pasos de cada día, la distancia que otra aplicación haya registrado y las sesiones de ejercicio de tipo carrera escritas por otras aplicaciones (Strava, Samsung Health, Google Health u otra), con el nombre de la aplicación que las escribió. Solo de los últimos treinta días, solo al abrir la app y nunca en segundo plano. VIDA RPG no escribe nada en Health Connect.</p>
 <p>Esos datos se quedan en tu teléfono, dentro de tu partida, y sirven para pagar tramos de pasos y carreras al cerrar cada día y para calcular tu rango, también en el teléfono. <strong>No salen del dispositivo, no se envían a ningún servidor y no se usan para publicidad</strong> ni para nada más. Lo único que puede viajar es la medida de tu misión principal si tú la registras a partir de una carrera: viaja al Coach IA por el mismo camino que cualquier medida que escribas a mano, descrito en el apartado del Coach IA.</p>
 <p>Se desactiva en Ajustes, que deja de leer y borra los días leídos. El permiso se revoca en Health Connect quitando VIDA RPG de sus aplicaciones con acceso; sin él la aplicación funciona entera igual.</p>
 
-<h2>10. Las compras: PRO y los programas de desafío</h2>
+<h2>11. Las compras: PRO y los programas de desafío</h2>
 <p>La descarga es gratuita y trae el juego completo. VIDA RPG ofrece una suscripción opcional, <strong>PRO</strong> —mensual o anual, la anual con siete días de prueba gratuita—, y seis <strong>programas de desafío</strong> que también se pueden comprar sueltos como compra única. Ninguna compra desbloquea el juego, quita anuncios (no hay) ni vende Baros con dinero real, que solo se ganan jugando. Los cosméticos también se ganan jugando y no se venden sueltos: unos pocos exclusivos vienen con PRO o al terminar un programa. Desde la 2.6.0 ningún mentor ni ninguna técnica se abre por nivel ni con Baros, sino completando el mentor anterior, igual con PRO que sin él; PRO permite recorrer dos caminos de mentores a la vez. No existe compra vitalicia.</p>
 <h3>Quién cobra y quién comprueba</h3>
 <ul>
@@ -166,20 +189,21 @@
 <p>Si tu suscripción está activa, en qué estado, con qué plan y hasta cuándo; qué programas has comprado; y si hay un pago pendiente. Ese bloque no viaja en el fichero de exportar la partida: las compras son de tu cuenta de la tienda y se recuperan con <strong>«Restaurar compras»</strong>, en Ajustes y en la pantalla de PRO. La suscripción se renueva sola al final de cada periodo hasta que la canceles, y se cancela desde la propia tienda; conservas PRO hasta el final del periodo pagado. La prueba gratuita pasa a suscripción al terminar si no la cancelas antes.</p>
 <p>El tratamiento que RevenueCat, Google y Apple hacen de estos datos se rige por sus propias políticas de privacidad.</p>
 
-<h2>11. Widget de pantalla de inicio (Android)</h2>
+<h2>12. Widget de pantalla de inicio (Android)</h2>
 <p>Si colocas el widget, la aplicación deja en su propio almacenamiento privado lo justo para pintarlo: los anillos del día, la cifra de la racha y una imagen pequeña de tu personaje dibujado (nunca una fotografía). No pide permisos, no usa conexión y no sale del dispositivo.</p>
 
-<h2>12. Permisos</h2>
+<h2>13. Permisos</h2>
 <ul>
   <li><strong>Notificaciones</strong>: es el único permiso que se te pregunta de entrada, una sola vez, al terminar de crear tu personaje. Puedes denegarlo, y los recordatorios se apagan cuando quieras desde Ajustes o desde el sistema.</li>
   <li><strong>Cámara</strong>: solo para hacer la foto con la que se crea el avatar, se pide en ese momento y puedes denegarla. La cámara está declarada como no obligatoria. Elegir una foto de la galería no necesita permiso: desde la 2.6.0 el paquete no declara ninguno de lectura de imágenes.</li>
-  <li><strong>Internet</strong>: lo declara el motor sobre el que se ejecuta la aplicación. Todos los recursos van empaquetados; las únicas peticiones de red posibles son las del Coach IA y las de la suscripción, y solo cuando tú las provocas.</li>
+  <li><strong>Internet</strong>: lo declara el motor sobre el que se ejecuta la aplicación. Todos los recursos van empaquetados; las únicas peticiones de red posibles son las del Coach IA, las de los anuncios que pides y las de la suscripción, y solo cuando tú las provocas.</li>
+  <li><strong>Identificador de publicidad</strong> (desde la 2.15.0): lo añade el componente de anuncios de Google, junto con tres permisos técnicos de las API de publicidad de Android. No te piden aprobación, solo se usan si pides un anuncio, y el identificador se restablece o se elimina desde los ajustes de Android.</li>
   <li><strong>Vibración</strong>, y los permisos técnicos que usa el sistema para reprogramar los recordatorios tras reiniciar el teléfono y para abrir la hoja de compra de la tienda. Ninguno de ellos te pide aprobación ni accede a tus datos.</li>
   <li><strong>Health Connect</strong>: tres permisos de lectura —pasos, distancia y sesiones de ejercicio— que se piden solo si activas la actividad física, en la pantalla de permisos del propio sistema; ninguno de segundo plano ni de histórico ampliado, y la aplicación no escribe nada en Health Connect. Se revocan desde Health Connect.</li>
 </ul>
 <p>La aplicación no solicita micrófono, ubicación, contactos, seguimiento entre aplicaciones, lectura de la galería, escritura en almacenamiento externo ni alarmas exactas, en ninguna plataforma.</p>
 
-<h2>13. Tus derechos (RGPD)</h2>
+<h2>14. Tus derechos (RGPD)</h2>
 <p>El Reglamento General de Protección de Datos de la Unión Europea te reconoce los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición sobre tus datos personales. En VIDA RPG el desarrollador <strong>no recopila ni conserva datos personales en servidores propios</strong>, así que no tiene nada tuyo a lo que dar acceso, corregir o borrar. El ejercicio de esos derechos se resuelve <strong>en tu propio dispositivo</strong>:</p>
 <ul>
   <li><strong>Acceso y portabilidad</strong>: la opción de exportar la partida, en Ajustes, te entrega todos tus datos en un fichero legible.</li>
@@ -188,16 +212,16 @@
 </ul>
 <p>Para cualquier consulta sobre privacidad, escribe a <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a>. Si consideras que tus derechos no se respetan, puedes reclamar ante la Agencia Española de Protección de Datos o ante la autoridad de control de tu país.</p>
 
-<h2>14. Menores</h2>
-<p>La aplicación <strong>no está dirigida a menores de trece años</strong> y no recopila datos de ellos. Como no recopila datos identificativos de nadie, tampoco puede recopilarlos de menores. Si eres padre, madre o tutor y crees que un menor ha usado la aplicación, recuerda que todos sus datos están en el dispositivo y se eliminan desinstalándola.</p>
+<h2>15. Menores</h2>
+<p>VIDA RPG está pensada para <strong>personas adultas</strong> y no se dirige a menores. No recopila datos identificativos de nadie, y los anuncios, si los pides, se piden a Google sin ningún dato de tu partida. Si eres padre, madre o tutor y crees que un menor ha usado la aplicación, recuerda que todos sus datos están en el dispositivo y se eliminan desinstalándola.</p>
 
-<h2>15. Desinstalar la aplicación</h2>
+<h2>16. Desinstalar la aplicación</h2>
 <p>Desinstalar VIDA RPG elimina todos los datos de la partida. <strong>No existe copia alguna en poder del desarrollador</strong>, así que no hay nada más que borrar ni que pedir. Solo quedarían los ficheros que tú mismo hubieras exportado y guardado donde eligieras.</p>
 
-<h2>16. Cambios en esta política</h2>
+<h2>17. Cambios en esta política</h2>
 <p>Si en el futuro cambia el tratamiento de datos, esta política se actualizará, se publicará en esta misma dirección y se mostrará dentro de la aplicación (Más → Privacidad), en los siete idiomas.</p>
 
-<h2>17. Responsable</h2>
+<h2>18. Responsable</h2>
 <p><strong>Alex Vida</strong>, desarrollador independiente, España.<br>Contacto: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>
     </article>
   </main>
