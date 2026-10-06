@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Documento legal</p>
       <h1>Política de privacidad</h1>
-      <p class="meta">Última actualización: 5 de octubre de 2026 · versión de la aplicación 2.16.0</p>
+      <p class="meta">Última actualización: 6 de octubre de 2026 · versión de la aplicación 2.16.0</p>
 <p class="lead">VIDA RPG es una aplicación <strong>sin cuentas de usuario y sin registro</strong>. Todo lo que registras se queda en tu dispositivo, y la aplicación funciona entera sin conexión. Esta política explica, sin rodeos, qué se guarda, dónde, y qué ocurre en las funciones opcionales que hablan con internet: el Coach IA, los anuncios bonificados y las compras dentro de la aplicación.</p>
 
 <h2>1. Resumen</h2>
@@ -197,11 +197,16 @@
 <ul>
   <li>el saldo;</li>
   <li>el número de pedido de cada compra de créditos, con su producto, su fecha y si se devolvió;</li>
+  <li>el último día con actividad (una compra, un gasto o una recuperación), para saber cuándo toca borrarlo todo;</li>
   <li>una lista corta de los últimos usos: un código aleatorio por uso, su fecha y si fue para el Coach o para una Hazaña, solo para no descontar dos veces el mismo.</li>
 </ul>
-<p>RevenueCat le avisa de cada compra y de cada devolución de créditos con el identificador anónimo, el producto y el número de pedido. <strong>No guarda el contenido de ninguna consulta.</strong> Cuando gastas un crédito, la app envía ese identificador anónimo al servidor del Coach.</p>
+<p>RevenueCat le avisa de cada compra y de cada devolución de créditos con el identificador anónimo, el producto y el número de pedido. <strong>No guarda el contenido de ninguna consulta.</strong> Cuando gastas un crédito, la app envía ese identificador anónimo al servidor del Coach. Una consulta pagada con un crédito envía al Coach exactamente lo mismo que cualquier otra consulta (sección 8); no viaja nada más.</p>
+<h3>Cuánto tiempo se guarda y cómo se borra</h3>
+<p>Estos datos del servidor <strong>se borran solos a los 24 meses sin actividad</strong>, es decir, sin ninguna compra, ningún gasto y ninguna recuperación en ese tiempo. Antes de ese plazo puedes pedir que se borren: escribe a <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a> con el número de pedido de tu justificante. Al borrarlos, los créditos que no hayas gastado se pierden.</p>
+<h3>Recuperar mis créditos</h3>
+<p>Si reinstalas la aplicación, la instalación nueva recibe otro identificador anónimo de compras y el saldo queda ligado al anterior. Para recuperarlo, en Ajustes → Créditos de consulta → «Recuperar mis créditos» escribe el número de pedido de Google Play (empieza por <code>GPA.</code> y está en el justificante de la aplicación y en el recibo que Google te envía por correo). La aplicación envía al servidor del Coach ese número de pedido y el identificador anónimo de compras de la instalación nueva. El servidor pasa el saldo no gastado del identificador anterior al nuevo, <strong>una sola vez por pedido</strong>, y no revela nada más. Los intentos están limitados a <strong>cinco al día por instalación</strong>; para contarlos se usa una huella irreversible que cambia cada día y se borra al día siguiente.</p>
 <h3>Qué se guarda en tu teléfono</h3>
-<p>En la partida, los <strong>justificantes</strong> de tus compras de créditos (fecha, producto, precio, créditos, número de pedido y el consentimiento que diste antes de pagar) y la última cifra de tu saldo. El identificador anónimo se guarda en el teléfono, fuera de la partida. Para cualquier duda sobre estos datos, o para pedir la devolución de créditos no gastados (las condiciones están en los <a href="terminos.html">Términos de uso</a>), escribe a <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a> con el número de pedido de tu justificante.</p>
+<p>En la partida, los <strong>justificantes</strong> de tus compras de créditos (fecha, producto, precio, créditos, número de pedido y el consentimiento que diste antes de pagar) y la última cifra de tu saldo. El identificador anónimo se guarda en el teléfono, fuera de la partida. Para cualquier duda sobre estos datos, o para pedir la devolución de créditos no gastados (las condiciones están en los <a href="terminos.html">Términos de uso</a>), escribe a <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a> con el número de pedido de tu justificante.</p>
 
 <h2>13. Widget de pantalla de inicio (Android)</h2>
 <p>Si colocas el widget, la aplicación deja en su propio almacenamiento privado lo justo para pintarlo: los anillos del día, la cifra de la racha y una imagen pequeña de tu personaje dibujado (nunca una fotografía). No pide permisos, no usa conexión y no sale del dispositivo.</p>
@@ -210,7 +215,7 @@
 <ul>
   <li><strong>Notificaciones</strong>: es el único permiso que se te pregunta de entrada, una sola vez, al terminar de crear tu personaje. Puedes denegarlo, y los recordatorios se apagan cuando quieras desde Ajustes o desde el sistema.</li>
   <li><strong>Cámara</strong>: solo para hacer la foto con la que se crea el avatar, se pide en ese momento y puedes denegarla. La cámara está declarada como no obligatoria. Elegir una foto de la galería no necesita permiso: desde la 2.6.0 el paquete no declara ninguno de lectura de imágenes.</li>
-  <li><strong>Internet</strong>: lo declara el motor sobre el que se ejecuta la aplicación. Todos los recursos van empaquetados; las únicas peticiones de red posibles son las del Coach IA, las de los anuncios que pides y las de la suscripción, y solo cuando tú las provocas. Desde la 2.16.0, también las de los créditos de consulta, cuando los compras o los gastas.</li>
+  <li><strong>Internet</strong>: lo declara el motor sobre el que se ejecuta la aplicación. Todos los recursos van empaquetados; las únicas peticiones de red posibles son las del Coach IA, las de los anuncios que pides y las de la suscripción, y solo cuando tú las provocas. Desde la 2.16.0, también las de los créditos de consulta, cuando los compras, los gastas o los recuperas.</li>
   <li><strong>Identificador de publicidad</strong> (desde la 2.15.0): lo añade el componente de anuncios de Google, junto con tres permisos técnicos de las API de publicidad de Android. No te piden aprobación, solo se usan si pides un anuncio, y el identificador se restablece o se elimina desde los ajustes de Android.</li>
   <li><strong>Vibración</strong>, y los permisos técnicos que usa el sistema para reprogramar los recordatorios tras reiniciar el teléfono y para abrir la hoja de compra de la tienda. Ninguno de ellos te pide aprobación ni accede a tus datos.</li>
   <li><strong>Health Connect</strong>: tres permisos de lectura —pasos, distancia y sesiones de ejercicio— que se piden solo si activas la actividad física, en la pantalla de permisos del propio sistema; ninguno de segundo plano ni de histórico ampliado, y la aplicación no escribe nada en Health Connect. Se revocan desde Health Connect.</li>
@@ -223,21 +228,21 @@
   <li><strong>Acceso y portabilidad</strong>: la opción de exportar la partida, en Ajustes, te entrega todos tus datos en un fichero legible.</li>
   <li><strong>Rectificación</strong>: todo lo que has escrito se edita dentro de la aplicación.</li>
   <li><strong>Supresión</strong>: el botón «Reiniciar partida» de Ajustes borra todo el progreso, y desinstalar la aplicación elimina todos los datos.</li>
-  <li><strong>Créditos de consulta</strong> (desde la 2.16.0): su saldo y sus compras están en el servidor del Coach, ligados a un identificador anónimo, no a tu nombre; para cualquier petición sobre ellos, escribe al contacto de abajo con el número de pedido de tu justificante.</li>
+  <li><strong>Créditos de consulta</strong> (desde la 2.16.0): su saldo y sus compras están en el servidor del Coach, ligados a un identificador anónimo, no a tu nombre. Puedes pedir que se borren, o cualquier otra cosa sobre ellos, escribiendo al contacto de abajo con el número de pedido de tu justificante; si no, se borran solos a los 24 meses sin actividad (sección 12).</li>
 </ul>
-<p>Para cualquier consulta sobre privacidad, escribe a <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a>. Si consideras que tus derechos no se respetan, puedes reclamar ante la Agencia Española de Protección de Datos o ante la autoridad de control de tu país.</p>
+<p>Para cualquier consulta sobre privacidad, escribe a <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a>. Si consideras que tus derechos no se respetan, puedes reclamar ante la Agencia Española de Protección de Datos o ante la autoridad de control de tu país.</p>
 
 <h2>16. Menores</h2>
 <p>VIDA RPG está pensada para <strong>personas adultas</strong> y no se dirige a menores. No recopila datos identificativos de nadie, y los anuncios, si los pides, se piden a Google sin ningún dato de tu partida. Si eres padre, madre o tutor y crees que un menor ha usado la aplicación, recuerda que todos sus datos están en el dispositivo y se eliminan desinstalándola.</p>
 
 <h2>17. Desinstalar la aplicación</h2>
-<p>Desinstalar VIDA RPG elimina todos los datos de la partida. <strong>No existe copia alguna en poder del desarrollador</strong>, así que no hay nada más que borrar ni que pedir. Solo quedarían los ficheros que tú mismo hubieras exportado y guardado donde eligieras. La única excepción es el saldo de créditos de consulta, si compraste alguno: sigue en el servidor del Coach, ligado al identificador anónimo de compras (sección 12).</p>
+<p>Desinstalar VIDA RPG elimina todos los datos de la partida. <strong>No existe copia alguna en poder del desarrollador</strong>, así que no hay nada más que borrar ni que pedir. Solo quedarían los ficheros que tú mismo hubieras exportado y guardado donde eligieras. La única excepción es el saldo de créditos de consulta, si compraste alguno: sigue en el servidor del Coach, ligado al identificador anónimo de compras, hasta que pidas su borrado o pasen 24 meses sin actividad, y si vuelves a instalar la aplicación puedes recuperarlo con el número de pedido (sección 12).</p>
 
 <h2>18. Cambios en esta política</h2>
 <p>Si en el futuro cambia el tratamiento de datos, esta política se actualizará, se publicará en esta misma dirección y se mostrará dentro de la aplicación (Más → Privacidad), en los siete idiomas.</p>
 
 <h2>19. Responsable</h2>
-<p><strong>Alex Vida</strong>, desarrollador independiente, España.<br>Contacto: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>
+<p><strong>Alex Vida</strong>, desarrollador independiente, España.<br>Contacto: <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a></p>
     </article>
   </main>
   <footer>
@@ -249,7 +254,7 @@
         <a href="eliminacion-de-datos.html">Política de eliminación de datos</a>
         <a href="soporte.html">Soporte</a>
       </nav>
-      <div>© 2026 Alex Vida · desarrollador independiente · España · Contacto: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></div>
+      <div>© 2026 Alex Vida · desarrollador independiente · España · Contacto: <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a></div>
     </div>
   </footer>
 </body>

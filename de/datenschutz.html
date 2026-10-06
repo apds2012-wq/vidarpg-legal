@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Rechtsdokument</p>
       <h1>Datenschutzerklärung</h1>
-      <p class="meta">Zuletzt aktualisiert: 5. Oktober 2026 · App-Version 2.16.0</p>
+      <p class="meta">Zuletzt aktualisiert: 6. Oktober 2026 · App-Version 2.16.0</p>
 <p class="lead">VIDA RPG ist eine App <strong>ohne Benutzerkonten und ohne Registrierung</strong>. Alles, was du einträgst, bleibt auf deinem Gerät, und die ganze App funktioniert offline. Diese Erklärung sagt ohne Umschweife, was gespeichert wird, wo, und was in den optionalen Funktionen geschieht, die mit dem Internet sprechen: dem KI-Coach, der Werbung mit Belohnung und den Käufen in der App.</p>
 
 <h2>1. Zusammenfassung</h2>
@@ -197,11 +197,16 @@
 <ul>
   <li>das Guthaben;</li>
   <li>die Bestellnummer jedes Credit-Kaufs mit Produkt, Datum und der Angabe, ob er erstattet wurde;</li>
+  <li>den letzten Tag mit Aktivität (ein Kauf, ein verbrauchter Credit oder ein Zurückholen von Credits), damit feststeht, wann alles zu löschen ist;</li>
   <li>eine kurze Liste der letzten Verwendungen: ein zufälliger Code pro Verwendung, ihr Datum und ob sie für den Coach oder für eine Heldentat war, nur damit dieselbe Verwendung nicht zweimal abgebucht wird.</li>
 </ul>
-<p>RevenueCat meldet ihm jeden Kauf und jede Erstattung von Credits mit der anonymen Kennung, dem Produkt und der Bestellnummer. <strong>Den Inhalt von Anfragen speichert er nicht.</strong> Wenn du einen Credit verbrauchst, sendet die App diese anonyme Kennung an den Server des Coachs.</p>
+<p>RevenueCat meldet ihm jeden Kauf und jede Erstattung von Credits mit der anonymen Kennung, dem Produkt und der Bestellnummer. <strong>Den Inhalt von Anfragen speichert er nicht.</strong> Wenn du einen Credit verbrauchst, sendet die App diese anonyme Kennung an den Server des Coachs. Eine mit einem Credit bezahlte Anfrage sendet dem Coach genau dasselbe wie jede andere Anfrage (Abschnitt 8); darüber hinaus wird nichts übertragen.</p>
+<h3>Speicherdauer und Löschung</h3>
+<p>Diese Daten auf dem Server <strong>werden nach 24 Monaten ohne Aktivität automatisch gelöscht</strong>, also wenn es in dieser Zeit keinen Kauf, keinen verbrauchten Credit und kein Zurückholen von Credits gibt. Vorher kannst du ihre Löschung beantragen: Schreib an <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a> und gib die Bestellnummer aus deinem Kaufbeleg an. Mit der Löschung verfallen die Credits, die du nicht verbraucht hast.</p>
+<h3>Meine Credits zurückholen</h3>
+<p>Wenn du die App neu installierst, erhält die neue Installation eine andere anonyme Kaufkennung, und das Guthaben bleibt mit der bisherigen verknüpft. Um es zurückzuholen, gib unter Einstellungen → Anfrage-Credits → „Meine Credits zurückholen“ die Google-Play-Bestellnummer ein (sie beginnt mit <code>GPA.</code> und steht auf dem Kaufbeleg in der App und auf der Quittung, die Google dir per E-Mail schickt). Die App sendet diese Bestellnummer und die anonyme Kaufkennung der neuen Installation an den Server des Coachs. Der Server überträgt das nicht verbrauchte Guthaben von der bisherigen Kennung auf die neue, <strong>nur einmal pro Bestellung</strong>, und gibt sonst nichts preis. Die Versuche sind auf <strong>fünf pro Tag und Installation</strong> begrenzt; gezählt werden sie mit einem nicht umkehrbaren Fingerabdruck, der sich jeden Tag ändert und am nächsten Tag gelöscht wird.</p>
 <h3>Was auf deinem Telefon gespeichert wird</h3>
-<p>Im Spielstand die <strong>Kaufbelege</strong> deiner Credit-Käufe (Datum, Produkt, Preis, Credits, Bestellnummer und die Zustimmung, die du vor der Zahlung erteilt hast) und der letzte bekannte Stand deines Guthabens. Die anonyme Kennung wird auf dem Telefon gespeichert, außerhalb des Spielstands. Bei Fragen zu diesen Daten oder um nicht verbrauchte Credits zurückzugeben (die Bedingungen stehen in den <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>), schreib an <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a> und gib die Bestellnummer aus deinem Kaufbeleg an.</p>
+<p>Im Spielstand die <strong>Kaufbelege</strong> deiner Credit-Käufe (Datum, Produkt, Preis, Credits, Bestellnummer und die Zustimmung, die du vor der Zahlung erteilt hast) und der letzte bekannte Stand deines Guthabens. Die anonyme Kennung wird auf dem Telefon gespeichert, außerhalb des Spielstands. Bei Fragen zu diesen Daten oder um nicht verbrauchte Credits zurückzugeben (die Bedingungen stehen in den <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>), schreib an <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a> und gib die Bestellnummer aus deinem Kaufbeleg an.</p>
 
 <h2>13. Widget auf dem Startbildschirm (Android)</h2>
 <p>Wenn du das Widget platzierst, legt die App in ihrem eigenen privaten Speicher genau so viel ab, wie zum Zeichnen nötig ist: die Ringe des Tages, die Zahl deiner Serie und ein kleines Bild deiner gezeichneten Figur (nie ein Foto). Es verlangt keine Berechtigungen, es nutzt keine Verbindung und es verlässt das Gerät nicht.</p>
@@ -210,7 +215,7 @@
 <ul>
   <li><strong>Benachrichtigungen</strong>: die einzige Berechtigung, nach der du von Anfang an gefragt wirst, ein einziges Mal, wenn du deine Figur fertig erstellt hast. Du kannst sie verweigern, und die Erinnerungen lassen sich jederzeit in den Einstellungen oder im System abschalten.</li>
   <li><strong>Kamera</strong>: nur um das Foto aufzunehmen, aus dem der Avatar erstellt wird; sie wird in diesem Moment angefragt, und du kannst sie verweigern. Die Kamera ist als nicht erforderlich deklariert. Ein Foto aus der Galerie zu wählen braucht keine Berechtigung: Seit 2.6.0 deklariert das Paket keine zum Lesen von Bildern.</li>
-  <li><strong>Internet</strong>: wird von der Engine deklariert, auf der die App läuft. Alle Ressourcen sind mitgeliefert; die einzigen möglichen Netzanfragen sind die des KI-Coachs, die der Werbung, die du anforderst, und die des Abos, und nur dann, wenn du sie auslöst. Seit 2.16.0 auch die der Anfrage-Credits, wenn du sie kaufst oder verbrauchst.</li>
+  <li><strong>Internet</strong>: wird von der Engine deklariert, auf der die App läuft. Alle Ressourcen sind mitgeliefert; die einzigen möglichen Netzanfragen sind die des KI-Coachs, die der Werbung, die du anforderst, und die des Abos, und nur dann, wenn du sie auslöst. Seit 2.16.0 auch die der Anfrage-Credits, wenn du sie kaufst, verbrauchst oder zurückholst.</li>
   <li><strong>Werbe-ID</strong> (seit 2.15.0): wird von der Werbekomponente von Google hinzugefügt, zusammen mit drei technischen Berechtigungen der Werbe-APIs von Android. Sie fragen dich nicht um Zustimmung, werden nur genutzt, wenn du eine Werbung anforderst, und die Werbe-ID lässt sich in den Android-Einstellungen zurücksetzen oder löschen.</li>
   <li><strong>Vibration</strong>, dazu die technischen Berechtigungen, mit denen das System die Erinnerungen nach einem Neustart des Telefons neu einplant und die Kaufansicht des Stores öffnet. Keine davon fragt dich um Zustimmung, und keine greift auf deine Daten zu.</li>
   <li><strong>Health Connect</strong>: drei Leseberechtigungen — Schritte, Distanz und Trainingseinheiten —, die nur dann angefragt werden, wenn du die körperliche Aktivität aktivierst. Keine davon gilt für den Hintergrund oder für einen erweiterten Verlauf, und die App schreibt nichts in Health Connect.</li>
@@ -223,21 +228,21 @@
   <li><strong>Auskunft und Übertragbarkeit</strong>: Die Option zum Exportieren des Spielstands, in den Einstellungen, gibt dir alle deine Daten in einer lesbaren Datei.</li>
   <li><strong>Berichtigung</strong>: Alles, was du geschrieben hast, lässt sich in der App bearbeiten.</li>
   <li><strong>Löschung</strong>: Die Schaltfläche „Spiel zurücksetzen“ in den Einstellungen löscht den gesamten Fortschritt, und die App zu deinstallieren entfernt alle Daten.</li>
-  <li><strong>Anfrage-Credits</strong> (seit 2.16.0): Ihr Guthaben und ihre Käufe liegen auf dem Server des Coachs, verknüpft mit einer anonymen Kennung, nicht mit deinem Namen; für jedes Anliegen dazu schreib an den Kontakt unten und gib die Bestellnummer aus deinem Kaufbeleg an.</li>
+  <li><strong>Anfrage-Credits</strong> (seit 2.16.0): Ihr Guthaben und ihre Käufe liegen auf dem Server des Coachs, verknüpft mit einer anonymen Kennung, nicht mit deinem Namen. Um ihre Löschung zu beantragen, oder für jedes andere Anliegen dazu, schreib an den Kontakt unten und gib die Bestellnummer aus deinem Kaufbeleg an; andernfalls werden sie nach 24 Monaten ohne Aktivität automatisch gelöscht (Abschnitt 12).</li>
 </ul>
-<p>Bei Fragen zum Datenschutz schreib an <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a>. Wenn du der Ansicht bist, dass deine Rechte nicht gewahrt werden, kannst du dich bei der spanischen Datenschutzbehörde (AEPD) oder bei der Aufsichtsbehörde deines Landes beschweren.</p>
+<p>Bei Fragen zum Datenschutz schreib an <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a>. Wenn du der Ansicht bist, dass deine Rechte nicht gewahrt werden, kannst du dich bei der spanischen Datenschutzbehörde (AEPD) oder bei der Aufsichtsbehörde deines Landes beschweren.</p>
 
 <h2>16. Minderjährige</h2>
 <p>VIDA RPG richtet sich an <strong>Erwachsene</strong> und nicht an Minderjährige. Die App erhebt von niemandem identifizierende Daten, und Werbung, falls du sie anforderst, wird bei Google ohne jede Angabe aus deinem Spielstand angefordert. Wenn du Vater, Mutter oder erziehungsberechtigt bist und glaubst, dass ein Kind die App benutzt hat: Alle seine Daten liegen auf dem Gerät und werden durch das Deinstallieren entfernt.</p>
 
 <h2>17. Die App deinstallieren</h2>
-<p>VIDA RPG zu deinstallieren löscht alle Daten des Spielstands. <strong>Beim Entwickler existiert keinerlei Kopie</strong>, es gibt also nichts weiter zu löschen und nichts zu beantragen. Übrig blieben nur die Dateien, die du selbst exportiert und dort gespeichert hast, wo du wolltest. Die einzige Ausnahme ist das Guthaben an Anfrage-Credits, falls du welche gekauft hast: Es bleibt auf dem Server des Coachs, verknüpft mit der anonymen Kaufkennung (Abschnitt 12).</p>
+<p>VIDA RPG zu deinstallieren löscht alle Daten des Spielstands. <strong>Beim Entwickler existiert keinerlei Kopie</strong>, es gibt also nichts weiter zu löschen und nichts zu beantragen. Übrig blieben nur die Dateien, die du selbst exportiert und dort gespeichert hast, wo du wolltest. Die einzige Ausnahme ist das Guthaben an Anfrage-Credits, falls du welche gekauft hast: Es bleibt auf dem Server des Coachs, verknüpft mit der anonymen Kaufkennung, bis du seine Löschung beantragst oder 24 Monate ohne Aktivität vergehen; wenn du die App erneut installierst, kannst du es mit der Bestellnummer zurückholen (Abschnitt 12).</p>
 
 <h2>18. Änderungen dieser Erklärung</h2>
 <p>Wenn sich die Verarbeitung der Daten künftig ändert, wird diese Erklärung aktualisiert, unter derselben Adresse veröffentlicht und in der App angezeigt (Mehr → Datenschutz), in allen sieben Sprachen.</p>
 
 <h2>19. Verantwortlicher</h2>
-<p><strong>Alex Vida</strong>, unabhängiger Entwickler, Spanien.<br>Kontakt: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>
+<p><strong>Alex Vida</strong>, unabhängiger Entwickler, Spanien.<br>Kontakt: <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a></p>
     </article>
   </main>
   <footer>
@@ -249,7 +254,7 @@
         <a href="datenloeschung.html">Richtlinie zur Datenlöschung</a>
         <a href="hilfe.html">Hilfe</a>
       </nav>
-      <div>© 2026 Alex Vida · unabhängiger Entwickler · Spanien · Kontakt: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></div>
+      <div>© 2026 Alex Vida · unabhängiger Entwickler · Spanien · Kontakt: <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a></div>
     </div>
   </footer>
 </body>

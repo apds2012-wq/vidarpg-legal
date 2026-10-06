@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Legal document</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: 5 October 2026 · app version 2.16.0</p>
+      <p class="meta">Last updated: 6 October 2026 · app version 2.16.0</p>
 <p class="lead">VIDA RPG is an app <strong>with no user accounts and no sign-up</strong>. Everything you record stays on your device, and the whole app works offline. This policy explains plainly what is stored, where, and what happens in the optional features that talk to the internet: the AI Coach, rewarded ads and in-app purchases.</p>
 
 <h2>1. Summary</h2>
@@ -197,11 +197,16 @@
 <ul>
   <li>the balance;</li>
   <li>the order number of each credit purchase, with its product, its date and whether it was refunded;</li>
+  <li>the last day with activity (a purchase, a credit spent or a recovery), to know when everything is due to be deleted;</li>
   <li>a short list of the latest uses: a random code per use, its date and whether it was for the Coach or for a Feat, only so that the same one is never deducted twice.</li>
 </ul>
-<p>RevenueCat notifies the server of each purchase and each refund of credits with the anonymous identifier, the product and the order number. <strong>The server does not store the content of any query.</strong> When you spend a credit, the app sends that anonymous identifier to the Coach server.</p>
+<p>RevenueCat notifies the server of each purchase and each refund of credits with the anonymous identifier, the product and the order number. <strong>The server does not store the content of any query.</strong> When you spend a credit, the app sends that anonymous identifier to the Coach server. A query paid for with a credit sends the Coach exactly the same as any other query (section 8); nothing else is sent.</p>
+<h3>How long it is kept and how it is deleted</h3>
+<p>This server data <strong>is deleted automatically after 24 months without activity</strong>, that is, with no purchase, no credit spent and no recovery in that time. Before then, you can ask for it to be deleted: write to <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a> with the order number from your receipt. When it is deleted, any credits you have not spent are lost.</p>
+<h3>Recover my credits</h3>
+<p>If you reinstall the app, the new installation gets a different anonymous purchase identifier and the balance stays tied to the previous one. To recover it, go to Settings → Query credits → "Recover my credits" and type the Google Play order number (it starts with <code>GPA.</code> and appears on the receipt in the app and on the receipt Google sends you by email). The app sends that order number and the new installation's anonymous purchase identifier to the Coach server. The server moves the unspent balance from the previous identifier to the new one, <strong>only once per order</strong>, and reveals nothing else. Attempts are limited to <strong>five per day per installation</strong>; they are counted with an irreversible fingerprint that changes every day and is deleted the next day.</p>
 <h3>What is kept on your phone</h3>
-<p>In your save, the <strong>receipts</strong> for your credit purchases (date, product, price, credits, order number and the consent you gave before paying) and the last figure of your balance. The anonymous identifier is stored on the phone, outside your save. For any question about this data, or to ask for a refund of unspent credits (the conditions are in the <a href="terms.html">Terms of Use</a>), write to <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a> with the order number from your receipt.</p>
+<p>In your save, the <strong>receipts</strong> for your credit purchases (date, product, price, credits, order number and the consent you gave before paying) and the last figure of your balance. The anonymous identifier is stored on the phone, outside your save. For any question about this data, or to ask for a refund of unspent credits (the conditions are in the <a href="terms.html">Terms of Use</a>), write to <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a> with the order number from your receipt.</p>
 
 <h2>13. Home-screen widget (Android)</h2>
 <p>If you place the widget, the app keeps in its own private storage just enough to draw it: the day's rings, your streak count and a small image of your drawn character (never a photograph). It requests no permissions, uses no connection and never leaves the device.</p>
@@ -210,7 +215,7 @@
 <ul>
   <li><strong>Notifications</strong>: the only permission you are asked for up front, once, when you finish creating your character. You can deny it, and reminders can be switched off whenever you like from Settings or from the system.</li>
   <li><strong>Camera</strong>: only to take the photo the avatar is created from, requested at that moment, and you can deny it. The camera is declared as not required. Picking a photo from the gallery needs no permission: since 2.6.0 the package declares no image-reading permission.</li>
-  <li><strong>Internet</strong>: declared by the engine the app runs on. All resources are bundled; the only possible network requests are those of the AI Coach, those of the ads you ask for and those of the subscription, and only when you trigger them. Since 2.16.0, also those of query credits, when you buy or spend them.</li>
+  <li><strong>Internet</strong>: declared by the engine the app runs on. All resources are bundled; the only possible network requests are those of the AI Coach, those of the ads you ask for and those of the subscription, and only when you trigger them. Since 2.16.0, also those of query credits, when you buy, spend or recover them.</li>
   <li><strong>Advertising ID</strong> (since 2.15.0): added by Google's ad component, together with three technical permissions for Android's advertising APIs. They do not ask for your approval, they are only used if you ask for an ad, and the ID is reset or deleted from Android's settings.</li>
   <li><strong>Vibration</strong>, plus the technical permissions the system uses to reschedule reminders after a reboot and to open the store's purchase sheet. None of them ask for your approval or access your data.</li>
   <li><strong>Health Connect</strong>: three read permissions — steps, distance and exercise sessions — requested only when you turn on physical activity, on the system's own screen. None for background access or for extended history, and the app writes nothing to Health Connect.</li>
@@ -223,21 +228,21 @@
   <li><strong>Access and portability</strong>: the export option in Settings gives you all your data in a readable file.</li>
   <li><strong>Rectification</strong>: everything you wrote can be edited inside the app.</li>
   <li><strong>Erasure</strong>: the "Reset the game" button in Settings erases all progress, and uninstalling the app deletes all data.</li>
-  <li><strong>Query credits</strong> (since 2.16.0): their balance and purchases are on the Coach server, tied to an anonymous identifier, not to your name; for any request about them, write to the contact below with the order number from your receipt.</li>
+  <li><strong>Query credits</strong> (since 2.16.0): their balance and purchases are on the Coach server, tied to an anonymous identifier, not to your name. You can ask for them to be deleted, or make any other request about them, by writing to the contact below with the order number from your receipt; otherwise they are deleted automatically after 24 months without activity (section 12).</li>
 </ul>
-<p>For any privacy enquiry, write to <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a>. If you believe your rights are not being respected, you may complain to the Spanish Data Protection Agency (AEPD) or to the supervisory authority in your country.</p>
+<p>For any privacy enquiry, write to <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a>. If you believe your rights are not being respected, you may complain to the Spanish Data Protection Agency (AEPD) or to the supervisory authority in your country.</p>
 
 <h2>16. Children</h2>
 <p>VIDA RPG is intended for <strong>adults</strong> and is not aimed at minors. It collects no identifying data from anyone, and ads, if you ask for them, are requested from Google without any data from your game. If you are a parent or guardian and believe a child has used the app, remember that all of their data is on the device and is removed by uninstalling it.</p>
 
 <h2>17. Uninstalling the app</h2>
-<p>Uninstalling VIDA RPG deletes all game data. <strong>The developer holds no copy whatsoever</strong>, so there is nothing else to delete or to request. The only remaining files would be those you exported yourself and saved wherever you chose. The only exception is the query credit balance, if you bought any: it stays on the Coach server, tied to the anonymous purchase identifier (section 12).</p>
+<p>Uninstalling VIDA RPG deletes all game data. <strong>The developer holds no copy whatsoever</strong>, so there is nothing else to delete or to request. The only remaining files would be those you exported yourself and saved wherever you chose. The only exception is the query credit balance, if you bought any: it stays on the Coach server, tied to the anonymous purchase identifier, until you ask for its deletion or 24 months pass without activity, and if you install the app again you can recover it with the order number (section 12).</p>
 
 <h2>18. Changes to this policy</h2>
 <p>If data handling changes in the future, this policy will be updated, published at this same address and shown inside the app (More → Privacy), in all seven languages.</p>
 
 <h2>19. Controller</h2>
-<p><strong>Alex Vida</strong>, independent developer, Spain.<br>Contact: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>
+<p><strong>Alex Vida</strong>, independent developer, Spain.<br>Contact: <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a></p>
     </article>
   </main>
   <footer>
@@ -249,7 +254,7 @@
         <a href="data-deletion.html">Data Deletion Policy</a>
         <a href="support.html">Support</a>
       </nav>
-      <div>© 2026 Alex Vida · independent developer · Spain · Contact: <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></div>
+      <div>© 2026 Alex Vida · independent developer · Spain · Contact: <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a></div>
     </div>
   </footer>
 </body>

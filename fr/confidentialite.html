@@ -39,7 +39,7 @@
     <article>
       <p class="kicker">Document juridique</p>
       <h1>Politique de confidentialité</h1>
-      <p class="meta">Dernière mise à jour : 5 octobre 2026 · version de l'application 2.16.0</p>
+      <p class="meta">Dernière mise à jour : 6 octobre 2026 · version de l'application 2.16.0</p>
 <p class="lead">VIDA RPG est une application <strong>sans comptes utilisateur et sans inscription</strong>. Tout ce que tu enregistres reste sur ton appareil, et l'application fonctionne entièrement hors connexion. Cette politique explique sans détour ce qui est enregistré, où, et ce qui se passe dans les fonctions optionnelles qui parlent à internet : le Coach IA, les publicités avec récompense et les achats dans l'application.</p>
 
 <h2>1. Résumé</h2>
@@ -197,11 +197,16 @@
 <ul>
   <li>le solde ;</li>
   <li>le numéro de commande de chaque achat de crédits, avec son produit, sa date et s'il a été remboursé ;</li>
+  <li>le dernier jour d'activité (un achat, un crédit dépensé ou une récupération), pour savoir quand tout doit être effacé ;</li>
   <li>une courte liste des dernières utilisations : un code aléatoire par utilisation, sa date et s'il s'agissait du Coach ou d'un Haut fait, uniquement pour ne pas décompter deux fois la même.</li>
 </ul>
-<p>RevenueCat le prévient de chaque achat et de chaque remboursement de crédits avec l'identifiant anonyme, le produit et le numéro de commande. <strong>Il ne conserve le contenu d'aucune question.</strong> Quand tu dépenses un crédit, l'application envoie cet identifiant anonyme au serveur du Coach.</p>
+<p>RevenueCat le prévient de chaque achat et de chaque remboursement de crédits avec l'identifiant anonyme, le produit et le numéro de commande. <strong>Il ne conserve le contenu d'aucune question.</strong> Quand tu dépenses un crédit, l'application envoie cet identifiant anonyme au serveur du Coach. Une question payée avec un crédit envoie au Coach exactement la même chose que n'importe quelle autre question (section 8) ; rien d'autre n'est transmis.</p>
+<h3>Durée de conservation et effacement</h3>
+<p>Ces données du serveur <strong>sont effacées automatiquement après 24 mois sans activité</strong>, c'est-à-dire sans aucun achat, aucun crédit dépensé ni aucune récupération pendant cette période. Avant ce délai, tu peux demander leur effacement : écris à <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a> avec le numéro de commande de ton justificatif. Lors de l'effacement, les crédits que tu n'as pas utilisés sont perdus.</p>
+<h3>Récupérer mes crédits</h3>
+<p>Si tu réinstalles l'application, la nouvelle installation reçoit un autre identifiant anonyme d'achats et le solde reste lié à l'ancien. Pour le récupérer, va dans Réglages → Crédits de question → « Récupérer mes crédits » et saisis le numéro de commande Google Play (il commence par <code>GPA.</code> et figure sur le justificatif de l'application et sur le reçu que Google t'envoie par courriel). L'application envoie au serveur du Coach ce numéro de commande et l'identifiant anonyme d'achats de la nouvelle installation. Le serveur transfère le solde non utilisé de l'ancien identifiant vers le nouveau, <strong>une seule fois par commande</strong>, et ne révèle rien d'autre. Les tentatives sont limitées à <strong>cinq par jour et par installation</strong> ; elles sont comptées au moyen d'une empreinte irréversible qui change chaque jour et est effacée le lendemain.</p>
 <h3>Ce qui est conservé sur ton téléphone</h3>
-<p>Dans la partie, les <strong>justificatifs</strong> de tes achats de crédits (date, produit, prix, crédits, numéro de commande et le consentement que tu as donné avant de payer) et le dernier chiffre de ton solde. L'identifiant anonyme est enregistré sur le téléphone, en dehors de la partie. Pour toute question sur ces données, ou pour demander le remboursement de crédits non utilisés (les conditions sont dans les <a href="conditions.html">Conditions d'utilisation</a>), écris à <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a> avec le numéro de commande de ton justificatif.</p>
+<p>Dans la partie, les <strong>justificatifs</strong> de tes achats de crédits (date, produit, prix, crédits, numéro de commande et le consentement que tu as donné avant de payer) et le dernier chiffre de ton solde. L'identifiant anonyme est enregistré sur le téléphone, en dehors de la partie. Pour toute question sur ces données, ou pour demander le remboursement de crédits non utilisés (les conditions sont dans les <a href="conditions.html">Conditions d'utilisation</a>), écris à <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a> avec le numéro de commande de ton justificatif.</p>
 
 <h2>13. Widget d'écran d'accueil (Android)</h2>
 <p>Si tu places le widget, l'application laisse dans son propre stockage privé le strict nécessaire pour le dessiner : les anneaux du jour, le chiffre de la série et une petite image de ton personnage dessiné (jamais une photographie). Il ne demande aucune autorisation, il n'utilise pas de connexion et il ne sort pas de l'appareil.</p>
@@ -210,7 +215,7 @@
 <ul>
   <li><strong>Notifications</strong> : c'est la seule autorisation qui t'est demandée d'emblée, une seule fois, quand tu finis de créer ton personnage. Tu peux la refuser, et tu peux désactiver les rappels quand tu veux, depuis les Réglages ou depuis le système.</li>
   <li><strong>Appareil photo</strong> : uniquement pour prendre la photo à partir de laquelle l'avatar est créé, elle est demandée à ce moment-là et tu peux la refuser. L'appareil photo est déclaré comme non obligatoire. Choisir une photo dans la galerie ne nécessite pas d'autorisation : depuis la 2.6.0, le paquet ne déclare aucune autorisation de lecture des images.</li>
-  <li><strong>Internet</strong> : déclarée par le moteur sur lequel l'application s'exécute. Toutes les ressources sont empaquetées ; les seules requêtes réseau possibles sont celles du Coach IA, celles des publicités que tu demandes et celles de l'abonnement, et uniquement quand tu les provoques. Depuis la 2.16.0, aussi celles des crédits de question, quand tu en achètes ou en dépenses.</li>
+  <li><strong>Internet</strong> : déclarée par le moteur sur lequel l'application s'exécute. Toutes les ressources sont empaquetées ; les seules requêtes réseau possibles sont celles du Coach IA, celles des publicités que tu demandes et celles de l'abonnement, et uniquement quand tu les provoques. Depuis la 2.16.0, aussi celles des crédits de question, quand tu en achètes, en dépenses ou en récupères.</li>
   <li><strong>Identifiant publicitaire</strong> (depuis la 2.15.0) : il est ajouté par le composant publicitaire de Google, avec trois autorisations techniques des API publicitaires d'Android. Elles ne te demandent pas d'approbation, ne servent que si tu demandes une publicité, et l'identifiant se réinitialise ou se supprime depuis les réglages d'Android.</li>
   <li><strong>Vibration</strong>, et les autorisations techniques que le système utilise pour reprogrammer les rappels après le redémarrage du téléphone et pour ouvrir la fenêtre d'achat de la boutique. Aucune d'elles ne te demande d'approbation ni n'accède à tes données.</li>
   <li><strong>Health Connect</strong> : trois autorisations de lecture — pas, distance et séances d'exercice —, demandées uniquement si tu actives l'activité physique et seulement à ce moment-là. Aucune autorisation en arrière-plan ni d'historique étendu, et l'application n'écrit rien dans Health Connect.</li>
@@ -223,21 +228,21 @@
   <li><strong>Accès et portabilité</strong> : l'option d'exporter la partie, dans les Réglages, te remet toutes tes données dans un fichier lisible.</li>
   <li><strong>Rectification</strong> : tout ce que tu as écrit se modifie à l'intérieur de l'application.</li>
   <li><strong>Effacement</strong> : le bouton « Réinitialiser la partie » des Réglages efface toute la progression, et désinstaller l'application supprime toutes les données.</li>
-  <li><strong>Crédits de question</strong> (depuis la 2.16.0) : leur solde et leurs achats sont sur le serveur du Coach, liés à un identifiant anonyme, pas à ton nom ; pour toute demande à leur sujet, écris au contact ci-dessous avec le numéro de commande de ton justificatif.</li>
+  <li><strong>Crédits de question</strong> (depuis la 2.16.0) : leur solde et leurs achats sont sur le serveur du Coach, liés à un identifiant anonyme, pas à ton nom. Tu peux demander leur effacement, ou faire toute autre demande à leur sujet, en écrivant au contact ci-dessous avec le numéro de commande de ton justificatif ; sinon, ils sont effacés automatiquement après 24 mois sans activité (section 12).</li>
 </ul>
-<p>Pour toute question sur la confidentialité, écris à <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a>. Si tu estimes que tes droits ne sont pas respectés, tu peux réclamer auprès de l'Agence espagnole de protection des données ou auprès de l'autorité de contrôle de ton pays.</p>
+<p>Pour toute question sur la confidentialité, écris à <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a>. Si tu estimes que tes droits ne sont pas respectés, tu peux réclamer auprès de l'Agence espagnole de protection des données ou auprès de l'autorité de contrôle de ton pays.</p>
 
 <h2>16. Mineurs</h2>
 <p>VIDA RPG est conçue pour les <strong>adultes</strong> et ne s'adresse pas aux mineurs. Elle ne collecte de données identifiantes de personne, et les publicités, si tu les demandes, sont demandées à Google sans aucune donnée de ta partie. Si tu es père, mère ou tuteur et que tu penses qu'un mineur a utilisé l'application, rappelle-toi que toutes ses données sont sur l'appareil et se suppriment en la désinstallant.</p>
 
 <h2>17. Désinstaller l'application</h2>
-<p>Désinstaller VIDA RPG supprime toutes les données de la partie. <strong>Il n'existe aucune copie entre les mains du développeur</strong>, il n'y a donc rien de plus à effacer ni à demander. Ne resteraient que les fichiers que tu aurais toi-même exportés et enregistrés là où tu l'as choisi. La seule exception est le solde de crédits de question, si tu en as acheté : il reste sur le serveur du Coach, lié à l'identifiant anonyme d'achats (section 12).</p>
+<p>Désinstaller VIDA RPG supprime toutes les données de la partie. <strong>Il n'existe aucune copie entre les mains du développeur</strong>, il n'y a donc rien de plus à effacer ni à demander. Ne resteraient que les fichiers que tu aurais toi-même exportés et enregistrés là où tu l'as choisi. La seule exception est le solde de crédits de question, si tu en as acheté : il reste sur le serveur du Coach, lié à l'identifiant anonyme d'achats, jusqu'à ce que tu demandes son effacement ou que 24 mois passent sans activité, et si tu réinstalles l'application, tu peux le récupérer avec le numéro de commande (section 12).</p>
 
 <h2>18. Modifications de cette politique</h2>
 <p>Si le traitement des données change à l'avenir, cette politique sera mise à jour, publiée à cette même adresse et affichée à l'intérieur de l'application (Plus → Confidentialité), dans les sept langues.</p>
 
 <h2>19. Responsable du traitement</h2>
-<p><strong>Alex Vida</strong>, développeur indépendant, Espagne.<br>Contact : <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></p>
+<p><strong>Alex Vida</strong>, développeur indépendant, Espagne.<br>Contact : <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a></p>
     </article>
   </main>
   <footer>
@@ -249,7 +254,7 @@
         <a href="suppression-des-donnees.html">Politique de suppression des données</a>
         <a href="assistance.html">Assistance</a>
       </nav>
-      <div>© 2026 Alex Vida · développeur indépendant · Espagne · Contact : <a href="mailto:apds2012@gmail.com">apds2012@gmail.com</a></div>
+      <div>© 2026 Alex Vida · développeur indépendant · Espagne · Contact : <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a></div>
     </div>
   </footer>
 </body>
