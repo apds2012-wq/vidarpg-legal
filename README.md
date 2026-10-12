@@ -9,4 +9,4 @@ términos de uso, política de eliminación de datos y página de soporte.
 - Este repositorio contiene **únicamente** el sitio legal. No forma parte
   del código de la aplicación ni contiene nada de él.
 
-Contacto: apds2012@gmail.com · Alex Vida, desarrollador independiente, España.
+Contacto: vidarpgapp@gmail.com · Alex Vida, desarrollador independiente, España.
