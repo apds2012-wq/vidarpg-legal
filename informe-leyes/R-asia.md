@@ -1,5 +1,7 @@
 # R-asia · Asia-Pacífico: protección de datos y consumo para VIDA RPG
 
+> **Actualización 4-11-2026.** El propietario ha dejado de ofrecer la app en Google Play en 12 países: Reino Unido, Serbia, Moldavia, Perú, Ecuador, Tailandia, Ruanda, Turquía, Vietnam, Uganda, Egipto y China (enviado a revisión de Google el 04-11-2026; en Play quedan 165 países o regiones; Hong Kong, Macao y Taiwán siguen). Motivo: representante, registro o trámite local (`INFORME-LEYES-PAISES.md`, sección 2 y fila 4 de la sección 5). La política de privacidad está al día en los 8 idiomas (§9 y §20.5, §20.8, §20.9, §20.10, rama `claude/quitar-12-paises`). Afecta a este anexo: **Tailandia, Vietnam y China continental**. Las decisiones de 3.3 sobre esos tres países quedan resueltas (excluidos); Kazajistán, sin cambios.
+
 Fecha de la investigación: **02-11-2026**. Hechos de la app según `BRIEF.md` (desarrollador particular, autónomo en España, sin establecimiento fuera de España, sin cuentas; datos que salen del teléfono solo a petición: Coach IA en Cloudflare, AdMob, Google Play + RevenueCat, créditos en el Worker, códigos). Política leída: `politica-privacidad-es.txt` (versión 2.17.1, 13-10-2026). Términos: `vidarpg-legal/es/terminos.html` (cláusula «tal cual», §5; ley española, §12).
 
 Regla de trabajo: solo se afirma lo que sale de una fuente oficial o fiable. Lo demás va marcado **NO VERIFICADO**. Las traducciones al inglés de Japón y Corea son de referencia: la versión con efecto legal es la original.
@@ -159,8 +161,8 @@ Fuentes: DPDP Act 2023 (Gaceta del 11-8-2023, PDF en meity.gov.in) y DPDP Rules 
 
 ### 3.3 Decisiones de distribución para el propietario (Play Console, «Países o regiones»)
 
-- **Excluir China continental** (PIPL art. 53). Seguramente ya no se distribuye allí.
-- **Tailandia y Vietnam:** o se excluyen, o se acepta el riesgo del representante tailandés (s.37(5)) y del expediente vietnamita (art. 20), o se consulta con un abogado local. Son las dos cargas formales de verdad.
+- **Excluir China continental** (PIPL art. 53). Seguramente ya no se distribuye allí. → **Hecho el 04-11-2026: excluida en Play** (Hong Kong, Macao y Taiwán siguen).
+- **Tailandia y Vietnam:** o se excluyen, o se acepta el riesgo del representante tailandés (s.37(5)) y del expediente vietnamita (art. 20), o se consulta con un abogado local. Son las dos cargas formales de verdad. → **Resuelto el 04-11-2026: Tailandia y Vietnam excluidos en Play.**
 - **Kazajistán:** la localización del art. 12 no se puede cumplir con esta arquitectura. Decidirlo con un abogado o excluir el país. Si hay otro informe para la CEI, coordinar con él.
 - **Corea, Japón, India, Singapur, Nueva Zelanda, Taiwán, Indonesia y Filipinas:** basta con los textos de 3.1 y 3.2, sin representante ni registro con el volumen actual.
 
