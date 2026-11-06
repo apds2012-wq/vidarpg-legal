@@ -1,5 +1,7 @@
 # VIDA RPG — Oriente Medio, Israel y África: leyes de protección de datos y consumo
 
+> **Actualización 4-11-2026.** El propietario ha dejado de ofrecer la app en Google Play en 12 países: Reino Unido, Serbia, Moldavia, Perú, Ecuador, Tailandia, Ruanda, Turquía, Vietnam, Uganda, Egipto y China (enviado a revisión de Google el 04-11-2026; en Play quedan 165 países o regiones; Hong Kong, Macao y Taiwán siguen). Motivo: representante, registro o trámite local (`INFORME-LEYES-PAISES.md`, sección 2 y fila 4 de la sección 5). La política de privacidad está al día en los 8 idiomas (§9 y §20.5, §20.8, §20.9, §20.10, rama `claude/quitar-12-paises`). Afecta a este anexo: **Egipto, Uganda y Ruanda**. La medición de usuarios de la sección 5 queda para Nigeria; lo de Egipto, resuelto (excluido).
+
 Investigación del 02-11-2026. Supuesto de partida (`BRIEF.md`): desarrollador **persona física** en España, sin establecimiento fuera de España, app gratuita con compras en Google Play, **sin cuentas**, partida solo en el teléfono, y lo que sale (Coach IA, anuncios a petición, compras y créditos) es opcional, seudónimo y va a EE. UU. (Cloudflare, Google, RevenueCat). Facturación y número de usuarios **no documentados**: se dan los umbrales.
 
 **Cómo leerlo.** «Verificado» quiere decir comprobado en el texto oficial o en un despacho o publicación jurídica fiable que se cita. «NO VERIFICADO» quiere decir que no lo he podido confirmar y que no debe tratarse como hecho. Varias webs oficiales (sdaia.gov.sa, kenyalaw.org, odpc.go.ke, el PDF de ECTA) bloquearon la descarga automática, así que en esos casos manda la fuente secundaria que se cita. **Esto no es asesoramiento jurídico.** Antes de registrarse en algún sitio o de cambiar la política conviene consultar a un abogado local en los países con más usuarios.
@@ -100,7 +102,7 @@ Una sección nueva, **«20. Si vives fuera de la Unión Europea»** (o un anexo 
 ## 5. Acciones que no son de texto (para que decida el propietario)
 - **Medir usuarios por país** en Play Console. Nigeria (> 200 en 6 meses, según fuentes secundarias), Uganda (registro sin umbral) y Egipto (licencia) son los que podrían exigir trámite.
 - **Vigilar el borrador saudí** (registro de quien transfiere fuera y almacenamiento en el Reino). Si se aprueba tal cual, valorar quitar Arabia Saudí de los países de distribución de Play o del Coach.
-- **Egipto**: si hay usuarios, consultar a un abogado local antes del ~1-11-2026. Si no, valorar excluirlo de la distribución.
+- **Egipto**: si hay usuarios, consultar a un abogado local antes del ~1-11-2026. Si no, valorar excluirlo de la distribución. → **Resuelto el 04-11-2026: Egipto excluido en Play** (también Uganda y Ruanda).
 - **EAU**: nada hasta que se publique el Reglamento ejecutivo.
 
 ## Fuentes (consultadas el 02-11-2026)

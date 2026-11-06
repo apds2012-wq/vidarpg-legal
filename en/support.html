@@ -41,8 +41,8 @@
     <article>
       <p class="kicker">Legal document</p>
       <h1>Support</h1>
-      <p class="meta">Last updated: 11 October 2026 · app version 2.17.0 (in preparation)</p>
-<p class="lead">Something not working, or a question? Write to <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a>. Include your phone model, the app version (shown at the bottom of the More screen) and what happened. A single person answers, so a reply may take a few days.</p>
+      <p class="meta">Last updated: 6 November 2026 · app version 2.20.0</p>
+<p class="lead">Something not working, or a question? Write to <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a>. Include your phone model, the app version (shown at the bottom of the More screen and in More → Settings → Legal) and what happened. A single person answers, so a reply may take a few days.</p>
 
 <div class="notice">
   <span class="title">Contact</span>
@@ -54,7 +54,7 @@
 <details>
   <summary>How do I recover my game if I change phones or lose it?</summary>
   <p>VIDA RPG has no accounts and no cloud copy: your game lives only on your device. The only way to keep it is to make a copy yourself: <strong>More → Settings → Export</strong> creates a file you can save wherever you like (your own cloud, an email to yourself, another device). On the new phone, <strong>Import</strong> reads that file and replaces the current game.</p>
-  <p>If you uninstalled the app without exporting, the game cannot be recovered: nobody has a copy. The PRO subscription and any programmes you bought can be recovered with "Restore purchases", in Settings or on the PRO screen, because they belong to your store account.</p>
+  <p>If you uninstalled the app without exporting, the game cannot be recovered: nobody has a copy. The same goes for Friends: the Friends key lives only on your phone and does not travel in the export file, so on the new phone you turn Friends on again and invite your friends again; the old data is deleted automatically after 90 days of non-use. The PRO subscription and any programmes you bought can be recovered with "Restore purchases", in Settings or on the PRO screen, because they belong to your store account.</p>
 </details>
 
 <details>
@@ -64,29 +64,35 @@
 
 <details>
   <summary>What happens if my character dies?</summary>
-  <p>Your character has 1000 health points. The vices you log take health away; if it reaches zero, the character dies. While dead, it earns no experience and you cannot log habits. The only way back is to <strong>complete the penalty</strong> you set yourself (the default is covering 50 km; you can change it from that same screen). Once completed, the character revives with half its health and the game continues: you do not lose your level, your suns or your missions.</p>
+  <p>Your character has 1000 health points. Each slip (vice) you log takes health away, unless you have that slip's pass from the Shop for the day. On top of that, when each day closes, a day with slips and fewer than three positive actions takes away 50 more points, and a day with no slips and at least three positive actions gives back 15 per action, up to 60. If health reaches zero, the character dies. While it is dead, the death screen covers the rest of the app: you cannot log habits or keep playing. The only way back is to <strong>complete the penalty</strong> you set yourself (the default is covering 50 km; you can change it from that same screen, with "Change penalty"). Once completed, the character revives with half its health (500 points) and the game continues: you do not lose your level, your suns or your missions.</p>
+  <p>That is how Hardcore mode, the default, works. If you would rather play without death, in <strong>More → Settings → Game mode</strong> you can choose "Gentle": health never drops below 1 and you only get a critical-health warning.</p>
 </details>
 
 <details>
   <summary>How does the streak work, and what protects it?</summary>
   <p>The streak counts consecutive days on which you log at least one positive action. A blank day breaks it, unless you carry a <strong>shield</strong>: they are bought in the Shop with suns, you can carry two at most, and each one covers one blank day and is used up. A shield keeps the days you already had; it does not grant new ones.</p>
-  <p>If a streak of three days or more breaks, a 24-hour <strong>recovery window</strong> opens: if you log six positive actions within it, you get the whole streak back. Milestones (7, 30, 100, 180 and 365 days) unlock exclusive cosmetics. Days are counted in universal time (UTC), so the day change may not match midnight in your time zone exactly.</p>
+  <p>If a streak of three days or more breaks, a 24-hour <strong>recovery window</strong> opens: if you log six positive actions within it, you get the whole streak back. At 7, 30, 100, 180 and 365 days you earn, once each, a piece of clothing that is not sold in the Shop: the Iron bracelet, the Belt of Consistency, the Hundred-Day Medallion, the Steel pauldrons and the Halo of the Year. Today you can wear the belt and the medallion; the bracelet, the pauldrons and the halo are earned all the same and kept in your game, but they cannot be worn yet because they have not been drawn in the new style. Days are counted in universal time (UTC), so the day change may not match midnight in your time zone exactly.</p>
 </details>
 
 <details>
   <summary>What exactly does the AI Coach do?</summary>
-  <p>It is an optional feature that analyses your goals and progress and proposes concrete adjustments or actions, in your language. It only acts when you tap its button, in three places: when refining a goal, when requesting the weekly analysis in Progress, or when asking for a suggestion about a mission. At that moment a structured summary of your goals and progress is sent to the VIDA RPG coach server, on Cloudflare, which queries an open language model (since 2.16.0, Gemma, by Google, run by Cloudflare) and does not store what you send it: <strong>without your name, without photographs and without the content of your golden card</strong>. It never sends anything on its own.</p>
-  <p>Without paying, you can ask it two queries a month; with PRO, one a day; each extra query, if you want it, by watching a voluntary rewarded ad or with a query credit; and in any case a cap of twelve a day per phone. If the server runs out of its free quota on a given day, the coach says so, does not count the query or the credit against you and is back the next day. Since 2.12.0 it adapts to each kind of goal, and what you answer your guide or the Paladin never reaches it. You can switch it off completely from Settings; the rest of the app works exactly the same without it. Its suggestions are ideas to weigh up, not instructions or professional advice. More detail in the <a href="privacy.html">Privacy Policy</a>.</p>
+  <p>It is an optional feature that analyses your goals and progress and proposes concrete adjustments or actions, in your language. It opens when you reach level 5, or earlier if you have PRO or query credits. It only acts when you tap its button, in three places: when creating or refining a goal with the wizard, when asking for the "Coach analysis" in Character → Progress, or when asking for a suggestion about a mission. At that moment a structured summary of your goals and progress is sent to the VIDA RPG coach server, on Cloudflare, which queries an open language model (since 2.16.0, Gemma, by Google, run by Cloudflare) and does not store what you send it: <strong>without your name, without photographs and without the content of your golden card</strong>. It never sends anything on its own.</p>
+  <p>Without paying, you can ask it two queries a month; with PRO, one a day; each extra query, if you want it, by watching a voluntary rewarded ad or with a query credit; and in any case a cap of twelve a day per phone. On the free plan, the first query of your game arrives in full; in the following ones you see the diagnosis, and the adjustments and actions it proposes stay blurred until you have PRO, which reveals them without spending another query. Queries paid with an ad or a credit always arrive in full. Every answer from the model carries the label "Answer generated by AI". If the server runs out of its free quota on a given day, the coach says so, does not count the query or the credit against you and is back the next day. Since 2.12.0 it adapts to each kind of goal, and what you answer your guide or the Paladin never reaches it. You can switch it off completely from Settings; the rest of the app works exactly the same without it. Its suggestions are ideas to weigh up, not instructions or professional advice. More detail in the <a href="privacy.html">Privacy Policy</a>.</p>
 </details>
 
 <details>
   <summary>Does the app need an internet connection?</summary>
-  <p>No. The whole game works offline. Only the AI Coach, when you invoke it, rewarded ads, when you ask to watch one, and purchases (the PRO screen and the challenge programmes), when you open them, need one. Physical activity from Health Connect is read on the phone itself and does not need one either. Since 2.16.0, so do query credits, when you buy or spend them. Since 2.17.0, on Android, the original soundtrack comes in a pack that is downloaded by Google Play, not by a VIDA RPG server; until it is there, you hear the music generated on the phone, offline.</p>
+  <p>No. The whole game works offline. Only these need one: the AI Coach, when you invoke it; rewarded ads, when you ask to watch one; purchases, when you open the PRO screen or a challenge programme's screen, and, if you have PRO or a programme, a check with the store when you open the app, at most once a day (without a connection you keep what you had); query credits (since 2.16.0), when you buy, spend or recover them; redeeming an access code in Settings → Code (since 2.17.1); and Friends (since 2.20.0), if you turn it on. Physical activity from Health Connect is read on the phone itself and does not need one. Since 2.17.0, on Android, the original soundtrack comes in a pack that is downloaded by Google Play, not by a VIDA RPG server; until it is there, you hear the music generated on the phone, offline.</p>
+</details>
+
+<details>
+  <summary>How do I stop sharing, block, report or delete my data in Friends?</summary>
+  <p>Since 2.20.0, with PRO, you can turn on Friends in More. On each person's profile you will find "End sharing with…", "Block" and "Report", and in Friends → "Privacy and deletion", "Delete all my data". Ending sharing and deleting everything take effect immediately on the server. Reports are reviewed by a person. If you no longer have the app, or prefer to notify us by email, write to <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a>; to delete without the app, give the name of your card and your four symbols (the ones shown in Friends → "Privacy and deletion"): it is only deleted if they match a single identity. More detail in the <a href="data-deletion.html">Data Deletion Policy</a> and in the <a href="terms.html">Terms of Use</a>.</p>
 </details>
 
 <details>
   <summary>What is PRO and how do I cancel it?</summary>
-  <p>PRO is an optional subscription, monthly or yearly (the yearly one with a seven-day free trial). It gives the AI Coach one query a day, lets you follow two mentor paths at once, removes the limit on Feats (without PRO, the first is free and the second is unlocked with suns earned by playing) and on coach plans, and adds advanced statistics, exclusive cosmetics and the six challenge programmes, which can also be bought individually. The download is free, ads are always voluntary (PRO does not need them) and suns are not sold for real money. It is bought and cancelled from Google Play (or the App Store), like any other subscription: you keep PRO until the end of the period you paid for, and the app cannot cancel it for you and puts no obstacles in your way.</p>
+  <p>PRO is an optional subscription, monthly or yearly (the yearly one with a seven-day free trial). It gives: the AI Coach, one query a day with its full method; in the adventure, 3 new encounters a day (1 without PRO); as many Feats as you like (without PRO, the first is free, the second costs 900 suns earned by playing, charged when you create it, and from the third on you need PRO, a rewarded ad —at most one a week— or a query credit) and no limit on coach plans (one active without PRO); the six challenge programmes, which can also be bought individually; two mentor paths at once; advanced statistics; the month grid every day (without PRO, one day a month during the first three months from when you first open it); exclusive clothing for your character; and Friends, which can only be turned on with PRO. The download is free, ads are always voluntary, with or without PRO, and suns are not sold for real money. It is bought and cancelled from Google Play (or the App Store), like any other subscription; "Manage subscription", on the PRO screen and, with PRO active, in Settings, takes you to Google Play. You keep PRO until the end of the period you paid for, and the app cannot cancel it for you and puts no obstacles in your way.</p>
 </details>
 
 <details>
@@ -101,14 +107,14 @@
 
 <details>
   <summary>How do I delete all my data?</summary>
-  <p>With the <strong>"Reset the game"</strong> button in Settings, or by uninstalling the app. Nothing remains on any server. The steps are in the <a href="data-deletion.html">Data Deletion Policy</a>. The only exception, if you bought query credits, is their balance on the Coach server, tied to an anonymous identifier. Since 2.17.0, the soundtrack pieces you have unlocked with credits are kept there too.</p>
+  <p>With the <strong>"Reset the game"</strong> button in Settings, which deletes the whole game from this phone, or by uninstalling the app, which also deletes the little that is kept outside the game (the language, a copy of the colour palette and a few technical markers). Your game is not on any server. The steps are in the <a href="data-deletion.html">Data Deletion Policy</a>. There are two exceptions. If you used Friends, your card and your challenges are on its server: they are deleted with "Delete all my data" in Friends → "Privacy and deletion", with "Reset the game" if you answer "Yes" to "Also delete your Friends data?" (it comes selected by default), or, on their own, after 90 days of non-use. And, if you bought query credits, their balance on the Coach server, tied to an anonymous identifier: you can ask for it to be deleted by writing to <a href="mailto:vidarpgapp@gmail.com">vidarpgapp@gmail.com</a> with the order number, or else it is deleted on its own after 24 months without activity. Since 2.17.0, the soundtrack pieces you have unlocked with credits are kept there too.</p>
 </details>
 
 <h2>Documents</h2>
 <ul class="grid">
   <li><a class="card" href="privacy.html"><span class="t">Privacy Policy</span><span class="d">What is stored, where, and what the AI Coach does.</span></a></li>
   <li><a class="card" href="terms.html"><span class="t">Terms of Use</span><span class="d">Permitted use and the notice that this is not professional advice.</span></a></li>
-  <li><a class="card" href="data-deletion.html"><span class="t">Data Deletion</span><span class="d">How to erase your progress completely.</span></a></li>
+  <li><a class="card" href="data-deletion.html"><span class="t">Data Deletion</span><span class="d">How to erase your progress completely and what you share in Friends.</span></a></li>
 </ul>
     </article>
   </main>

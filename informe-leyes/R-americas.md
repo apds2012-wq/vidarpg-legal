@@ -1,5 +1,7 @@
 # VIDA RPG · Leyes de América (EE. UU., Canadá, México, Hispanoamérica)
 
+> **Actualización 4-11-2026.** El propietario ha dejado de ofrecer la app en Google Play en 12 países: Reino Unido, Serbia, Moldavia, Perú, Ecuador, Tailandia, Ruanda, Turquía, Vietnam, Uganda, Egipto y China (enviado a revisión de Google el 04-11-2026; en Play quedan 165 países o regiones; Hong Kong, Macao y Taiwán siguen). Motivo: representante, registro o trámite local (`INFORME-LEYES-PAISES.md`, sección 2 y fila 4 de la sección 5). La política de privacidad está al día en los 8 idiomas (§9 y §20.5, §20.8, §20.9, §20.10, rama `claude/quitar-12-paises`). Afecta a este anexo: **Perú y Ecuador**. El representante de Perú y el apoderado de Ecuador (5.4) dejan de plantearse mientras no se ofrezca allí.
+
 Investigación del 2-11-2026. Supuesto de partida (BRIEF.md): desarrollador persona física en España, sin establecimiento fuera de España, app para adultos en Google Play, sin cuentas, partida solo en el teléfono, ingresos y usuarios sin documentar. Política leída: `politica-privacidad-es.txt` (13-10-2026, v2.17.1).
 
 Reglas de este informe: cada afirmación lleva su fuente y la fecha en que se consultó. Lo que no se pudo leer en una fuente oficial va marcado **NO VERIFICADO**. Cuando la fuente es un resumen de un bufete o el texto de un tercero que reproduce la ley (FindLaw, Cornell LII, bufetes), se dice así. Brasil (LGPD y CDC) queda fuera: va en otro informe (`br-src/`).
@@ -394,7 +396,7 @@ Además, en la sección 18 («Cambios en esta política»): «Si cambia algo imp
 ### 5.4 Pendiente de decisión del propietario (no lo puede resolver la investigación)
 
 - **Domicilio postal** público (lo piden PIPEDA 4.8.2, la LFPDPPP 15-I, la Ley 25.326 art. 6, la Ley 18.331 art. 13, la Ley 21.719 art. 14 ter c y la LFPC 76 bis III). Hoy la política solo pone «España». Un apartado de correos o un domicilio profesional puede servir: **NO VERIFICADO** en cada país.
-- **Representante en Perú** (DS 016-2024-JUS) y **apoderado en Ecuador**: coste frente a riesgo. Con datos mínimos, el riesgo práctico es bajo, pero no nombrarlo es un incumplimiento formal.
+- **Representante en Perú** (DS 016-2024-JUS) y **apoderado en Ecuador**: coste frente a riesgo. Con datos mínimos, el riesgo práctico es bajo, pero no nombrarlo es un incumplimiento formal. → **04-11-2026: Perú y Ecuador excluidos en Play.**
 - **Evaluación de impacto** del art. 17 de la ley de Quebec para las comunicaciones a EE. UU.: es un documento interno breve.
 
 ---

@@ -1,5 +1,7 @@
 # VIDA RPG · Europa y alrededores: qué leyes se aplican y qué falta en la política
 
+> **Actualización 4-11-2026.** El propietario ha dejado de ofrecer la app en Google Play en 12 países: Reino Unido, Serbia, Moldavia, Perú, Ecuador, Tailandia, Ruanda, Turquía, Vietnam, Uganda, Egipto y China (enviado a revisión de Google el 04-11-2026; en Play quedan 165 países o regiones; Hong Kong, Macao y Taiwán siguen). Motivo: representante, registro o trámite local (`INFORME-LEYES-PAISES.md`, sección 2 y fila 4 de la sección 5). La política de privacidad está al día en los 8 idiomas (§9 y §20.5, §20.8, §20.9, §20.10, rama `claude/quitar-12-paises`). Afecta a este anexo: **Reino Unido, Serbia, Moldavia y Turquía**. Las preguntas de C sobre esos países quedan resueltas (excluidos); Montenegro y el resto de Europa, sin cambios.
+
 Investigación del 2 de noviembre de 2026. Punto de partida: `BRIEF.md` y la política de privacidad en español (versión 2.17.1, 13-10-2026).
 Regla: cada afirmación lleva su fuente y la fecha de consulta (2-11-2026, salvo que se diga otra). Lo que no se pudo comprobar en una fuente oficial o fiable va marcado **NO VERIFICADO**. Esto es investigación, no asesoramiento jurídico: antes de publicar, que lo revise un abogado.
 
@@ -200,8 +202,8 @@ Fuente: RGPD, Reglamento (UE) 2016/679, arts. 9, 11, 13, 21, 22, 37 (texto ofici
 4. **Marca de IA** en el cuadro del Sabio cuando habla el Coach, y comprobar si el art. 50.2 obliga a un marcado legible por máquina desde el 2-12-2026.
 
 **C. Decisiones para el propietario**
-- ¿Designar un representante en el **Reino Unido** (probable), en **Serbia** y en **Moldavia**, o quitar Serbia y Moldavia de la distribución?
-- ¿**Turquía**: excluirla de Play o cumplir con VERBIS y su representante?
+- ¿Designar un representante en el **Reino Unido** (probable), en **Serbia** y en **Moldavia**, o quitar Serbia y Moldavia de la distribución? → **Resuelto el 04-11-2026: los tres excluidos en Play.**
+- ¿**Turquía**: excluirla de Play o cumplir con VERBIS y su representante? → **Resuelto el 04-11-2026: excluida en Play.**
 - ¿**Rusia**: apagar Coach y códigos con RU, no distribuir o aceptar el riesgo?
 - ¿Vicios en el resumen del Coach: consentimiento explícito o fuera?
 
